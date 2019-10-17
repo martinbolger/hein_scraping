@@ -1,0 +1,165 @@
+,First Name,Last Name,Title,School,E-mail,Phone,Gender,Gender Label
+0,Helen,Alvare,Professor of Law,Antonin Scalia Law School at George Mason University,halvare@gmu.edu,(703) 993-9845,female,0
+1,David,Bernstein,University Professor,Antonin Scalia Law School at George Mason University,dbernste@gmu.edu,(703) 993-8089,male,1
+2,Michelle,Boardman,Associate Professor of Law,Antonin Scalia Law School at George Mason University,mboardma@gmu.edu,(703) 993-8056,female,0
+3,Francis,Buckley,GMU Foundation Professor of Law,Antonin Scalia Law School at George Mason University,fbuckley@gmu.edu,(703) 993-8028,male,1
+4,Henry,Butler,Dean and Professor of Law,Antonin Scalia Law School at George Mason University,hnbutler@gmu.edu,(703) 993-8644,male,1
+5,Tun-Jen,Chiang,Associate Professor of Law,Antonin Scalia Law School at George Mason University,tchiang2@gmu.edu,(703) 993-9868,unknown,2
+6,Terrence,Chorvat,Professor of Law,Antonin Scalia Law School at George Mason University,tchorvat@gmu.edu,(703) 993-8208,male,1
+7,Eric,Claeys,Professor of Law,Antonin Scalia Law School at George Mason University,eclaeys@gmu.edu,(703) 993-8247,male,1
+8,Lloyd,Cohen,Professor of Law,Antonin Scalia Law School at George Mason University,lcohen2@gmu.edu,(703) 993-8048,male,1
+9,Ross,Davies,Professor of Law,Antonin Scalia Law School at George Mason University,rdavies@greenbag.org,(703) 993-8049,male,1
+10,Steven,Eagle,Professor Emeritus of Law,Antonin Scalia Law School at George Mason University,seagle@gmu.edu,(703) 328-7976,male,1
+11,Nuno,Garoupa,"Professor of Law, Associate Dean for Research and Faculty Development & Faculty Director of Graduate Studies",Antonin Scalia Law School at George Mason University,ngaroup@gmu.edu,(703) 993-8184,male,1
+12,D. Bruce,Johnsen,Professor of Law,Antonin Scalia Law School at George Mason University,djohnsen@gmu.edu,(703) 993-8066,unknown,2
+13,Bruce,Kobayashi,"Associate Dean for Research & Faculty Development, Professor of Law",Antonin Scalia Law School at George Mason University,bkobayas@gmu.edu,(703) 993-8034,male,1
+14,Michael,Krauss,Professor of Law,Antonin Scalia Law School at George Mason University,mkrauss@gmu.edu,(703) 993-8024,male,1
+15,Craig,Lerner,Professor of Law,Antonin Scalia Law School at George Mason University,clerner@gmu.edu,(703) 993-8080,male,1
+16,Nelson,Lund,University Professor,Antonin Scalia Law School at George Mason University,nlund@gmu.edu,(703) 993-8045,male,1
+17,Joyce,Malcolm,Patrick Henry Professor of Constitutional Law & the Second Admendment,Antonin Scalia Law School at George Mason University,jmalcolm@gmu.edu,(703) 993-9150,female,0
+18,Kevin,McCabe,Prof. of Neuroecons. & Law.,Antonin Scalia Law School at George Mason University,kmccabe@gmu.edu,(703) 993-9441,male,1
+19,Adam,Mossoff,"Professor of Law, and Founder & Executive Director of the Center for the Protection of Intellectual Property",Antonin Scalia Law School at George Mason University,amossoff@gmu.edu,(703) 993-9577,male,1
+20,Murat,Mungan,Associate Professor of Law,Antonin Scalia Law School at George Mason University,mmungan@gmu.edu,(703) 993-8266,male,1
+21,Timothy,Muris,GMU Foundation Professor of Law,Antonin Scalia Law School at George Mason University,tmuris@gmu.edu,(703) 993-9421,male,1
+22,Christopher,Newman,Associate Professor of Law,Antonin Scalia Law School at George Mason University,cnewman2@gmu.edu,(703) 993-8131,male,1
+23,Jeffrey,Parker,Professor of Law,Antonin Scalia Law School at George Mason University,jparke3@gmu.edu,(703) 993-8055,male,1
+24,Rachelle,Perkins,Associate Dean for Academic Affairs & Associate Professor of Law,Antonin Scalia Law School at George Mason University,rholmes6@gmu.edu,(703) 993-8966,female,0
+25,Daniel,Polsby,Professor of Law,Antonin Scalia Law School at George Mason University,polsby@gmu.edu,(703) 993-8087,male,1
+26,Jeremy,Rabkin,Professor of Law,Antonin Scalia Law School at George Mason University,jrabkin@gmu.edu,(703) 993-8972,male,1
+27,Neomi,Rao,Associate Professor of Law & Director of the Center for the Study of the Administrative State,Antonin Scalia Law School at George Mason University,nrao@gmu.edu,(703) 993-8097,female,0
+28,Linda,Schwartzstein,"Prof. & V-Provost, Acad. Affrs.",Antonin Scalia Law School at George Mason University,lschwar1@gmu.edu,(703) 993-8789,female,0
+29,Ilya,Somin,Professor of Law,Antonin Scalia Law School at George Mason University,isomin@gmu.edu,(703) 993-8069,male,1
+30,J.W.,Verret,Associate Professor of Law,Antonin Scalia Law School at George Mason University,jverret@gmu.edu,(703) 993-8038,unknown,2
+31,Joshua,Wright,"Executive Director of the Global Antitrust Institute, Univeristy Professor of Law",Antonin Scalia Law School at George Mason University,jwrightg@gmu.edu,(703) 993-8236,male,1
+32,Todd,Zywicki,"Executive Director of the Law & Economics Center, Foundation Professor of Law",Antonin Scalia Law School at George Mason University,tzywick2@gmu.edu,(703) 993-9484,male,1
+33,Gerald,Bepko,"IUPUI Chancellor Emeritus, IU Trustee Professor, and Professor of Law",Indiana University Robert H. McKinney School of Law,gbepko@iupui.edu,(317) 278-9240,male,1
+34,Shawn Marie,Boyne,Professor of Law; Faculty Felllow-IUPUI Office of Planning & Institutional Improvement; Co-Director JD Program Evaluation;,Indiana University Robert H. McKinney School of Law,smboyne@iupui.edu,(317) 278-4781,unknown,2
+35,Karen,Bravo,Vice Dean and Professor of Law,Indiana University Robert H. McKinney School of Law,kbravo@iupui.edu,(317) 278-9117,female,0
+36,Robert,Brookins,Professor of Law,Indiana University Robert H. McKinney School of Law,rbrookin@iupui.edu,(317) 274-7287,male,1
+37,Jeffrey,Cooper,Associate Professor of Law,Indiana University Robert H. McKinney School of Law,jcooper1@iupui.edu,(317) 278-2173,male,1
+38,Susan,deMaine,"Associate Director, Ruth Lilly Law Library, and Lecturer in Law",Indiana University Robert H. McKinney School of Law,sdemaine@iu.edu,(317) 274-1925,female,0
+39,Jennifer,Drobac,Samuel R. Rosen Professor of Law,Indiana University Robert H. McKinney School of Law,jdrobac@iu.edu,(317) 278-4777,female,0
+40,George,Edwards,"Carl M. Gray Professor of Law; Director, Program in International Human Rights Law; John S. Grimes Fellow",Indiana University Robert H. McKinney School of Law,gedwards@indiana.edu,(317) 278-2359,male,1
+41,Frank,Emmert,"John S. Grimes Professor of Law; Executive Director, Center for International and Comparative Law",Indiana University Robert H. McKinney School of Law,femmert@iupui.edu,(317) 278-9661,male,1
+42,Nicholas,Georgakopoulos,Harold Woodard Professor of Law,Indiana University Robert H. McKinney School of Law,ngeorgak@iupui.edu,(317) 274-1825,male,1
+43,John,Hill,R. Bruce Townsend Professor of Law; Adjunct Professor of Philosophy; Grimes Fellow,Indiana University Robert H. McKinney School of Law,johlhill@iupui.edu,(317) 278-9036,male,1
+44,Max,Huffman,"Professor of Law; Director, McKinney Law Online",Indiana University Robert H. McKinney School of Law,huffmmax@iupui.edu,(317) 274-8009,male,1
+45,Richard,Humphrey,"Reference and Instruction Librarian & Lecturer in Law, Ruth Lilly Law Library",Indiana University Robert H. McKinney School of Law,rhumphre@iupui.edu,(317) 278-1793,male,1
+46,Rob,Katz,Professor of Law,Indiana University Robert H. McKinney School of Law,rokatz@iu.edu,(317) 278-4791,male,1
+47,Benjamin,Keele,"Research and Instruction Librarian & Lecturer in Law, Ruth Lilly Law Library",Indiana University Robert H. McKinney School of Law,bkeele@indiana.edu,(317) 274-1929,male,1
+48,Linda,Kelly,M. Dale Palmer Prof.,Indiana University Robert H. McKinney School of Law,linkelly@iupui.edu,(317) 278-4793,female,0
+49,Andrew,Klein,Dean & Paul E. Beam Prof.,Indiana University Robert H. McKinney School of Law,anrklein@iupui.edu,(317) 274-2099,male,1
+50,Gerard Nicholas,Magliocca,Samuel R. Rosen Prof.,Indiana University Robert H. McKinney School of Law,gmaglioc@iupui.edu,(317) 278-4792,unknown,2
+51,Seema,Mohapatra,Associate Professor of Law,Indiana University Robert H. McKinney School of Law,mohap@iu.edu,(321) 206-5685,female,0
+52,Miriam,Murphy,"Director & Senior Lecturer in Law, Ruth Lilly Law Library",Indiana University Robert H. McKinney School of Law,mimurphy@iupui.edu,(317) 274-1928,female,0
+53,James,Nehf,Professor of Law; Cleon H. Foust Fellow; John S. Grimes Fellow,Indiana University Robert H. McKinney School of Law,jnehf@iupui.edu,(317) 274-8077,male,1
+54,Xuan-Thao,Nguyen,"Gerald L. Bepko Chair; Director, Center for Intellectual Property Law and Innovation",Indiana University Robert H. McKinney School of Law,xunguyen@iupui.edu,(214) 768-4037,unknown,2
+55,Michael,Pitts,Vice Dean and Professor of Law,Indiana University Robert H. McKinney School of Law,mjpitts@iupui.edu,(317) 278-9155,male,1
+56,Florence,Roisman,"William F. Harvey Professor, Chancellor's Professor",Indiana University Robert H. McKinney School of Law,froisman@iupui.edu,(317) 274-4479,female,0
+57,Lea,Shaver,Professor of Law and Dean's Fellow,Indiana University Robert H. McKinney School of Law,lbshaver@iupui.edu,(317) 278-4475,female,0
+58,Lahny,Silva,Professor of Law and Dean's Fellow,Indiana University Robert H. McKinney School of Law,lrsilva@iupui.edu,(317) 278-6712,unknown,2
+59,Margaret,Tarkington,Professor of Law,Indiana University Robert H. McKinney School of Law,mtarking@iupui.edu,(317) 278-8440,female,0
+60,Nicolas,Terry,Hall Render Professor of Law; Executive Director of the William S. and Christine S. Hall Center for Law and Health,Indiana University Robert H. McKinney School of Law,npterry@iupui.edu,(317) 274-8087,male,1
+61,James,White,Professor of Law,Indiana University Robert H. McKinney School of Law,jwhite@iupui.edu,(317) 278-9690,male,1
+62,Lloyd,Wilson,"Professor of Law; Director, Joint Center for Asian Law Studies; Director, Chinese Law Summer Program",Indiana University Robert H. McKinney School of Law,ltwilson@iu.edu,(317) 274-4826,male,1
+63,Richard,Wright,Lawrence A. Jegen III Professor of Law,Indiana University Robert H. McKinney School of Law,gwright@iupui.edu,(317) 278-4794,male,1
+64,K. Lee,Adams,Assoc. Prof.,Atlanta's John Marshall Law School,ladams@johnmarshall.edu,(678) 916-2647,unknown,2
+65,Joanna,Apolinsky,Associate Professor,Atlanta's John Marshall Law School,japolinsky@johnmarshall.edu,(678) 916-2647,female,0
+66,Anthony,Baker,Prof.,Atlanta's John Marshall Law School,abaker@johnmarshall.edu,(919) 865-4681,male,1
+67,Scott,Boone,Visiting Associate Professor,Atlanta's John Marshall Law School,sboone@johnmarshall.edu,(678) 916-2638,male,1
+68,Kathleen,Burch,Assoc. Prof.,Atlanta's John Marshall Law School,kburch@johnmarshall.edu,(678) 916-2631,female,0
+69,Robert,D'Agostino,Prof.,Atlanta's John Marshall Law School,rdagostino@johnmarshall.edu,(678) 916-2630,male,1
+70,Helen,De Haven,Assoc. Prof.,Atlanta's John Marshall Law School,hdehaven@johnmarshall.edu,(678) 916-2635,female,0
+71,Jace,Gatewood,Assoc. Prof. and Assistant Dean of Academic Programs,Atlanta's John Marshall Law School,jgatewood@johnmarshall.edu,(678) 638-6660,male,1
+72,Keith,Harrison,Professor of Law & Associate Dean,Atlanta's John Marshall Law School,kharrison@savannahlawschool.org,(912) 525-3901,male,1
+73,Elizabeth,Jaffe,Assoc. Prof.,Atlanta's John Marshall Law School,ejaffe@johnmarshall.edu,(678) 916-2637,female,0
+74,Browning,Jeffries,Assistant Prof.,Atlanta's John Marshall Law School,bjeffries@johnmarshall.edu,(678) 916-2636,unknown,2
+75,Michael,Lynch,Law Library Director,Atlanta's John Marshall Law School,mlynch@johnmarshall.edu,(678) 916-2661 (108),male,1
+76,Suparna,Malempati,Assoc. Prof.,Atlanta's John Marshall Law School,smalempati@johnmarshall.edu,(678) 916-2646,unknown,2
+77,Lance,McMillian,Associate Professor,Atlanta's John Marshall Law School,lmcmillian@hotmail.com,(678) 916-2634,male,1
+78,Malcolm,Morris,Dean,Atlanta's John Marshall Law School,mmorris@johnmarshall.edu,(815) 753-0280,male,1
+79,Jonathan,Rapping,Assoc. Prof.,Atlanta's John Marshall Law School,jrapping@johnmarshall.edu,(678) 916-2642,male,1
+80,Lisa,Tripp,Ass't Prof.,Atlanta's John Marshall Law School,ltripp@johnmarshall.edu,(678) 916-2643,female,0
+81,Jeffrey,Van Detta,The John E. Ryan Professor of International Business & Workplace Law,Atlanta's John Marshall Law School,jvandetta@johnmarshall.edu,(678) 916-2633,male,1
+82,William,Andreen,Edgar L. Clarkson Professor and Director UA-ANU Exchange Program,University of Alabama School of Law,wandreen@law.ua.edu,(205) 348-7091,male,1
+83,Carol,Andrews,Douglas Arant Professor of Law,University of Alabama School of Law,candrews@law.ua.edu,(205) 348-0334,mostly_female,0
+84,Mark,Brandon,Dean and Thomas E. McMillan Professor of Law,University of Alabama School of Law,mbrandon@law.ua.edu,(205) 348-5117,male,1
+85,William,Brewbaker,William Alfred Rose Professor of Law,University of Alabama School of Law,wbrewbak@law.ua.edu,(205) 348-1132,male,1
+86,Alfred,Brophy,D Paul Jones Chair of Law,University of Alabama School of Law,abrophy@law.ua.edu,(205) 348-1148,male,1
+87,Montre,Carodine,Professor of Law,University of Alabama School of Law,mcarodine@law.ua.edu,(205) 348-7657,unknown,2
+88,Jenny,Carroll,"Wiggins, Childs, Quinn & Pantazis Professor of Law",University of Alabama School of Law,jcarroll@law.ua.edu,(205) 348-1116,female,0
+89,John,Dillbary,"James M. Kidd, Sr Professor of Law",University of Alabama School of Law,sdillbary@law.ua.edu,(205) 348-9988,male,1
+90,Alan,Durham,Vice Dean and Judge Robert S. Vance Professor of Law,University of Alabama School of Law,adurham@law.ua.edu,(205) 348-1137,male,1
+91,Heather,Elliott,"Alumni, Class of '36 Professor of Law",University of Alabama School of Law,helliott@law.ua.edu,(205) 348-9965,female,0
+92,Mirit,Eyal-Cohen,Associate Professor of Law,University of Alabama School of Law,meyal-cohen@law.ua.edu,(205) 348-0243,unknown,2
+93,Bryan,Fair,Thomas E. Skinner Professor of Law,University of Alabama School of Law,bfair@law.ua.edu,(205) 348-7494,male,1
+94,Susan,Hamill,Professor of Law and Honors Professor,University of Alabama School of Law,shamill@law.ua.edu,(205) 348-5931,female,0
+95,Julie,Hill,Alton C. and Cecile Cunningham Craig Professor of Law,University of Alabama School of Law,jhill@law.ua.edu,(205) 348-5973,female,0
+96,Steven,Hobbs,Tom Bevill Chairholder of Law,University of Alabama School of Law,shobbs@law.ua.edu,(205) 348-5247,male,1
+97,Paul,Horwitz,Gordon Rosen Professor of Law,University of Alabama School of Law,phorwitz@law.ua.edu,(205) 348-6110,male,1
+98,Daniel,Joyner,"Professor of Law, Director of International Programs",University of Alabama School of Law,djoyner@law.ua.edu,(205) 348-5831,male,1
+99,Ronald,Krotoszynski,John S. Stone Chair of Law & Director of Faculty Research,University of Alabama School of Law,rkrotoszynski@law.ua.edu,(205) 348-0420,male,1
+100,Alberto,Lopez,Professor of Law,University of Alabama School of Law,alopez@law.ua.edu,(205) 348-9831,male,1
+101,Michael,Pardo,Henry Upson Sims Professor of Law,University of Alabama School of Law,mpardo@law.ua.edu,(205) 348-2032,male,1
+102,Meredith,Render,Professor of Law,University of Alabama School of Law,mrender@law.ua.edu,(205) 348-7853,mostly_female,0
+103,Kenneth,Rosen,Professor of Law,University of Alabama School of Law,krosen@law.ua.edu,(205) 348-1117,male,1
+104,Adam,Steinman,University Research Professor of Law,University of Alabama School of Law,asteinman@law.ua.edu,(205) 348-9715,male,1
+105,Fredrick,Vars,"Ira Drayton Pruitt, Sr. Professor of Law",University of Alabama School of Law,fvars@law.ua.edu,(205) 348-0841,male,1
+106,Douglas,Abrams,Assoc. Prof. Emeritus of Law,University of Missouri School of Law,abramsd@missouri.edu,(573) 882-0307,male,1
+107,Royce,Barondes,James S. Rollins Prof. of Law,University of Missouri School of Law,barondesr@missouri.edu,(573) 882-1109,male,1
+108,Frank,Bowman,Floyd R. Gibson Missouri Endowed Prof.,University of Missouri School of Law,bowmanf@missouri.edu,(573) 882-2749,male,1
+109,Michelle,Cecil,William H. Pittman Prof.,University of Missouri School of Law,cecilm@missouri.edu,(573) 882-7765,female,0
+110,Dennis,Crouch,Assoc. Prof.,University of Missouri School of Law,dc@alumni.princeton.edu,(573) 884-3614,male,1
+111,Kenneth,Dean,"Dean Emeritus of Law, Deputy Provost Emeritus and Associate Professor Emeritus of Law",University of Missouri School of Law,deank@missouri.edu,(573) 882-0270,male,1
+112,R. Lawrence,Dessem,Dean Emeritus and Timothy J. Heinsz Professor Emeritus of Law,University of Missouri School of Law,dessemrl@missouri.edu,(573) 882-7066,unknown,2
+113,David,English,W.F. Fratcher Professor of Law,University of Missouri School of Law,englishda@missouri.edu,(573) 489-1407,male,1
+114,Wilson,Freyermuth,John D. Lawson Prof.,University of Missouri School of Law,freyermuthr@missouri.edu,(573) 882-1105,male,1
+115,Rafael,Gely,Professor of Law,University of Missouri School of Law,gelyr@missouri.edu,(573) 882-8084,male,1
+116,Robert,Jerry,Floyd R. Gibson Missouri Endowed Professor of Law-Emeritus,University of Missouri School of Law,jerryr@missouri.edu,(352) 359-2923,male,1
+117,Thomas,Lambert,Wall Chair in Corporate Law & Governance and Professor of Law,University of Missouri School of Law,lambertt@missouri.edu,(573) 882-6558,male,1
+118,Ilhyung,Lee,Edward W. Hinton Professor of Law,University of Missouri School of Law,leeih@missouri.edu,(573) 882-2426,unknown,2
+119,Lyrissa,Lidsky,Dean & Judge C.A. Leedy Professor,University of Missouri School of Law,lidskyl@missouri.edu,(573) 882-3246,unknown,2
+120,Paul,Litton,Associate Dean for Faculty Research and R. B. Price Professor of Law,University of Missouri School of Law,littonp@missouri.edu,(573) 882-6488,male,1
+121,S. David,Mitchell,Associate Dean for Academic Affairs and Ruth L. Hulston Professor of Law,University of Missouri School of Law,mitchellsd@missouri.edu,(573) 882-8113,unknown,2
+122,Gary,Myers,Earl F. Nelson Professor of Law,University of Missouri School of Law,myers@missouri.edu,(573) 882-2791,male,1
+123,Carol,Newman,Transactional Professor of Law,University of Missouri School of Law,newmancd@missouri.edu,(573) 882-2658,mostly_female,0
+124,Rigel,Oliveri,Professor,University of Missouri School of Law,oliverir@missouri.edu,(573) 882-5068,unknown,2
+125,Richard,Reuben,"Prof., Sr. Fellow, Cntr. for the Study of Dispute Resolu. & Co-Dir., MO Cntr. for the Study of Conflict, Law & the Media.",University of Missouri School of Law,reubenr@missouri.edu,(573) 884-5204,male,1
+126,Amy,Schmitz,Elwood L. Thomas Missouri Endowed Professor of Law,University of Missouri School of Law,schmitzaj@missouri.edu,(573) 884-3614,female,0
+127,S.I.,Strong,Manley O. Hudson Professor of Law,University of Missouri School of Law,strongsi@missouri.edu,(573) 882-2465,unknown,2
+128,Christina,Wells,Enoch H. Crowder Professor of Law,University of Missouri School of Law,wellsc@missouri.edu,(573) 882-8375,female,0
+129,Adell,Amos,Professor & Assoc. Dean for Academic Affairs,University of Oregon School of Law,aamos@uoregon.edu,(541) 346-3826,male,1
+130,Carl,Bjerre,Wallace L. and Ellen A. Kaapcke Professor of Business Law,University of Oregon School of Law,cbjerre@uoregon.edu,(541) 346-3981,male,1
+131,John,Bonine,Bernard B. Kliks Professor,University of Oregon School of Law,jbonine@uoregon.edu,(541) 346-3827,male,1
+132,Marcilynn,Burke,Dean,University of Oregon School of Law,lawdean@uoregon.edu,(541) 346-3836,unknown,2
+133,Stuart,Chinn,Associate Professor & Associate Dean of Programs and Research,University of Oregon School of Law,schinn@uoregon.edu,(541) 346-5797,male,1
+134,Andrea,Coles-Bjerre,Associate Professor,University of Oregon School of Law,acoles@law.uoregon.edu,(541) 346-3810,female,0
+135,Michael,Fakhri,Associate Professor,University of Oregon School of Law,mfakhri@uoregon.edu,(541) 514-8401,male,1
+136,Caroline,Forell,Professor,University of Oregon School of Law,cforell@uoregon.edu,(541) 346-3864,female,0
+137,Elizabeth,Frost,LRW Senior Instructor I,University of Oregon School of Law,efrost@uoregon.edu,(541) 346-5135,female,0
+138,Susan,Gary,Professor,University of Oregon School of Law,sgary@uoregon.edu,(541) 346-3856,female,0
+139,Ibrahim,Gassama,Professor,University of Oregon School of Law,igassama@law.uoregon.edu,(541) 346-3831,male,1
+140,Erik,Girvan,Associate Professor,University of Oregon School of Law,girvan@uoregon.edu,(541) 346-8934,male,1
+141,Rebekah,Hanley,LRW Senior Instructor II,University of Oregon School of Law,rhanley@uoregon.edu,(541) 346-3809,female,0
+142,Leslie,Harris,Dorothy Kliks Fones Prof. Emerita,University of Oregon School of Law,lharris@uoregon.edu,(541) 346-3840,mostly_female,0
+143,Richard,Hildreth,Professor,University of Oregon School of Law,rghildre@law.uoregon.edu,(541) 346-3866,male,1
+144,Mary Ann,Hyatt,"Dir., Library & Prof.",University of Oregon School of Law,mahyatt@uoregon.edu,(541) 346-3097,unknown,2
+145,Robert,Illig,Associate Prof.,University of Oregon School of Law,rillig@uoregon.edu,(541) 346-1723,male,1
+146,Thomas,Lininger,Professor & Orlando John and Marian H. Hollis Professor of Law,University of Oregon School of Law,lininger@uoregon.edu,(541) 346-3662,male,1
+147,Mohsen,Manesh,Associate Professor,University of Oregon School of Law,mohsen@uoregon.edu,(541) 346-3887,male,1
+148,Roberta,Mann,Mr. & Mrs. L.L. Stewart Professor of Business Law,University of Oregon School of Law,rfmann@uoregon.edu,(541) 346-3854,female,0
+149,Megan,McAlpin,LRW Senior Lecturer I,University of Oregon School of Law,mmcalpin@uoregon.edu,(541) 346-3673,female,0
+150,Michelle,McKinley,Professor,University of Oregon School of Law,michelle@uoregon.edu,(541) 346-5191,female,0
+151,Michael,Moffitt,Professor,University of Oregon School of Law,mmoffitt@uoregon.edu,(541) 346-3836,male,1
+152,Michael,Musheno,Professor & Faculty Director Undergraduate Legal Studies,University of Oregon School of Law,musheno@uoregon.edu,(541) 346-3862,male,1
+153,Eric,Priest,Associate Professor,University of Oregon School of Law,priest@uoregon.edu,(541) 346-0414,male,1
+154,Ofer,Raban,Professor,University of Oregon School of Law,ofer@uoregon.edu,(541) 346-1578,male,1
+155,Jennifer,Reynolds,Associate Professor,University of Oregon School of Law,jwr@uoregon.edu,(617) 304-7491,female,0
+156,Joan,Rocklin,LRW Senior Lecturer II,University of Oregon School of Law,jrocklin@uoregon.edu,(541) 346-3869,female,0
+157,Suzanne,Rowe,James L. and Ilene R. Hershner Professor,University of Oregon School of Law,srowe@uoregon.edu,(541) 346-0507,female,0
+158,David,Schuman,Professor of Practice,University of Oregon School of Law,dschuman@uoregon.edu,(541) 346-8871,male,1
+159,Nancy,Shurtz,B.A. Kliks Professor,University of Oregon School of Law,nshurtz@uoregon.edu,(541) 346-3841,female,0
+160,Elizabeth,Tippett,Associate Professor,University of Oregon School of Law,tippett@uoregon.edu,(650) 391-5359,female,0
+161,Dominick,Vetri,Professor Emeritus,University of Oregon School of Law,dvetri@uoregon.edu,(541) 346-3868,male,1
+162,Merle,Weiner,Philip H. Knight Professor of Law,University of Oregon School of Law,mweiner@uoregon.edu,(541) 346-3857,mostly_male,1
+163,Mary,Wood,Phillip H. Knight Professor of Law,University of Oregon School of Law,mwood@law.uoregon.edu,(541) 346-3842,mostly_female,0

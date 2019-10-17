@@ -1,0 +1,281 @@
+,LateralYear,ID,First Name,LastName,Moved From,Moved To,Gender,Gender Label
+0,2012,9272,Matthew,Adler,University of Pennsylvania,Duke University,male,1
+1,2016,3677,Edward,Afield,Ava Maria School of Law,Georgia State University,male,1
+2,2017,46,Richard,Albert,Boston College,"University of Texas, Austin",male,1
+3,2016,8298,Lisa,Alexander,"University of Wisconsin, Madison",Texas A&M University,female,0
+4,2018,832,Hilary,Allen,Suffolk University,American University,female,0
+5,2015,2546,Owen,Anderson,"University of Oklahoma, Norman","University of Texas, Austin",male,1
+6,2018,2248,Olufunmilayo,Arewa,"University of California, Irvine",Temple University,unknown,2
+7,2013,4263,Kenneth,Ayotte,Northwestern University,"University of California, Berkeley",male,1
+8,2017,9199,Sahar,Aziz,Texas A&M University,Rutgers University,female,0
+9,2017,9420,Adam,Badawi,"Washington University, St. Louis","University of California, Berkeley",male,1
+10,2016,1458,Margo,Bagley,University of Virginia,Emory University,female,0
+11,2017,794,Shalanda,Baker,University of Hawaii,Northeastern University,unknown,2
+12,2017,5849,Angela,Banks,College of William & Mary,Arizona State University,female,0
+13,2014,1470,Oren,Bar-Gill,New York University,Harvard University,male,1
+14,2015,4247,Ann,Bartow,Pace University,University of New Hampshire,female,0
+15,2013,852,Teri,Baxter,Saint Louis University,University of Tennessee,female,0
+16,2012,5425,Karima,Bennoune,Rutgers University at Newark,"University of California, Davis",female,0
+17,2014,248,Mitchell,Berman,"University of Texas, Austin",University of Pennsylvania,male,1
+18,2018,656,Khaled,Beydoun,University of Detroit Mercy School of Law,"University of Arkansas, Fayetteville",male,1
+19,2018,7894,Joshua,Blank,New York University,"University of California, Irvine",male,1
+20,2017,301,William,Boyd,"University of Colorado, Boulder","University of California, Los Angeles",male,1
+21,2012,7911,Anu,Bradford,University of Chicago,Columbia University,female,0
+22,2018,2493,Samuel,Bray,"University of California, Los Angeles",University of Notre Dame,male,1
+23,2015,8219,Thomas,Brennan,Northwestern University,Harvard University,male,1
+24,2017,4088,Richard,Brooks,Columbia University,New York University,male,1
+25,2017,1674,Alfred,Brophy,"University of North Carolina, Chapel Hill ",University of Alabama,male,1
+26,2012,865,Charles,Brower,University of Mississippi,Wayne State University,male,1
+27,2017,3991,Eleanor,Brown,George Washington University,"Pennsylvania State University, University Park",female,0
+28,2012,6713,Tomiko,Brown-Nagin,University of Virginia,Harvard University,female,0
+29,2015,4416,Aaron,Bruhl,University of Houston,College of William & Mary,male,1
+30,2017,4529,Christopher,Bruner,Washington & Lee University,University of Georgia,male,1
+31,2015,4349,Christopher,Buccafusco,Chicago-Kent College of Law,Cardozo Law School,male,1
+32,2013,4979,Karen,Burke,University of San Diego,"University of Florida, Gainesville",female,0
+33,2012,7162,Paul,Butler,George Washington University,Georgetown University,male,1
+34,2014,6840,William,Buzbee,Emory University,Georgetown University,male,1
+35,2015,4373,Irene,Calboli,Marquette University,Texas A&M University,female,0
+36,2013,5159,Lan,Cao,College of William & Mary,Chapman University,andy,2
+37,2013,2160,June,Carbone,"University of Missouri, Kansas City",University of Minnesota,female,0
+38,2013,2664,Paul,Caron,University of Cincinnati,Pepperdine University,male,1
+39,2016,3892,Dale,Carpenter,University of Minnesota,Southern Methodist University,mostly_male,1
+40,2014,6876,Jenny,Carroll,Seton Hall University,University of Alabama,female,0
+41,2018,2814,Jennifer,Chacon,"University of California, Irvine","University of California, Los Angeles",female,0
+42,2018,8807,Anupam,Chander,"University of California, Davis",Georgetown University,male,1
+43,2018,1723,Stewart,Chang,Whittier Law School,"University of Nevada, Las Vegas",male,1
+44,2013,1126,Jim,Chen,University of Louisville,Michigan State University,male,1
+45,2013,6750,Eric,Chiappinelli,Creighton University,Texas Tech University,male,1
+46,2013,4098,Luis,Chiesa,Pace University,"State University of New York, Buffalo",male,1
+47,2013,1640,Christine,Cimini,University of Denver Sturm College of Law,Vermont Law School,female,0
+48,2018,9893,Jessica,Clarke,University of Minnesota,Vanderbilt University,female,0
+49,2014,5526,Steve,Clowney,University of Kentucky,"University of Arkansas, Fayetteville",male,1
+50,2014,5149,Andrew,Coan,"University of Wisconsin, Madison",University of Arizona,male,1
+51,2014,6269,Jorge,Contreras,American University,University of Utah,male,1
+52,2018,1824,Frank,Cooper,Suffolk University,"University of Nevada, Las Vegas",male,1
+53,2013,3878,Evan,Criddle,Syracuse University,College of William & Mary,male,1
+54,2012,5281,Barry,Cushman,University of Virginia,University of Notre Dame,male,1
+55,2013,2226,Jason,Czarnezki,Vermont Law School,Pace University,male,1
+56,2013,7669,Steven,Davidoff,Ohio State University,"University of California, Berkeley",male,1
+57,2018,6296,Seth,Davis,"University of California, Irvine","University of California, Berkeley",male,1
+58,2013,4489,Richard,Delgado,Seattle University,University of Alabama,male,1
+59,2014,9081,Dhammika,Dharmapala,University of Illinois,University of Chicago,unknown,2
+60,2015,7272,William,Dodge,"University of California, Hastings","University of California, Davis",male,1
+61,2012,4153,Scott,Dodson,College of William & Mary,"University of California, Hastings",male,1
+62,2014,6857,Michael,Doran,Georgetown University,University of Virginia,male,1
+63,2014,8653,Justin,Driver,"University of Texas, Austin",University of Chicago,male,1
+64,2012,8185,Mary,Dudziak,University of Southern California,Emory University,mostly_female,0
+65,2018,6667,Melissa,Durkee,"University of Washington, Seattle",University of Georgia,female,0
+66,2018,74,Atiba,Ellis,West Virginia University,Marquette University,unknown,2
+67,2014,5989,Lee,Epstein,University of Southern California,Washington University in St. Louis,mostly_male,1
+68,2017,9246,Tonya,Evans,Widener University Commonwealth,University of New Hampshire,female,0
+69,2016,3269,David,Fagundes,Southwestern Law School,University of Houston,male,1
+70,2012,1297,Nita,Farahany,Vanderbilt University,Duke University,female,0
+71,2014,829,Kimberly,Ferzan,"Rutgers University, Camden",University of Virginia,mostly_female,0
+72,2016,524,Joshua,Fischman,Northwestern University,University of Virginia,male,1
+73,2017,3108,Catherine,Fisk,"University of California, Irvine","University of California, Berkeley",female,0
+74,2017,6699,Victor,Flatt,"University of North Carolina, Chapel Hill",University of Houston,male,1
+75,2018,4193,Victor,Fleischer,University of San Diego,"University of California, Irvine",male,1
+76,2013,9999,Miranda,Fleischer,"University of Colorado, Boulder",University of San Diego,female,0
+77,2015,3062,Susan,Fortney,Hofstra University,Texas A&M University,female,0
+78,2017,255,Sheila,Foster,Fordham University,Georgetown University,female,0
+79,2016,3073,Michael,Frakes,Northwestern University,Duke University,male,1
+80,2016,2291,Susan,Franck,Washington & Lee University,American University,female,0
+81,2018,3743,David,Franklyn,University of San Francisco,Golden Gate University,male,1
+82,2017,9472,Brett,Frischmann,Cardozo Law School,Villanova University,male,1
+83,2013,5827,Jeanne,Fromer,Fordham University,New York University,female,0
+84,2015,6025,Brian,Galle,Boston College,Georgetown University,male,1
+85,2017,4466,David,Gamage,"University of California, Berkeley","Indiana University, Bloomington",male,1
+86,2018,2171,Nuno,Garoupa,Texas A&M University,George Mason University,male,1
+87,2018,5069,Brandon,Garrett,University of Virginia,Duke University,male,1
+88,2012,2605,Bryant,Garth,Southwestern Law School,"University of California, Irvine",male,1
+89,2012,5347,James,Gathii,Albany Law School,"Loyola University, Chicago",male,1
+90,2012,1244,Adam,Gershowitz,University of Houston,College of William & Mary,male,1
+91,2016,900,Shubha,Ghosh,"University of Wisconsin, Madison",Syracuse University,female,0
+92,2017,4067,Rachel,Godsil,Seton Hall University,Rutgers University,female,0
+93,2018,7402,Andrew,Gold,DePaul University,Brooklyn Law School,male,1
+94,2014,4861,Michele,Goodwin,University of Minnesota,"University of California, Irvine",female,0
+95,2012,4754,Leslie,Griffin,University of Houston,"University of Nevada, Las Vegas",mostly_female,0
+96,2016,699,James,Grimmelman,University of Maryland,Cornell University,male,1
+97,2016,8668,Joanna,Grossman,Hofstra University,Southern Methodist University,female,0
+98,2014,3885,Kaaryn,Gustafson,University of Connecticut,"University of California, Irvine",unknown,2
+99,2017,7844,Sarah,Haan,University of Idaho,Washington & Lee University,female,0
+100,2018,7046,Philip,Hackney,Louisiana State University,University of Pittsburgh,male,1
+101,2017,1585,Sam,Halabi,University of Tulsa,"University of Missouri, Columbia",mostly_male,1
+102,2014,3456,Emily,Hammond,Wake Forest University,George Washington University,female,0
+103,2014,9094,Bernard,Harcourt,University of Chicago,Columbia University,male,1
+104,2017,8921,Woodrow,Hartzog,"Cumberland School of Law, Samford University",Northeastern University,male,1
+105,2017,805,David,Hasen,"University of Colorado, Boulder","University of Florida, Gainesville",male,1
+106,2014,9734,Michael,Hatfield,Texas Tech University,"University of Washington, Seattle",male,1
+107,2016,8243,Grant,Hayden,Hofstra University,Southern Methodist University,male,1
+108,2012,4257,Deborah,Hellman,University of Maryland,University of Virginia,female,0
+109,2015,2371,C.,Hemphill,Columbia University,New York University,unknown,2
+110,2012,586,Jennifer,Hendricks,University of Tennessee,"University of Colorado, Boulder",female,0
+111,2013,9970,Lenese,Herbert,Albany Law School,Howard University,unknown,2
+112,2016,4921,Andrew,Hessick,University of Utah,"University of North Carolina, Chapel Hill",male,1
+113,2016,2653,Carissa,Hessick,University of Utah,"University of North Carolina, Chapel Hill",female,0
+114,2013,4267,Julie,Hill,University of Houston,University of Alabama,female,0
+115,2013,2172,Adam,Hirsch,Florida State University,University of San Diego,male,1
+116,2017,1062,Allison,Hoffman,"University of California, Los Angeles",University of Pennsylvania,female,0
+117,2017,1919,David,Hoffman,Temple University,University of Pennsylvania,male,1
+118,2018,8826,Christopher,Holman,"University of Missouri, Kansas City",Drake University,male,1
+119,2017,3906,Ryan,Holte,Southern Illinois University,University of Akron,mostly_male,1
+120,2012,7499,Jill,Horwitz,University of Michigan,"University of California, Los Angeles",female,0
+121,2017,866,Herbert,Hovenkamp,University of Iowa,University of Pennsylvania,male,1
+122,2017,2928,Blake,Hudson,Louisiana State University,University of Houston,mostly_male,1
+123,2014,8773,Christine,Hurt,University of Illinois,Brigham Young University,female,0
+124,2013,6660,Darren,Hutchinson,American University,"University of Florida, Gainesville",male,1
+125,2016,6716,David,Hyman,University of Illinois,Georgetown University,male,1
+126,2014,9939,Darian,Ibrahim,"University of Wisconsin, Madison",College of William & Mary,mostly_male,1
+127,2017,7289,Lolita,Inniss,Cleveland-Marshall College of Law,Southern Methodist University,female,0
+128,2018,5470,Robert,Jackson,Columbia University,New York University,male,1
+129,2014,681,Charles,Jalloh,University of Pittsburgh,Florida International University,male,1
+130,2015,5404,Robert,Jerry,"University of Florida, Gainesville","University of Missouri, Columbia",male,1
+131,2013,9980,Lucy,Jewel,John Marshall Law School (Atlanta) ,University of Tennessee,female,0
+132,2018,217,Dalié,Jiménez,University of Connecticut,"University of California, Irvine",unknown,2
+133,2018,3590,Kristin,Johnson,Seton Hall University,Tulane University,female,0
+134,2016,94,RonNell,Jones,Brigham Young University,University of Utah,unknown,2
+135,2013,6461,Emily,Kadens,"University of Texas, Austin",Northwestern University,female,0
+136,2018,4133,Michael,Kang,Emory University,Northwestern University,male,1
+137,2015,3448,Sonia,Katyal,Fordham University,"University of California, Berkeley",female,0
+138,2015,7119,Daniel,Katz,Michigan State University,Chicago-Kent College of Law,male,1
+139,2014,7620,Cathleen,Kaveny,University of Notre Dame,Boston College,female,0
+140,2017,6675,Orin,Kerr,George Washington University,University of Southern California,male,1
+141,2016,6353,Janine,Kim,Marquette University,Chapman University,female,0
+142,2016,2914,Renee,Knake,Michigan State University,University of Houston,female,0
+143,2018,1180,Eugene,Kontorovich,Northwestern University,George Mason University,male,1
+144,2012,1100,Jody,Kraus,University of Pennsylvania,Columbia University,mostly_female,0
+145,2015,1605,Charlotte,Ku,University of Illinois,Texas A&M University,female,0
+146,2014,8987,Andrew,Kull,Boston University,"University of Texas, Austin",male,1
+147,2018,1104,Rebecca,Kysar,Brooklyn Law School,Fordham University,female,0
+148,2014,4875,Amy,Landers,McGeorge School of Law,Drexel University,female,0
+149,2017,6047,Kurt,Lash,University of Illinois,University of Richmond,male,1
+150,2016,982,Sarah,Lawsky,"University of California, Irvine",Northwestern University,female,0
+151,2017,8416,Yoon-Ho,Lee,University of Southern California,Northwestern University,unknown,2
+152,2018,5384,Jill,Lens,Baylor University,"University of Arkansas, Fayetteville",female,0
+153,2012,8223,Francine,Lipman,Chapman University,"University of Nevada, Las Vegas",female,0
+154,2012,8230,Jonathan,Lipson,"University of Wisconsin, Madison",Temple University,male,1
+155,2012,2118,Jacqueline,Lipton,Case Western Reserve University,University of Houston,female,0
+156,2013,5634,Albert,Lopez,University of Richmond,University of Alabama,male,1
+157,2015,43,Erik,Luna,Washington & Lee University,Arizona State University,male,1
+158,2016,1140,Andrew,Lund,Pace University,Villanova University,male,1
+159,2015,3945,Glynn,Lunney,Tulane University,Texas A&M University,mostly_male,1
+160,2015,3453,Timothy,Lytton,Albany Law School,Georgia State University,male,1
+161,2014,8979,Robert,MacCoun,"University of California, Berkeley",Stanford University,male,1
+162,2012,5728,Thomas,Main,McGeorge School of Law,"University of Nevada, Las Vegas",male,1
+163,2018,2167,Suzette,Malveaux,Catholic University,"University of Colorado, Boulder",female,0
+164,2018,5400,David,Marcus,University of Arizon,"University of California, Los Angeles",male,1
+165,2015,3311,Bruce,Markell,Florida State University,Northwestern University,male,1
+166,2015,5596,Andrei,Marmor,University of Southern California,Cornell University,male,1
+167,2016,3962,Fatma,Marouf,"University of Nevada, Las Vegas",Texas A&M University,female,0
+168,2013,1538,Ruth,Mason,University of Connecticut,University of Virginia,female,0
+169,2017,5016,Dayna,Matthew,"University of Colorado, Boulder",University of Virginia,female,0
+170,2012,3833,Jason,Mazzone,Brooklyn Law School,University of Illinois,male,1
+171,2013,4922,Grayson,McCouch,University of San Diego,"University of Florida, Gainesville",male,1
+172,2014,2384,Patricia,McCoy,University of Connecticut,Boston College,female,0
+173,2018,6962,Justin,McCrary,"University of California, Berkeley",Columbia University,male,1
+174,2013,2556,Mathew,McCubbins,University of Southern California,Duke University,male,1
+175,2015,7712,Ajay,Mehrotra,"Indiana University, Bloomington",Northwestern University,male,1
+176,2017,3369,Pamela,Metzger,Tulane University,Southern Methodist University,female,0
+177,2015,7702,Tim,Meyer,University of Georgia,Vanderbilt University,male,1
+178,2013,6239,Bernadette,Meyler,Cornell University,Stanford University,female,0
+179,2018,1650,Curtis,Milhaupt,Columbia University,Stanford University,male,1
+180,2013,1459,Darrell,Miller,University of Cincinnati,Duke University,male,1
+181,2012,2856,Robert,Miller,Villanova University,University of Iowa,male,1
+182,2017,8561,Nicholas,Mirkay,Creighton University,University of Hawaii,male,1
+183,2016,2582,Thomas,Mitchell,"University of Wisconsin, Madison",Texas A&M University,male,1
+184,2018,543,Seema,Mohapatra,Barry University,"Indiana University, Indianapolis",female,0
+185,2012,1863,Edward,Morrison,Columbia University,University of Chicago,male,1
+186,2013,5913,Susan,Morse,"University of California, Hastings","University of Texas, Austin",female,0
+187,2017,3888,Samuel,Moyn,Harvard University,Yale University,male,1
+188,2018,4224,Melissa,Murray,"University of California, Berkeley",New York University,female,0
+189,2017,7264,Alexandra,Natapoff,"Loyola Law School, Los Angeles","University of California, Irvine",female,0
+190,2017,113,Douglas,NeJaime,"University of California, Los Angeles",Yale University,male,1
+191,2014,8686,Xuan-Thao,Nguyen,Southern Methodist University,"Indiana University, Indianapolis",unknown,2
+192,2012,9064,Victoria,Nourse,"University of Wisconsin, Madison",Georgetown University,female,0
+193,2018,3463,Anne,O'Connell,"University of California, Berkeley",Stanford University,female,0
+194,2017,5142,Shu-Yi,Oei,Tulane University,Boston College,andy,2
+195,2015,1675,Paul,Ohm,"University of Colorado, Boulder",Georgetown University,male,1
+196,2017,5702,Ruth,Okediji,University of Minnesota,Harvard University,female,0
+197,2014,5382,Saule,Omarove,"University of North Carolina, Chapel Hill",Cornell University,female,0
+198,2016,9216,Angela,Onwuachi-Willig,University of Iowa,"University of California, Berkeley",female,0
+199,2017,2257,David,Orentlicher,"Indiana University, Indianapolis","University of Nevada, Las Vegas",male,1
+200,2018,5914,Leigh,Osofsky,University of Miami,"University of North Carolina, Chapel Hill",mostly_female,0
+201,2015,2636,Dave,Owen,University of Maine,"University of California, Hastings",male,1
+202,2015,6137,Mary-Rose,Papandrea,Boston College,"University of North Carolina, Chapel Hill",unknown,2
+203,2016,2085,Jordan,Paradise,Seton Hall University,"Loyola University, Chicago",male,1
+204,2012,9014,Rafael,Pardo,University of Washington at Seattle,Emory University,male,1
+205,2013,3273,James,Park,Brooklyn Law School,"University of California, Los Angeles",male,1
+206,2012,3957,Ed,Parson,University of Michigan,"University of California, Los Angeles",male,1
+207,2017,6118,Frank,Partnoy,University of San Diego,"University of California, Berkeley",male,1
+208,2013,7891,Frank,Pasquale,Seton Hall University,University of Maryland,male,1
+209,2013,32,Eduardo,Penalver,Cornell University,University of Chicago,male,1
+210,2013,8400,Nathaniel,Persily,Columbia University,Stanford University,male,1
+211,2016,1948,Gregg,Polsky,"University of North Carolina, Chapel Hill",University of Georgia,male,1
+212,2012,1038,H.,Powell,George Washington University,Duke University,unknown,2
+213,2014,3697,Wendell,Pritchett,"Rutgers University, Camden",University of Pennsylvania,male,1
+214,2015,3173,Scott,Pryor,Regent University,Campbell University,male,1
+215,2013,8905,Ellen,Pryor,Southern Methodist University,University of North Texas,female,0
+216,2018,512,Jedediah,Purdy,Duke University,Columbia University,male,1
+217,2014,8644,Intisar,Rabb,New York University,Harvard University,female,0
+218,2015,8208,Srividhya,Ragavan,"University of Oklahoma, Norman",Texas A&M University,unknown,2
+219,2014,1524,Robert,Rhee,University of Maryland,"University of Florida, Gainesville",male,1
+220,2014,2780,L.,Richardson,University of Iowa,"University of California, Irvine",unknown,2
+221,2017,0,Alice,Ristroph,Seton Hall University,Brooklyn Law School,female,0
+222,2014,972,Kalyani,Robbins,University of Akron,Florida International University,female,0
+223,2012,2123,Dorothy,Roberts,Northwestern University,University of Pennsylvania,female,0
+224,2016,1446,Edward,Rock,University of Pennsylvania,New York University,male,1
+225,2013,8064,Cristina,Rodriguez,New York University,Yale University,female,0
+226,2018,7757,Christopher,Roederer,Florida Coastal Law School,University of Dayton,male,1
+227,2012,13,Jim,Rossi,Florida State University,Vanderbilt University,male,1
+228,2014,1663,Troy,Rule,University of Missouri,Arizona State University,male,1
+229,2015,1349,Erin,Ryan,Lewis & Clark College,Florida State University,mostly_female,0
+230,2017,7569,Victoria,Sahani,Washington & Lee University,Arizona State University,female,0
+231,2018,8988,Hillary,Sale,"Washington University, St. Louis",Georgetown University,female,0
+232,2015,688,James,Salzman,Duke University,"University of California, Los Angeles",male,1
+233,2012,7437,Adam,Samaha,University of Chicago,New York University,male,1
+234,2016,1320,Amy,Schmitz,"University of Colorado, Boulder","University of Missouri, Columbia",female,0
+235,2015,6280,David,Schwartz,Chicago-Kent College of Law,Northwestern University,male,1
+236,2013,1098,Christopher,Serkin,Brooklyn Law School,Vanderbilt University,male,1
+237,2014,7154,Gregory,Shaffer,"University of Minnesota, Twin Cities","University of California, Irvine",male,1
+238,2013,7109,Darien,Shanske,"University of California, Hastings","University of California, Davis",male,1
+239,2015,4784,Jessica,Silbey,Suffolk University,Northeastern University,female,0
+240,2017,5433,Michael,Simkovic,Seton Hall University,University of Southern California,male,1
+241,2015,8367,Kenneth,Simons,Boston University,"University of California, Irvine",male,1
+242,2014,9155,David,Sklansky,"University of California, Berkeley",Stanford University,male,1
+243,2017,1895,Brad,Snyder,"University of Wisconsin, Madison",Georgetown University,male,1
+244,2014,9686,A.,Spencer,Washington & Lee University,University of Virginia,unknown,2
+245,2013,6162,Matthew,Spitzer,"University of Texas, Austin",Northwestern University,male,1
+246,2013,880,Christopher,Sprigman,University of Virginia,New York University,male,1
+247,2014,3417,Paul,Stancil,University of Illinois,Brigham Young University,male,1
+248,2013,2088,Jean,Stefancic,Seattle University,University of Alabama,male,1
+249,2016,3538,Alex,Stein,Cardozo Law School,Brooklyn Law School,male,1
+250,2014,7683,Adam,Steinman,Seton Hall University,University of Alabama,male,1
+251,2014,1385,Kristen,Stilt,Northwestern University,Harvard University,female,0
+252,2018,1550,Madhavi,Sunder,"University of California, Davis",Georgetown University,female,0
+253,2015,956,Alan,Sykes,New York University,Stanford University,male,1
+254,2014,1148,Eric,Talley,"University of California, Berkeley",Columbia University,male,1
+255,2017,4685,Franita,Tolson,Florida State University,University of Southern California,unknown,2
+256,2014,2329,Christopher,Tomlins,"University of California, Irvine","University of California, Berkeley",male,1
+257,2014,5946,Gerald,Torres,"University of Texas, Austin",Cornell University,male,1
+258,2016,8220,Elizabeth,Trujillo,Suffolk University,Texas A&M University,female,0
+259,2014,6165,Deborah,Tuerkheimer,DePaul University,Northwestern University,female,0
+260,2017,6593,Rebecca,Tushnet,Georgetown University,Harvard University,female,0
+261,2012,6066,Amanda,Tyler,George Washington University,"University of California, Berkeley",female,0
+262,2017,9182,Ryan,Vacca,University of Akron,University of New Hampshire,mostly_male,1
+263,2012,4704,Katharine,Van Tassel,St. Thomas University (Florida) ,University of Akron,female,0
+264,2017,7158,Urska,Velikonja,Emory University,Georgetown University,unknown,2
+265,2017,7799,Rose,Villazor,"University of California, Davis",Rutgers University,female,0
+266,2015,4898,Steve,Vladeck,American University,"University of Texas, Austin",male,1
+267,2016,2848,Gina,Warren,Texas A&M University,University of Houston,female,0
+268,2016,3160,Melissa,Wasserman,University of Illinois,"University of Texas, Austin",female,0
+269,2017,4806,Nancy,Welsh,Pennsylvania State University Dickinson School of Law (Carlysle),Texas A&M University,female,0
+270,2013,5837,Robin,Wilson,Washington & Lee University,University of Illinois,mostly_male,1
+271,2018,4023,Andrew,Woods,University of Kentucky,University of Arizona,male,1
+272,2018,4015,Kevin,Woodson,Drexel University,University of Richmond,male,1
+273,2017,562,Del,Wright,Valparaiso University,"University of Missouri, Kansas City",female,0
+274,2012,555,Gideon,Yaffe,University of Southern California,Yale University,male,1
+275,2016,1213,Ellen,Yaroshefsky,Cardozo Law School,Hofstra University,female,0
+276,2018,9362,Ruqaiijah,Yearby,Case Western Reserve University,Saint Louis University,unknown,2
+277,2015,6567,Peter,Yu,Drake University,Texas A&M University,male,1
+278,2015,8520,Kathryn,Zeiler,Georgetown University,Boston University,female,0
+279,2018,7177,Sandi,Zellmer,"University of Nebraska, Lincoln",University of Montana,male,1

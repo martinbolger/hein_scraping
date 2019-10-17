@@ -1,0 +1,481 @@
+Unnamed: 0,Person,School,Type,Cited by Cases,Cited by Articles,Accessed (Past 12 Months),Cited by Articles (Past 10 Years),Cited by Articles (Past 1-2 years),ScholarCheck Rank,Average Citations per Article,Average Citations per Document,Self-Citations,ID
+0,Yonathan A. Arbel,Alabama,number,0,8,170,8,6,0,2.67,2.67,0,
+0,Courtney Cross,Alabama,number,0,1,68,1,1,0,0.33,0.33,0,
+0,Allyson E. Gold,Alabama,number,0,2,117,2,1,0,0.67,0.67,0,
+,Vera Korzun,Akron,number,0,10,171,10,5,0,2.5,2.5,0,
+,Camilla Hrdy,Akron,number,0,59,129,59,17,0,6.56,5.36,0,
+,Elizabeth Knowles,Akron,number,0,0,22,0,0,0,0,0,0,
+,Benjamin J. McMichael,Alabama,number,0,3,31,3,2,0,0.6,0.5,0,
+,Deepa Das Acevedo,Alabama,number,0,22,455,22,16,0,2.44,2.44,0,
+,Meghan M. Boone,Alabama,number,0,8,163,8,6,0,1.6,1.6,0,
+,Casey E. Faucon,Alabama,number,0,20,213,20,2,0,5,3.33,0,
+,Yonathan A. Arbel,Alabama,number,0,8,170,8,6,0,2.67,2.67,0,
+,Courtney Cross,Alabama,number,0,1,68,1,1,0,0.33,0.33,0,
+,Allyson E. Gold,Alabama,number,0,2,117,2,1,0,0.67,0.67,0,
+,Stephen Rushin,Alabama,number,2,220,800,218,72,0,12.94,10.48,0,
+,Jessica Eisen,Alberta,number,0,3,245,3,2,0,0.5,0.5,0,
+,Rebecca J. Hamilton,American (Wash Coll of Law),number,0,26,347,21,2,0,5.2,3.25,0,
+,Anita Sinha,American (Wash Coll of Law),number,0,43,279,29,8,0,10.75,7.17,0,
+,Tammi Walker,Arizona,number,0,1,63,1,1,0,1,0.5,0,
+,Jason Kreag,Arizona,number,3,43,130,43,19,0,8.6,7.17,0,
+,Sergio Puig,Arizona,number,0,125,756,125,61,0,5.95,4.46,0,
+,Justin Weinstein-Tull,Arizona State,number,2,26,132,26,12,0,8.67,5.2,0,
+,Trevor Reed,Arizona State,number,0,0,9,0,0,0,0,0,0,
+,Bijal Shah,Arizona State,number,0,47,184,47,13,0,7.83,6.71,4,
+,Laura Napoli Coordes,Arizona State,number,0,20,138,20,11,0,2.86,2.86,1,
+,Erin Adele Scharff,Arizona State,number,0,34,146,34,15,0,8.5,6.8,3,
+,Kaiponanea T. Matsumura,Arizona State,number,2,60,98,58,19,0,15,6.67,0,
+,Beth K. Zilberman,Arkansas,number,0,0,16,0,0,0,0,0,0,
+,Alan M. Trammell,Arkansas-Fayetteville,number,3,72,119,68,12,0,9.14,17.14,0,
+,Jordan B. Woods,Arkansas-Fayetteville,number,0,81,758,79,25,0,8.27,6.71,0,
+,Sara Gosman,Arkansas-Fayetteville,number,0,3,36,3,0,0,1.5,1.5,0,
+,Natalie Ram,Baltimore,number,6,74,244,73,20,0,9.25,8.22,0,
+,Nadia B. Ahmad,Barry,number,0,11,128,10,4,0,1.33,1.33,0,
+,Nancy Cantalupo,Barry,number,0,136,498,134,26,0,14.78,16.3,0,
+,Denitsa R. Mavrova Heinrich,Barry,number,0,1,34,1,1,0,1,1,0,
+,Michael Morley,Barry,number,4,195,340,138,42,0,9.29,6.5,0,
+,Abbye Atkinson,Berkeley,number,0,20,66,20,1,0,6.67,6.67,0,
+,Joy Milligan,Berkeley,number,0,48,129,42,11,0,12,9.6,0,
+,Tejas N. Narechania,Berkeley,number,0,46,97,46,15,0,5.75,4.6,0,
+,Catherine Crump,Berkeley,number,1,24,58,16,6,0,24,12,0,
+,Hiba Hafiz,Boston College,number,0,3,93,3,3,0,1,1,0,
+,Daniel Farbman,Boston College,number,0,2,21,2,1,0,2,2,0,
+,Vera Korzun,Akron,number,0,10,171,10,5,0,2.5,2.5,0,117404
+,Camilla Hrdy,Akron,number,0,59,129,59,17,0,6.56,5.36,0,203049
+,Vera Korzun,Akron,number,0,10,171,10,5,0,2.5,2.5,0,292128
+,Camilla Hrdy,Akron,number,0,59,129,59,17,0,6.56,5.36,0,315067
+,Elizabeth Knowles,Akron,number,0,0,22,0,0,0,0,0,0,852395
+,Benjamin J. McMichael,Alabama,number,0,3,31,3,2,0,0.6,0.5,0,266743
+,Deepa Das Acevedo,Alabama,number,0,22,455,22,16,0,2.44,2.44,0,466720
+,Meghan M. Boone,Alabama,number,0,8,163,8,6,0,1.6,1.6,0,677636
+,Casey E. Faucon,Alabama,number,0,20,213,20,2,0,5,3.33,0,962321
+,Vera Korzun,Akron,number,0,10,171,10,5,0,2.5,2.5,0,144152
+,Camilla Hrdy,Akron,number,0,59,129,59,17,0,6.56,5.36,0,170212
+,Elizabeth Knowles,Akron,number,0,0,22,0,0,0,0,0,0,217325
+,Benjamin J. McMichael,Alabama,number,0,3,31,3,2,0,0.6,0.5,0,235433
+,Deepa Das Acevedo,Alabama,number,0,22,455,22,16,0,2.44,2.44,0,254357
+,Meghan M. Boone,Alabama,number,0,8,163,8,6,0,1.6,1.6,0,276683
+,Casey E. Faucon,Alabama,number,0,20,213,20,2,0,5,3.33,0,304001
+,Yonathan A. Arbel,Alabama,number,0,8,170,8,6,0,2.67,2.67,0,324763
+,Courtney Cross,Alabama,number,0,1,68,1,1,0,0.33,0.33,0,337978
+,Allyson E. Gold,Alabama,number,0,2,117,2,1,0,0.67,0.67,0,227798
+,Stephen Rushin,Alabama,number,2,220,800,218,72,0,12.94,10.48,0,508986
+,Jessica Eisen,Alberta,number,0,3,245,3,2,0,0.5,0.5,0,933079
+,Rebecca J. Hamilton,American (Wash Coll of Law),number,0,26,347,21,2,0,5.2,3.25,0,114134
+,Anita Sinha,American (Wash Coll of Law),number,0,43,279,29,8,0,10.75,7.17,0,144937
+,Tammi Walker,Arizona,number,0,1,63,1,1,0,1,0.5,0,165257
+,Jason Kreag,Arizona,number,3,43,130,43,19,0,8.6,7.17,0,183138
+,Sergio Puig,Arizona,number,0,125,756,125,61,0,5.95,4.46,0,203504
+,Justin Weinstein-Tull,Arizona State,number,2,26,132,26,12,0,8.67,5.2,0,242545
+,Trevor Reed,Arizona State,number,0,0,9,0,0,0,0,0,0,262190
+,Bijal Shah,Arizona State,number,0,47,184,47,13,0,7.83,6.71,4,278746
+,Laura Napoli Coordes,Arizona State,number,0,20,138,20,11,0,2.86,2.86,1,299775
+,Erin Adele Scharff,Arizona State,number,0,34,146,34,15,0,8.5,6.8,3,339910
+,Kaiponanea T. Matsumura,Arizona State,number,2,60,98,58,19,0,15,6.67,0,217460
+,Beth K. Zilberman,Arkansas,number,0,0,16,0,0,0,0,0,0,526473
+,Alan M. Trammell,Arkansas-Fayetteville,number,3,72,119,68,12,0,9.14,17.14,0,699342
+,Jordan B. Woods,Arkansas-Fayetteville,number,0,81,758,79,25,0,8.27,6.71,0,102739
+,Sara Gosman,Arkansas-Fayetteville,number,0,3,36,3,0,0,1.5,1.5,0,150245
+,Natalie Ram,Baltimore,number,6,74,244,73,20,0,9.25,8.22,0,174070
+,Nadia B. Ahmad,Barry,number,0,11,128,10,4,0,1.33,1.33,0,197857
+,Nancy Cantalupo,Barry,number,0,136,498,134,26,0,14.78,16.3,0,244894
+,Benjamin Edwards,Barry,number,0,0,0,0,0,0,0,0,0,288796
+,Denitsa R. Mavrova Heinrich,Barry,number,0,1,34,1,1,0,1,1,0,328783
+,Michael Morley,Barry,number,4,195,340,138,42,0,9.29,6.5,0,375842
+,Abbye Atkinson,Berkeley,number,0,20,66,20,1,0,6.67,6.67,0,103314
+,Joy Milligan,Berkeley,number,0,48,129,42,11,0,12,9.6,0,125551
+,Tejas N. Narechania,Berkeley,number,0,46,97,46,15,0,5.75,4.6,0,145353
+,Catherine Crump,Berkeley,number,1,24,58,16,6,0,24,12,0,166796
+,Hiba Hafiz,Boston College,number,0,3,93,3,3,0,1,1,0,185032
+,Daniel Farbman,Boston College,number,0,2,21,2,1,0,2,2,0,203496
+,Jeffrey M. Cohen,Boston College,number,0,9,11,6,1,0,7.5,4,0,225589
+,M. Ryan Williams,Boston College,number,2,242,410,237,38,0,29.85,39.18,0,295892
+,Natalya Shnitser,Boston College,number,0,32,57,32,4,0,8,6.4,0,296982
+,Portia Pedro,Boston University,number,0,0,46,0,0,0,0,0,0,503393
+,Scott Hirst,Boston University,number,0,67,174,67,25,0,11.17,11.17,0,681669
+,Ahmed Ghappour,Boston University,number,1,17,382,17,8,0,8.5,5.67,1,874965
+,Rory Van Loo,Boston University,number,0,74,746,74,44,0,9.25,8.22,8,106070
+,Rebecca Ingber,Boston University,number,0,67,218,67,19,0,8.38,7.44,10,127996
+,Julian Arato,Brooklyn,number,0,58,323,57,13,0,7.25,6.44,0,163237
+,K. Sabeel Rahman,Brooklyn,number,0,53,621,53,34,0,7.57,3.79,0,186462
+,Jocelyn Simonson,Brooklyn,number,4,169,491,168,70,0,21.12,16.9,0,219679
+,Nicole Hallett,Buffalo,number,0,4,83,4,2,0,1,0.8,0,245709
+,Jonathan Manes,Buffalo,number,1,5,95,5,2,0,1.67,1.67,1,265670
+,Stephanie H. Barclay,BYU,number,1,27,283,27,4,0,6.75,4.5,0,286269
+,Denitsa R. Mavrova Heinrich,Barry,number,0,1,39,1,1,0,1,1,0,247646
+,William (I) Clayton,BYU,number,0,2,25,2,1,0,2,2,0,331135
+,Gladriel Shobe,BYU,number,0,9,151,9,9,0,2.25,2.25,0,454544
+,Jarrod Shobe,BYU,number,0,44,171,44,16,0,8.8,8.8,0,652281
+,Stephanie Plamondon Bair,BYU,number,0,34,258,33,9,0,4.86,4.86,0,854238
+,Clark D. Asay,BYU,number,0,103,375,103,29,0,7.36,6.87,0,125011
+,Hannah Brenner,Cal Western,number,0,28,228,28,6,0,3.11,3.11,0,184450
+,Erin Sheley,Calgary,number,3,29,386,29,6,0,3.62,3.22,0,207960
+,Vera Korzun,Akron,number,0,10,171,10,5,0,2.5,2.5,0,6298
+,Camilla Hrdy,Akron,number,0,59,129,59,17,0,6.56,5.36,0,5811
+,Elizabeth Knowles,Akron,number,0,0,22,0,0,0,0,0,0,9429
+,Benjamin J. McMichael,Alabama,number,0,3,31,3,2,0,0.6,0.5,0,570
+,Deepa Das Acevedo,Alabama,number,0,22,455,22,16,0,2.44,2.44,0,9614
+,Meghan M. Boone,Alabama,number,0,8,163,8,6,0,1.6,1.6,0,9149
+,Casey E. Faucon,Alabama,number,0,20,213,20,2,0,5,3.33,0,3632
+,Yonathan A. Arbel,Alabama,number,0,8,170,8,6,0,2.67,2.67,0,7083
+,Courtney Cross,Alabama,number,0,1,68,1,1,0,0.33,0.33,0,7364
+,Allyson E. Gold,Alabama,number,0,2,117,2,1,0,0.67,0.67,0,6447
+,Stephen Rushin,Alabama,number,2,220,800,218,72,0,12.94,10.48,0,2557
+,Jessica Eisen,Alberta,number,0,3,245,3,2,0,0.5,0.5,0,5713
+,Rebecca J. Hamilton,American (Wash Coll of Law),number,0,26,347,21,2,0,5.2,3.25,0,7572
+,Anita Sinha,American (Wash Coll of Law),number,0,43,279,29,8,0,10.75,7.17,0,3937
+,Tammi Walker,Arizona,number,0,1,63,1,1,0,1,0.5,0,9456
+,Jason Kreag,Arizona,number,3,43,130,43,19,0,8.6,7.17,0,659
+,Sergio Puig,Arizona,number,0,125,756,125,61,0,5.95,4.46,0,3199
+,Justin Weinstein-Tull,Arizona State,number,2,26,132,26,12,0,8.67,5.2,0,665
+,Trevor Reed,Arizona State,number,0,0,9,0,0,0,0,0,0,9359
+,Bijal Shah,Arizona State,number,0,47,184,47,13,0,7.83,6.71,4,367
+,Laura Napoli Coordes,Arizona State,number,0,20,138,20,11,0,2.86,2.86,1,1616
+,Erin Adele Scharff,Arizona State,number,0,34,146,34,15,0,8.5,6.8,3,1324
+,Kaiponanea T. Matsumura,Arizona State,number,2,60,98,58,19,0,15,6.67,0,1418
+,Beth K. Zilberman,Arkansas,number,0,0,16,0,0,0,0,0,0,1142
+,Alan M. Trammell,Arkansas-Fayetteville,number,3,72,119,68,12,0,9.14,17.14,0,3735
+,Jordan B. Woods,Arkansas-Fayetteville,number,0,81,758,79,25,0,8.27,6.71,0,5960
+,Sara Gosman,Arkansas-Fayetteville,number,0,3,36,3,0,0,1.5,1.5,0,707
+,Natalie Ram,Baltimore,number,6,74,244,73,20,0,9.25,8.22,0,5195
+,Nadia B. Ahmad,Barry,number,0,11,128,10,4,0,1.33,1.33,0,2974
+,Nancy Cantalupo,Barry,number,0,136,498,134,26,0,14.78,16.3,0,6719
+,Benjamin Edwards,Barry,number,0,0,0,0,0,0,0,0,0,3435
+,Denitsa R. Mavrova Heinrich,Barry,number,0,1,34,1,1,0,1,1,0,6326
+,Michael Morley,Barry,number,4,195,340,138,42,0,9.29,6.5,0,9533
+,Abbye Atkinson,Berkeley,number,0,20,66,20,1,0,6.67,6.67,0,1506
+,Joy Milligan,Berkeley,number,0,48,129,42,11,0,12,9.6,0,4887
+,Tejas N. Narechania,Berkeley,number,0,46,97,46,15,0,5.75,4.6,0,445
+,Catherine Crump,Berkeley,number,1,24,58,16,6,0,24,12,0,2418
+,Hiba Hafiz,Boston College,number,0,3,93,3,3,0,1,1,0,6043
+,Daniel Farbman,Boston College,number,0,2,21,2,1,0,2,2,0,8987
+,Jeffrey M. Cohen,Boston College,number,0,9,11,6,1,0,7.5,4,0,5608
+,M. Ryan Williams,Boston College,number,2,242,410,237,38,0,29.85,39.18,0,3476
+,Natalya Shnitser,Boston College,number,0,32,57,32,4,0,8,6.4,0,7580
+,Scott Hirst,Boston University,number,0,67,174,67,25,0,11.17,11.17,0,3675
+,Ahmed Ghappour,Boston University,number,1,17,382,17,8,0,8.5,5.67,1,474
+,Rory Van Loo,Boston University,number,0,74,746,74,44,0,9.25,8.22,8,9011
+,Rebecca Ingber,Boston University,number,0,67,218,67,19,0,8.38,7.44,10,2657
+,Julian Arato,Brooklyn,number,0,58,323,57,13,0,7.25,6.44,0,2584
+,K. Sabeel Rahman,Brooklyn,number,0,53,621,53,34,0,7.57,3.79,0,396
+,Jocelyn Simonson,Brooklyn,number,4,169,491,168,70,0,21.12,16.9,0,7350
+,Nicole Hallett,Buffalo,number,0,4,83,4,2,0,1,0.8,0,2849
+,Jonathan Manes,Buffalo,number,1,5,95,5,2,0,1.67,1.67,1,9450
+,Stephanie H. Barclay,BYU,number,1,27,283,27,4,0,6.75,4.5,0,9905
+,William (I) Clayton,BYU,number,0,2,25,2,1,0,2,2,0,2664
+,Gladriel Shobe,BYU,number,0,9,151,9,9,0,2.25,2.25,0,5891
+,Jarrod Shobe,BYU,number,0,44,171,44,16,0,8.8,8.8,0,120
+,Stephanie Plamondon Bair,BYU,number,0,34,258,33,9,0,4.86,4.86,0,6491
+,Clark D. Asay,BYU,number,0,103,375,103,29,0,7.36,6.87,0,4257
+,Hannah Brenner,Cal Western,number,0,28,228,28,6,0,3.11,3.11,0,4300
+,Erin Sheley,Calgary,number,3,29,386,29,6,0,3.62,3.22,0,8801
+,Greg Reilly,California Western,number,1,112,185,112,51,0,9.33,8.62,0,5678
+,Shawn E. Fields,Campbell,number,0,19,305,15,13,0,2.71,2.38,0,3185
+,Jocelyn Getgen Kestenbaum,Cardozo,number,0,27,224,27,4,0,6.75,3.86,0,4404
+,Michael C. Pollack,Cardozo,number,3,31,163,18,6,0,7.75,3.88,0,6459
+,Samuel N. Weinstein,Cardozo,number,0,22,45,7,5,0,7.33,4.4,0,6390
+,Claudia Flores,Chicago,number,0,4,82,2,1,0,2,2,0,5003
+,Daniel J. Hemel,Chicago,number,1,215,702,213,87,0,21.67,14.58,0,5336
+,Genevieve Lakier,Chicago,number,0,77,193,77,25,0,15.4,11,0,9382
+,John Rappaport,Chicago,number,2,69,129,69,26,0,11.5,11.5,0,7746
+,Adam S. Chilton,Chicago,number,0,121,724,114,58,0,4.32,3.78,0,9228
+,William Partlett,Chinese U of Hong Kong,number,0,25,148,25,1,0,2.78,2.78,0,1244
+,Rehan Aindri Abeyratne,Chinese University of Hong Kong,number,0,10,250,10,2,0,1.43,1.25,0,9632
+,Craig J. Konnoth,Colorado,number,0,31,124,31,10,0,22.2,11.83,0,3537
+,Benjamin N. Levin,Colorado,number,3,108,340,85,27,0,17.52,11.58,0,6030
+,Scott Skinner-Thompson,Colorado,number,0,47,369,47,24,0,9.4,6.71,0,247
+,Sloan G. Speck,Colorado,number,2,58,53,54,11,0,29,19.33,0,8637
+,Kristelia A. Garcia,Colorado,number,0,20,106,20,6,0,5,5,2,4393
+,Sharon (I) Jacobs,Colorado,number,0,73,155,73,16,0,9.12,9.12,5,7632
+,Maeve Herbert Glass,Columbia,number,0,0,114,0,0,0,0,0,0,2517
+,Kellen Funk,Columbia,number,0,6,1,6,2,0,2,1.2,0,4146
+,Joshua R. Mitts,Columbia,number,3,75,387,57,24,0,9.38,8.33,0,8092
+,Kristen Underhill,Columbia,number,1,18,195,18,4,0,3.6,3,0,8166
+,Jeremy K. Kessler,Columbia,number,2,91,221,91,46,0,18.2,13,0,8834
+,Ryan Stoa,Concordia,number,0,22,393,22,4,0,2.2,2.2,0,2398
+,Jessica Berch,Concordia,number,0,16,75,16,6,0,3.2,2.67,0,3842
+,Jamelia N. Morgan,Connecticut,number,0,1,122,1,1,0,0.33,0.33,0,3180
+,Kiel Brennan-Marquez,Connecticut,number,1,72,432,72,39,0,4.5,3.79,0,6636
+,Jeremy R. McClane,Connecticut,number,0,12,106,12,5,0,4.33,4.33,0,2065
+,Rachel Goldberg,Cornell,number,0,0,10,0,0,0,0,0,0,4041
+,Maggie Gardner,Cornell,number,2,37,237,37,14,0,5.29,4.11,0,390
+,Zachary D. Clopton,Cornell,number,7,140,524,129,54,0,7,6.36,0,4312
+,Elizabeth Brundige,Cornell,number,0,2,85,2,0,0,0.67,0.5,0,7438
+,Charisa Smith,CUNY,number,1,9,111,9,3,0,1.8,1.8,0,5927
+,Menesh S. Patel,Davis,number,0,1,32,1,1,0,1,1,0,7789
+,Shayak Sarkar,Davis,number,0,2,75,2,2,0,1,0.33,0,9689
+,Shiri Krebs,Deakin,number,0,4,136,4,2,0,1,1,0,7322
+,Govind C. Persad,Denver,number,0,27,134,27,10,0,11,6.14,0,2680
+,Wyatt G. Sassman,Denver,number,0,7,47,7,3,0,5,2.33,0,9271
+,Erin R. Archerd,Detroit Mercy,number,0,12,68,10,1,0,7.5,4.5,0,4889
+,Hannah C. Bloch-Wehba,Drexel,number,0,7,80,7,4,0,1.75,1.75,0,2136
+,Ben K. Grunwald,Duke,number,1,13,184,13,6,0,2.17,1.62,0,2681
+,Ofer Eldar,Duke,number,0,14,93,13,3,0,3.5,3.5,0,2411
+,Taisu Zhang,Duke,number,0,35,184,34,9,0,4.38,3.89,0,7940
+,Richard L. Jr. Heppner,Duquesne,number,0,6,16,6,1,0,3,3,0,5715
+,Pablo Echeverri,Duquesne,number,0,1,5,1,1,0,1,1,0,2278
+,George S. Georgiev,Emory,number,0,12,77,12,7,0,3,3,0,2339
+,Kamina A. Pinder,Emory,number,0,49,69,41,2,0,13.58,13.58,0,5563
+,Merritt McAlister,Florida,number,2,3,12,3,0,0,3,1.5,0,6461
+,Stephanie Bornstein,Florida,number,0,185,517,162,33,0,16.82,15.42,0,2360
+,Sarah L. Swan,Florida State,number,0,47,287,47,22,0,5.88,5.88,0,7997
+,Lauren Henry Scholz,Florida State,number,0,11,182,11,7,0,3.67,2.75,0,8742
+,Avlana K. Eisenberg,Florida State,number,0,56,181,56,20,0,14,14,0,2078
+,Justin Sevier,Florida State,number,1,46,261,46,13,0,4.6,4.6,0,158
+,Janet Freilich,Fordham,number,0,36,119,36,5,0,7.2,6,0,9843
+,Robert Leider,George Mason,number,2,15,42,15,1,0,5,5,0,2461
+,Caroline Cecot,George Mason,number,0,30,151,30,15,0,4.29,3.33,0,2764
+,Jennifer L. Mascott,George Mason,number,1,21,148,21,18,0,7,5.25,0,2432
+,Paolo Saguato,George Mason,number,0,2,87,2,1,0,0.67,0.67,0,5052
+,Megan T. Stevenson,George Mason,number,2,57,481,57,46,0,9.5,8.14,0,9573
+,Amanda Levendowski,Georgetown,number,0,13,751,13,7,0,13,6.5,0,6022
+,Kevin P. Arlyck,Georgetown,number,0,7,37,7,2,0,3.5,2.33,0,5455
+,Shon R. Hopwood,Georgetown,number,0,26,194,26,13,0,7.17,4.25,0,6777
+,Sherally Munshi,Georgetown,number,0,11,183,11,8,0,2.2,2.2,0,4227
+,Neel Sukhatme,Georgetown,number,0,43,64,43,5,0,10.75,10.75,0,3940
+,Yvonne Tew,Georgetown,number,0,13,139,13,4,0,3.25,2.6,1,1592
+,Jamillah Bowman Williams,Georgetown,number,0,4,99,4,3,0,2,2,0,698
+,Anne C. Fleming,Georgetown,number,1,38,76,36,10,0,19,9.5,1,6336
+,Lindsey Simon,Georgia,number,0,1,12,1,1,0,1,1,0,9162
+,Sandra Mayson,Georgia,number,3,87,494,87,65,0,21.75,21.75,0,1930
+,Kate Weisburd,GW,number,3,28,76,28,10,0,14,9.33,0,3686
+,Dmitry Karshtedt,GW,number,0,75,227,75,21,0,7.5,6.82,0,4143
+,Nikolas Bowie,Harvard,number,0,2,53,2,2,0,1,0.5,0,7291
+,Anna Lvovsky,Harvard,number,3,17,108,17,14,0,8.5,8.5,0,8981
+,Elizabeth Papp Kamali,Harvard,number,0,0,21,0,0,0,0,0,0,4126
+,Daphna Renan,Harvard,number,0,117,529,114,56,0,23.4,23.4,0,6523
+,Christopher Bavitz,Harvard,number,0,0,2,0,0,0,0,0,0,9203
+,Crystal S. Yang,Harvard,number,2,46,256,46,20,0,15.33,15.33,0,3736
+,Emily Murphy,Hastings,number,1,80,129,79,7,0,20,20,0,3473
+,Manoj Viswanathan,Hastings,number,0,28,123,25,6,0,5.6,4,0,6914
+,Veena Dubal,Hastings,number,0,4,21,4,1,0,1.33,1.33,0,3963
+,Zachary S. Price,Hastings,number,7,286,355,261,53,0,26,22,0,9254
+,Charles E. Colman,Hawaii,number,2,22,90,22,7,0,2.44,2.44,0,7670
+,Matthew A. Shapiro,Hofstra,number,0,10,15,10,4,0,5,5,0,4503
+,Brenner M. Fissell,Hofstra,number,0,17,221,17,10,0,1.7,1.55,0,1179
+,Ryan Whalen,Hong Kong,number,0,11,157,11,4,0,1.57,1.38,0,4953
+,Andrew C. Michaels,Houston,number,0,9,121,9,2,0,1.8,1.5,0,4053
+,H. James Nelson,Houston,number,0,75,143,74,16,0,12,10.2,0,5582
+,Emily Berman,Houston,number,0,86,366,79,16,0,8.6,7.17,0,1582
+,Myrisha Lewis,Howard,number,0,2,6,2,1,0,2,2,0,8167
+,Matthew Bruckner,Howard,number,0,7,16,7,1,0,3.5,3.5,0,1964
+,Samuel P. Newton,Idaho,number,0,0,13,0,0,0,0,0,0,5866
+,Katherine Evans,Idaho,number,0,12,12,10,0,0,6,6,0,4216
+,Katherine A. Macfarlane,Idaho,number,0,34,119,33,10,0,3.78,3.4,0,7483
+,David Pimentel,Idaho,number,5,131,770,117,18,0,5.7,5.24,0,8915
+,Aliza Plener Cover,Idaho,number,0,19,86,19,11,0,10.67,10.67,0,584
+,Michelle D. Layser,Illinois,number,0,13,44,13,1,0,3.25,3.25,0,6290
+,Ian Samuel,Indiana (Bloomington),number,0,19,58,19,6,0,19,4.75,0,6617
+,Jessica Eaglin,Indiana (Bloomington),number,5,62,271,62,25,0,10.33,10.33,8,6299
+,Todd Haugh,Indiana Kelley Sch of Bus,number,0,84,296,84,37,0,7,6,0,7290
+,Brian Owsley,Indiana Tech,number,6,44,22,8,2,0,8.8,8.8,0,1688
+,Gina-Gail S. Fletcher,Indiana-Bloomington,number,0,12,127,12,3,0,4,4,1,6010
+,Pamela Foohey,Indiana-Bloomington,number,0,54,192,53,17,0,4.15,3.86,11,437
+,Alison K. Guernsey,Iowa,number,1,18,39,17,0,0,9,6,0,8274
+,Daria Fisher Page,Iowa,number,0,7,13,7,2,0,2.33,2.33,0,1796
+,Anya E.R. Prince,Iowa,number,0,21,134,21,10,0,3,3,0,3058
+,Gregory H. Shill,Iowa,number,1,23,108,23,4,0,7.67,5.75,0,5621
+,Sean Sullivan,Iowa,number,0,19,147,19,8,0,2.57,3.57,0,7362
+,Cristina Carmody Tilley,Iowa,number,0,51,166,36,10,0,8.5,8.5,0,9387
+,Mihailis E. Diamantis,Iowa,number,0,22,205,21,16,0,2.44,2.44,0,9440
+,Sarah A. Seo,Iowa,number,4,19,69,19,7,0,6.33,2.71,0,5854
+,Matthew C. Turk,Kelley School (Indiana),number,0,52,236,52,14,0,3.9,16.25,0,3289
+,Christopher G. Bradley,Kentucky,number,0,6,183,6,4,0,2,2,0,827
+,Albertina Antognini,Kentucky,number,0,28,203,28,9,0,7,7,0,8901
+,Andrew K. Woods,Kentucky,number,1,81,263,81,29,0,10.12,9,0,3586
+,Ezra Goldschlager,LaVerne,number,0,0,1,0,0,0,0,0,0,5843
+,Paul MacMahon,London School of Economics,number,2,21,101,21,5,0,3.5,2.33,0,2482
+,Justin Walker,Louisville,number,0,3,87,3,2,0,0.75,0.5,0,6876
+,L. Kate Mitchell,Loyola-Chicago,number,0,0,36,0,0,0,0,0,0,3795
+,Nicholas S. Bryner,LSU,number,0,24,131,24,15,0,4.8,4.8,0,1206
+,Madalyn K. Wasilczuk,LSU,number,0,0,4,0,0,0,0,0,0,7540
+,Raff Donelson,LSU,number,0,0,48,0,0,0,0,0,0,9240
+,Lecia Vicente,LSU,number,0,2,20,2,2,0,0.67,0.67,0,1755
+,Thea Johnson,Maine,number,0,17,126,17,9,0,4.25,3.4,0,734
+,Jill I. Goldenziel,Marine Corps University,number,4,44,226,33,5,0,17,9.13,0,2325
+,Jodie A. Kirshner,Marron Institute (NYU),number,0,32,162,32,7,0,3.56,3.2,0,4994
+,Dustin Marlan,Massachusetts,number,0,4,103,4,0,0,4,2,0,757
+,John Newman,Memphis,number,0,89,299,82,30,0,8.9,4.45,11,9612
+,Andrew Elmore,Miami,number,2,16,91,13,6,0,4,3.2,0,9808
+,Kathleen Claussen,Miami,number,0,14,273,14,5,0,1.75,1.08,0,6153
+,Edward G. Fox,Michigan,number,0,6,93,6,6,0,4,3.75,0,6337
+,Maureen Carroll,Michigan,number,1,67,186,66,19,0,16.75,11.17,0,4326
+,Gabriel V. Rauterberg,Michigan,number,1,105,556,105,49,0,13.12,10.5,0,9305
+,Carla L. Reyes,Michigan State,number,1,55,428,55,30,0,6.88,5,0,5592
+,David H. Blankfein-Tabachnick,MIchigan State,number,0,8,303,8,2,0,8,7,0,2745
+,Randall K. Johnson,Mississippi College,number,0,12,104,12,7,0,1.5,1.5,0,2800
+,Brook E. Gotberg,Missouri,number,2,18,81,18,6,0,6,6,0,4939
+,Erika Fisher Lietzan,Missouri,number,7,194,339,138,28,0,10.78,10.21,14,3553
+,Brandon Weiss,Missouri - Kansas City,number,0,4,42,4,2,0,2,1.33,0,4138
+,Meredith Edelman,Monash Business School,number,0,0,0,0,0,0,0,0,0,6277
+,Cathay Y. N. Smith,Montana,number,0,6,189,6,3,0,1.2,1,0,3564
+,Ryan Sullivan,Nebraska,number,0,4,127,4,1,0,0.8,0.4,0,8686
+,Maggie Wittlin,Nebraska,number,0,26,72,26,5,0,6.5,4.33,0,9990
+,Alexandra Roberts,New Hampshire,number,0,0,3,0,0,0,0,0,0,6771
+,Mary Leto Pareja,New Mexico,number,0,9,16,7,1,0,2.25,2.25,0,303
+,Kevin Sobel-Read,Newcastle (Australia),number,0,7,60,7,3,0,2.33,2.33,0,8193
+,Eisha Jain,North Carolina,number,1,116,293,116,51,0,19.33,19.33,0,6323
+,Claudia E. Haupt,Northeastern,number,0,100,341,94,31,0,5.56,5.56,0,9208
+,Carliss N. Chatman,Northern Illinois,number,0,2,53,2,1,0,0.5,0.5,0,6463
+,Sarah (I) Fox,Northern Illinois,number,2,24,109,24,6,0,5.7,4.5,0,3943
+,Maybell Romero,Northern Illinois,number,0,3,18,3,3,0,1.5,1,0,1978
+,Matthew Tokson,Northern Kentucky,number,1,140,182,139,23,0,28,23.33,0,3840
+,Matthew D. Kugler,Northwestern,number,0,80,329,80,32,0,5.71,5.33,0,9715
+,Sarath Sanga,Northwestern,number,0,18,121,18,11,0,2.57,2.57,0,2671
+,Candice T. Player,Northwestern,number,0,13,153,13,5,0,4.33,4.33,0,8036
+,Destiny Peery,Northwestern,number,0,19,147,19,5,0,4.75,3.8,0,3581
+,Christian R. Burset,Notre Dame,number,0,0,21,0,0,0,0,0,0,5898
+,Sadie Blanchard,Notre Dame,number,0,24,151,24,3,0,6,4,0,7806
+,Marah Stith McLeod,Notre Dame,number,0,5,245,5,2,0,1.67,1.67,0,8068
+,Veronica S. Root,Notre Dame,number,2,62,212,61,20,0,28.67,17.67,0,9916
+,Dallan F. Flake,Ohio Northern,number,1,34,290,34,18,0,4.86,4.86,0,5048
+,Erica Goldberg,Ohio Northern,number,0,84,269,84,21,0,10.5,10.5,0,996
+,Karen Hall,Ohio Northern,number,0,0,0,0,0,0,0,0,0,8886
+,Karen Powell,Ohio Northern,number,0,1,5,1,0,0,0.25,0.2,0,17
+,Courtlyn G. Roser-Jones,Ohio State,number,0,2,58,2,0,0,2,2,0,808
+,Matthew H. Birkhold,Ohio State,number,0,8,95,8,0,0,2.67,2,0,8470
+,Bryan H. Choi,Ohio State,number,1,56,150,51,7,0,11.2,11.2,2,2631
+,Ari Glogower,Ohio State,number,0,7,128,7,7,0,2.33,2.33,0,5088
+,Mohamed S. Helal,Ohio State,number,0,10,64,10,1,0,2,2,1,1213
+,Amna A. Akbar,Ohio State,number,0,39,363,39,26,0,9.75,9.75,0,3265
+,Liz Kaminski,Ohio State,number,1,235,1395,216,56,0,36.6,53.07,0,4464
+,Roger Michael Michalski,Oklahoma,number,0,42,149,42,15,0,17,9.5,0,4217
+,Melissa D. Mortazavi,Oklahoma,number,0,35,224,35,12,0,11.36,11.17,0,3768
+,Joshua S. Sellers,Oklahoma,number,0,10,83,10,9,0,2,2,0,9500
+,Kristen Bell,Oregon,number,0,1,24,0,0,0,0.5,0.2,0,5304
+,Jonathan Brown,Pace,number,0,19,228,9,2,0,1.58,1.19,0,9609
+,Margot Pollans,Pace,number,0,38,223,38,12,0,7.6,5.43,4,6709
+,Maggie McKinley,Penn,number,0,25,143,25,17,0,12.5,8.33,0,9408
+,Ryan D. Doerfler,Penn,number,1,39,208,39,26,0,6.5,4.88,0,7197
+,Martin Skladany,Penn State,number,0,15,81,15,1,0,1.67,1.5,0,2196
+,Megan S. Wright,Penn State (University Park),number,0,17,209,17,12,0,1.89,1.7,0,8005
+,Ben Johnson,Penn State (University Park),number,0,11,4,5,0,0,11,2.75,0,4729
+,Matthew J.B. Lawrence,Penn State Dickinson,number,1,33,56,33,10,0,8.25,6.6,0,4968
+,David Thaw,Pitt,number,0,71,234,71,15,0,8.88,7.89,7,4722
+,Greer Donley,Pittsburgh,number,0,5,61,5,1,0,1,1,0,8210
+,Jaime Lluch,Puerto Rico Poli Sci Dept,number,0,0,18,0,0,0,0,0,0,8928
+,Alyssa S. King,Queen's,number,0,4,67,4,2,0,0.67,2.67,0,9198
+,Jennifer A. Levine,Quinnipiac,number,0,14,32,8,0,0,0,14,0,1262
+,G. Alex Sinha,Quinnipiac,number,0,7,176,7,0,0,7,7,0,1742
+,Luke P. Norris,Richmond,number,0,11,145,11,9,0,5.5,5.5,0,5606
+,Hayes R. Holderness,Richmond,number,0,16,84,16,7,0,4,3.2,0,5575
+,Jud Campbell,Richmond,number,0,29,274,29,19,0,5.8,4.83,0,7153
+,Erin R. Collins,Richmond,number,0,24,242,24,10,0,7.17,7.17,0,6807
+,Paul T. Crane,Richmond,number,5,70,66,69,14,0,23.33,17.5,0,4122
+,Allison Tait,Richmond,number,0,54,323,54,12,0,8.31,8,0,9853
+,Adnan Zulfiqar,Rutgers,number,0,9,93,9,0,0,4.5,3.5,0,2108
+,Alexis Karteron,Rutgers (Camden),number,0,1,21,1,1,0,1,1,0,217
+,Kirsten Nussbaumer,Rutgers (Camden),number,0,1,1,1,0,0,1,1,0,4705
+,Tracey M. Roberts,Samford (Cumberland),number,0,50,69,50,11,0,10,8.33,0,454
+,Ariel Stevenson,San Diego,number,0,2,19,2,0,0,2,1,0,6949
+,Vinay Harpalani,Savannah,number,0,61,206,61,5,0,6.78,5.55,0,4716
+,Katherine Moore,Seton Hall,number,0,6,11,6,0,0,6,6,0,625
+,Hillel J. Bavli,SMU,number,1,3,84,3,2,0,0.5,0.43,0,8393
+,Natalie Nanasi,SMU,number,0,9,174,9,6,0,1.5,1.29,1,5648
+,Jesse M. Cross,South Carolina,number,0,1,29,1,0,0,0.5,0.25,0,4563
+,Clint Wallace,South Carolina,number,0,0,1,0,0,0,0,0,0,3309
+,Annie Eisenberg,South Carolina,number,0,0,2,0,0,0,0,0,0,2143
+,Bryant Smith,South Carolina,number,47,440,820,160,27,0,38.43,35.64,0,2214
+,Kevin S. Haeberle,South Carolina,number,0,26,212,26,15,0,4.33,5.2,0,4160
+,Marie C. Boyd,South Carolina,number,0,12,118,12,2,0,3.75,3.75,0,1890
+,Nathan Richardson,South Carolina,number,0,43,136,41,2,0,3.58,3.31,0,2950
+,Seth W. Stoughton,South Carolina,number,2,148,757,148,58,0,14.8,13.45,0,1490
+,Tessa R. Davis,South Carolina,number,0,20,89,20,2,0,12,10,0,4127
+,Hannah Haksgaard,South Dakota,number,0,21,88,21,4,0,7,3,0,4784
+,Rachel VanLandingham,Southwestern,number,0,4,40,4,0,0,2,1.33,0,9544
+,Sheldon A. Evans,St. John's,number,2,2,33,2,2,0,1,1,0,5538
+,Kate Klonick,St. John's,number,4,29,621,29,22,0,9.67,7.25,0,67
+,Lauren R. Roth,St. John's,number,1,7,164,7,1,0,1.17,1.17,0,6859
+,Kate Levine,St. John's,number,0,86,235,86,39,0,17.2,14.33,0,512
+,Ana Santos Rutschman,St. Louis,number,0,8,108,8,4,0,1.33,1.33,0,4912
+,Rachel Moran,St. Thomas (Minnesota),number,3,931,710,321,30,0,20.69,17.57,63,3839
+,Colleen Honigsberg,Stanford,number,0,17,64,16,9,0,3.4,3.4,0,915
+,Gregory Ablavsky,Stanford,number,1,105,297,102,26,0,17.5,15,0,899
+,Rabia Belt,Stanford,number,0,11,121,11,4,0,2.75,2.2,0,6427
+,Jacob Goldin,Stanford,number,0,37,167,37,13,0,3.7,3.7,0,1192
+,Lisa Larrimore Ouellette,Stanford,number,2,401,543,401,105,0,22.28,17.43,0,7858
+,Christina Miller,Suffolk,number,0,2,0,2,0,0,0,2,0,2924
+,Rene Reyes,Suffolk,number,0,25,141,25,2,0,2.78,2.5,0,8467
+,Erin E. Braatz,Suffolk,number,0,1,15,1,1,0,1,1,0,5100
+,Joshua Andresen,Surrey,number,0,6,62,6,2,0,6,3,0,2448
+,Stephen Bero,Surrey,number,0,0,2,0,0,0,0,0,0,8522
+,Ira K. Lindsay,Surrey,number,0,0,14,0,0,0,0,0,0,2809
+,Alexander F. Sarch,Surrey,number,1,22,279,20,8,0,5.5,4.4,0,6497
+,Pamela K. Bookman,Temple,number,1,75,207,71,30,0,18.75,12.5,0,8862
+,Lauren M. Ouziel,Temple,number,0,37,78,32,10,0,12.33,6.17,3,8777
+,Jonathan G. Rohr,Tennessee,number,0,4,177,4,3,0,2.5,1.17,0,6927
+,Amber Baylor,Texas A&M,number,0,5,44,5,3,0,1.25,1.25,0,2116
+,Guillermo J. Garcia Sanchez,Texas A&M,number,0,6,80,6,4,0,1.5,1.2,1,2899
+,Brian N. Larson,Texas A&M,number,1,2,7,2,0,0,0.67,0.67,0,9685
+,Jeff W. Slattery,Texas A&M,number,0,0,5,0,0,0,0,0,0,4014
+,William Magnuson,Texas A&M,number,0,55,1079,55,16,0,6.88,6.88,5,3621
+,Saurabh Vishnubhakat,Texas A&M,number,6,84,250,84,38,0,5.25,4.67,16,1226
+,Tracy Hresko Pearl,Texas Tech,number,0,3,244,3,3,0,0.6,0.6,0,1665
+,Kristen van de Biezenbos,Texas Tech,number,0,5,84,5,4,0,1.67,1.67,0,2550
+,Agnieszka A. McPeak,Toldeo,number,6,19,321,19,7,0,5.8,5.8,0,2963
+,Anna Su,Toronto,number,0,11,59,11,2,0,2.75,2.2,0,5912
+,Emily A. Satterthwaite,Toronto,number,0,3,67,3,2,0,2.5,2.5,0,3689
+,Ann M. Lipton,Tulane,number,1,31,155,31,17,0,5.17,5.17,0,5522
+,Warigia Bowman,Tulsa,number,0,1,5,0,0,0,0.5,0.5,0,2576
+,Ido Kilovaty,Tulsa,number,0,10,252,10,6,0,1.43,1.43,0,3527
+,Irene Oritseweyinmi Joe,UC Davis,number,0,22,121,22,15,0,7.33,7.33,0,1084
+,Aaron Y. Tang,UC Davis,number,3,51,216,51,11,0,13.83,13.5,0,8499
+,Jasmine E. Harris,UC Davis,number,0,14,246,14,6,0,2.8,2.8,0,9957
+,Jared A. Ellias,UC Hastings,number,0,3,15,3,2,0,0.6,0.6,0,8950
+,Emily S. Taylor Poppe,UC Irvine,number,0,16,106,16,8,0,5.33,5.33,0,8572
+,Leah M. Litman,UC Irvine,number,1,86,252,86,35,0,6.14,5.38,0,5144
+,Alison M. Mikkor,UC Irvine,number,0,7,8,7,2,0,7,7,0,3733
+,Hye-Sung Kim,UC Irvine,number,0,5,59,5,1,0,1.25,1,0,754
+,Seth Davis,UC Irvine,number,0,189,433,126,38,0,14.54,11.81,0,6119
+,LaToya Baldwin Clark,UCLA,number,0,2,98,2,2,0,0.67,0.5,0,4325
+,Blake Emerson,UCLA,number,0,4,76,4,3,0,2,1,0,6271
+,Kristen E. Eichensehr,UCLA,number,2,114,787,113,30,0,12.67,8.14,7,5482
+,Beth A. Colgan,UCLA,number,9,163,573,130,34,0,10.19,8.58,13,9062
+,Richard M. Re,UCLA,number,9,265,609,263,67,0,16.56,12.62,13,1847
+,Emily Tendayi Achiume,UCLA,number,0,29,585,29,6,0,4.83,3.22,5,4757
+,Norrinda Brown Hayat,UDC,number,0,5,103,5,4,0,2.5,2.5,0,4011
+,Camden Hutchison,University of British Columbia,number,0,0,22,0,0,0,0,0,0,2248
+,M. Eve Hanan,UNLV,number,0,6,138,6,2,0,3,3,0,641
+,Cathy Hwang,Utah,number,1,29,189,29,12,0,4.83,4.83,0,7004
+,Natalie M. Banta,Valparaiso,number,2,30,204,30,9,0,6,5,0,1114
+,Lauren Rogal,Vanderbilt,number,0,2,90,2,1,0,2,1,0,3838
+,Sara Mayeux,Vanderbilt,number,1,29,239,27,11,0,4.14,2.9,0,3500
+,Joseph L. Fishman,Vanderbilt,number,0,42,328,42,7,0,7,7,3,8794
+,Rachel Stevens,Vermont,number,0,3,10,2,0,0,0,3,0,3341
+,Christine Speidel,Villanova,number,0,0,8,0,0,0,0,0,0,197
+,Josephine (I) Nelson,Villanova,number,0,2,18,1,0,0,1,2,0,653
+,Farah Peterson,Virginia,number,0,1,74,1,1,0,1,0.5,0,5852
+,Aditya Bamzai,Virginia,number,2,66,294,59,37,0,13.2,9.43,0,8976
+,Gregg Strauss,Virginia,number,0,23,62,23,11,0,7.67,7.67,0,1952
+,Russell A. Gold,Wake Forest,number,0,84,172,81,26,0,11.57,13.12,0,6648
+,Susannah Pollvogt,Washburn,number,0,3,38,3,0,0,3,0.75,0,9127
+,Daniel Epps,Washington (St. Louis),number,1,47,347,47,25,0,7.83,6.71,0,2795
+,Rachel E. Sachs,Washington (St. Louis),number,0,30,187,30,19,0,7.71,7.71,0,926
+,Angelica Chazaro,Washington (University of),number,2,46,138,43,17,0,11.5,11.5,0,3053
+,William Ortman,Wayne,number,0,18,101,18,11,0,3.6,3.6,0,9952
+,Anne M. Choike,Wayne State,number,0,0,17,0,0,0,0,0,0,820
+,Sanjukta M. Paul,Wayne State,number,0,16,94,16,6,0,8,8,0,3042
+,Blanche Wiesen Cook,Wayne State,number,1,16,185,12,4,0,3,7,0,7141
+,Joshua E. Weishart,West Virginia,number,0,38,173,38,17,0,9.5,7.6,0,7822
+,Valarie K. Blake,West Virginia,number,0,32,146,32,9,0,6.37,6.37,0,4497
+,Peter Conti-Brown,Wharton,number,0,60,124,60,10,0,8.57,6.67,0,885
+,Amanda Shanor,Wharton Legal Studies,number,1,120,295,120,42,0,24,20,0,4180
+,Brian D. Feinstein,Wharton Legal Studies,number,0,34,187,32,19,0,4.25,4.25,0,296
+,Andrew Gilden,Willamette,number,3,130,366,126,26,0,10.83,9.29,0,8197
+,Aaron D. Simowitz,Willamette,number,1,20,204,20,6,0,4,4,0,184
+,Peter Molk,Willamette,number,0,56,250,56,16,0,5.6,4.67,0,755
+,Jay Butler,William & Mary,number,0,6,73,6,2,0,3,3,0,2654
+,Sarah R. Wasserman Rajec,William & Mary,number,1,37,72,37,7,0,7.4,7.4,0,5474
+,BJ Ard,Wisconsin,number,1,45,215,45,6,0,7.5,6.43,0,6681
+,Ion Meyn,Wisconsin,number,1,34,110,34,12,0,8.5,8.5,3,3872
+,Yaron Nili,Wisconsin,number,0,43,275,43,30,0,6.14,6.14,1,7225
+,Gwendolyn M. Leachman,Wisconsin,number,0,49,232,49,13,0,12.25,9.8,0,3761
+,Miriam Seifter,Wisconsin,number,0,102,299,101,22,0,12.75,11.33,6,4630
+,Robert M. Yablon,Wisconsin,number,0,20,231,17,7,0,4,2.5,0,5689
+,Emily S. Bremer,Wyoming,number,4,59,167,58,12,0,5.9,5.9,0,5119
+,Danielle R. Cover,Wyoming,number,0,0,61,0,0,0,0,0,0,794
+,Monica C. Bell,Yale,number,0,58,432,56,40,0,11.6,7.25,0,6516
+,Zachary D. Liscow,Yale,number,0,29,225,29,14,0,3.62,3.22,0,3253
+,Anika Singh Lemar,Yale,number,0,14,92,12,6,0,3.5,2.8,0,160
+,Issa Kohler-Hausmann,Yale,number,0,123,145,119,35,0,30.75,30.75,0,2835
+,Richard R. W. Brooks,Columbia University,number,0,109,89,61,1,0,4.95,3.63,0,6082

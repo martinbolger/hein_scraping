@@ -1,0 +1,313 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ctxt",
+				"ctxt_txt"
+			],
+			[
+				"sheet_",
+				"sheet_name"
+			],
+			[
+				"post",
+				"post_file"
+			],
+			[
+				"prep",
+				"preprocess_df"
+			],
+			[
+				"de",
+				"deque"
+			],
+			[
+				"Get",
+				"getElementById\t(elementId: string) => (HTMLElement | null)"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/C/Users/marti/Documents/GitHub/ARL/mechanical_turk/HTML_files/html_mod_feedback_DME.py",
+			"settings":
+			{
+				"buffer_size": 3959,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "Packages/Python/Python.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control:instal",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Upgrade/Overwrite All Packages"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 64.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/marti/Documents/GitHub/notMNIST-to-MNIST/convert_to_mnist_format.py",
+		"/C/Users/marti/Documents/GitHub/ARL/mechanical_turk/HTML_files/html_mod_text_earthquake.py",
+		"/C/Users/marti/Documents/GitHub/ARL/mechanical_turk/HTML_files/html_mod_feedback_earthquake.py",
+		"/C/Users/marti/Documents/GitHub/ARL/mechanical_turk/HTML_files/html_mod_text_DME.py",
+		"/C/Users/marti/Documents/GitHub/ARL/mechanical_turk/HTML_files/html_mod_feedback_DME.py",
+		"/C/Users/marti/Documents/GitHub/ARL/mechanical_turk/HTML_files/ctext_df_test.py",
+		"/C/Users/marti/Documents/GitHub/ARL/mechanical_turk/html_mod_feedback.py",
+		"/C/Users/marti/Documents/GitHub/ARL/path_test.py",
+		"/C/Users/marti/Documents/GitHub/ARL/mechanical_turk/html_mod.py",
+		"/C/Users/marti/Documents/Python Scripts/path_test",
+		"/C/Users/marti/Documents/GitHub/ARL/mechanical_turk/get_sent.py",
+		"/C/Users/marti/AppData/Roaming/Sublime Text 3/Packages/User/Python_AWS.sublime-build",
+		"/C/Users/marti/Documents/GitHub/ARL/data_processing/.Rhistory",
+		"/C/Users/marti/Documents/GitHub/ARL/mechanical_turk/python_run.py",
+		"/C/Users/marti/Documents/GitHub/ARL/mechanical_turk/questions.xml",
+		"/C/Users/marti/Documents/GitHub/ARL/mechanical_turk/sent_split_test.py",
+		"/C/Users/marti/Desktop/New folder/AWS_test.html",
+		"/C/Users/marti/Documents/Python Scripts/questions.xml",
+		"/C/Users/marti/Desktop/New folder/Beastify/popup/choose_beast.css",
+		"/C/Users/marti/Desktop/New folder/even_check.css",
+		"/C/Users/marti/Documents/GitHub/ARL/mechanical_turk/AWS_test.html",
+		"/C/Users/marti/Desktop/New folder/Beastify/popup/choose_beast.html",
+		"/C/Users/marti/Documents/Python Scripts/python_run.py",
+		"/C/Users/marti/Documents/Python Scripts/test.py",
+		"/C/Users/marti/AppData/Roaming/Sublime Text 3/Packages/User/python_RUN.sublime-build",
+		"/C/Users/marti/AppData/Roaming/Sublime Text 3/Packages/User/AWS.sublime-build",
+		"/C/Users/marti/Documents/Python Scripts/test_project.sublime-project",
+		"/C/Users/marti/Desktop/crypto/crypto_data/crypto.py",
+		"/C/Users/marti/Desktop/crypto.py",
+		"/C/Users/marti/Desktop/Beastify/content_scripts/beastify.js",
+		"/C/Users/marti/Desktop/NativeMessaging/app/ping_pong.py",
+		"/C/Users/marti/Desktop/NativeMessaging/app/ping_pong_win.bat",
+		"/C/Users/marti/Desktop/NativeMessaging/app/ping_pong.json",
+		"/C/Users/marti/Desktop/NativeMessaging/add-on/background.js",
+		"/C/Users/marti/Desktop/Native Messaging/check_config_win.py",
+		"/C/Users/marti/Desktop/Native Messaging/app/ping_pong.py",
+		"/C/Users/marti/Desktop/Native Messaging/add-on/manifest.json",
+		"/C/Users/marti/Desktop/Native Messaging/app/ping_pong_win.bat",
+		"/C/Users/marti/Desktop/Native Messaging/add-on/background.js",
+		"/C/Users/marti/Desktop/Native Messaging/app/ping_pong.json",
+		"/C/Users/marti/Desktop/Beastify/popup/choose_beast.js",
+		"/C/Users/marti/Desktop/Beastify/popup/choose_beast.html",
+		"/C/Users/marti/Desktop/Links/Exercises/Logout.html",
+		"/C/Users/marti/Desktop/Beastify/content_scripts/Hello_world.html",
+		"/C/Users/marti/Desktop/Links/Exercises/index.html",
+		"/C/Users/marti/Desktop/Beastify/popup/choose_beasts.js",
+		"/C/Users/marti/Desktop/Beastify/popup/choose_beast.css",
+		"/C/Users/marti/Desktop/Beastify/manifest.json",
+		"/C/Users/marti/Desktop/manifest",
+		"/C/Users/marti/Desktop/borderify",
+		"/C/Users/marti/AppData/Roaming/Anki2/addons/my_first_addon/__init__.py"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"Tag"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/C/Users/marti/Documents/GitHub/ARL/mechanical_turk/HTML_files/html_mod_feedback_DME.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3959,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3732,
+								3732
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1782.4,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 298.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/Python/Python.sublime-build",
+	"project": "project.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
