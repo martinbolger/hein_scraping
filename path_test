@@ -1,6 +1,0 @@
-from pathlib import Path
-import os
-
-dir = Path(os.getcwd())
-
-print(dir)

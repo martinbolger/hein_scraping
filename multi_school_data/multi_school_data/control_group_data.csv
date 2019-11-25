@@ -1,0 +1,556 @@
+,Unnamed: 0,First Name,Last Name,Title,School URL,School URL short,School,E-mail,Phone,US News Rank,ID
+0,0,Peter,Joy,"Henry Hitchcock Prof.; Vice Dean; Director, Criminal Justice Clinic",https://law.wustl.edu,wustl.edu,Washington University in St. Louis School of Law,joy@wulaw.wustl.edu,(314) 935-6445,18.0,7468
+1,1,Hope,Babcock,"Professor of Law, Director (Institute for Public Representation Environmental Law Clinic)",https://www.law.georgetown.edu,georgetown.edu,Georgetown University Law Center,babcock@law.georgetown.edu,(202) 662-9481,14.0,4288
+2,2,William,Allen,Nusbaum Prof. of Law & Bus.,https://www.law.nyu.edu,nyu.edu,New York University School of Law,wta1@nyu.edu,(212) 998-6327,6.0,6296
+3,3,Brian,Murchison,Charles S. Rowe Prof.,https://law.wlu.edu,wlu.edu,Washington and Lee University School of Law,murchisonb@wlu.edu,(540) 458-8511,34.0,5770
+4,4,Shelby,Green,Prof.,https://law.pace.edu,pace.edu,Pace University Elisabeth Haub School of Law,sgreen@law.pace.edu,(914) 422-4421,122.0,4697
+5,5,Howard,Abrams,Professor,www.law.udmercy.edu/,udmercy.edu,University of Detroit Mercy School of Law,abramshb@udmercy.edu,(313) 596-0215,146.0,6844
+6,6,Douglas,Abrams,Assoc. Prof. Emeritus of Law,https://law.missouri.edu,missouri.edu,University of Missouri School of Law,abramsd@missouri.edu,(573) 882-0307,64.0,2400
+7,7,David,Abrams,"Professor of Law, Business Economics and Public Policy",https://www.law.upenn.edu,upenn.edu,University of Pennsylvania Law School,dabrams@law.upenn.edu,(215) 898-7497,7.0,1733
+8,8,Bryan,Adamson,Associate Professor of Law,https://law.seattleu.edu,seattleu.edu,Seattle University School of Law,badamson@seattleu.edu,(206) 398-4412,122.0,3137
+9,9,Padideh,Ala'i,"Professor, Director of Int'l Legal Studies Program & Coord'r, Hubert H. Humphry Fellowship Prog.",https://www.wcl.american.edu,wcl.american.edu,"American University, Washington College of Law",palai@wcl.american.edu,(202) 274-4227,77.0,2574
+10,10,Cynthia,Alkon,Associate Dean for Academic Affairs; Professor of Law,https://law.tamu.edu,tamu.edu,Texas A&M University School of Law,calkon@law.tamu.edu,(817) 212-3956,83.0,2898
+11,11,Nicholas,Allard,"Professor of Law (2012- ), Joseph Crea Dean (2012-18) and President (2014-18)",https://www.brooklaw.edu,brooklaw.edu,Brooklyn Law School,nick.allard@brooklaw.edu,(718) 780-7902,71.0,6018
+12,12,Scott,Altman,Virginia S. and Fred H. Bice Prof.,https://gould.usc.edu,gould.usc.edu,University of Southern California Gould School of Law,saltman@law.usc.edu,(213) 740-2544,17.0,3578
+13,13,Michael,Ambrosio,Professor of Law,https://law.shu.edu,shu.edu,Seton Hall University School of Law,michael.ambrosio@shu.edu,(973) 642-8807,59.0,3918
+14,14,Abdullahi,An-Na'im,Charles Howard Candler Prof. and Director of the Center for Int'l & Comparative Law,law.emory.edu,emory.edu,Emory University School of Law,aannaim@emory.edu,(404) 727-1198,26.0,4219
+15,15,Cheryl,Anderson,Professor,https://law.siu.edu,siu.edu,Southern Illinois University School of Law,cheryla@siu.edu,(618) 453-5634,146.0,6986
+16,16,Roy,Anderson,Professor,https://www.smu.edu › Law,smu.edu,"Southern Methodist University, Dedman School of Law",rranders@smu.edu,(214) 768-3279,52.0,60
+17,17,Mark,Anderson,Associate Professor,https://www.law.temple.edu,temple.edu,"Temple University, James E. Beasley School of Law",mark.anderson@temple.edu,(215) 204-5007,48.0,7891
+18,18,William,Andreen,Edgar L. Clarkson Professor and Director UA-ANU Exchange Program,https://www.law.ua.edu,ua.edu,University of Alabama School of Law,wandreen@law.ua.edu,(205) 348-7091,25.0,157
+19,19,John,Applegate,Exec. Vice President for Univ. Regional Aff's Planning and Policy,https://www.law.indiana.edu,indiana.edu,Indiana University Maurer School of Law,jsapple@indiana.edu,(812) 855-9198,34.0,5402
+20,20,Marie,Ashe,Research Professor,https://www.suffolk.edu › law,suffolk.edu,Suffolk University Law School,mashe@suffolk.edu,(617) 573-8086,143.0,1450
+21,21,Alan,Auerbach,Robert D. Burch Professor of Law; Professor of Economics,https://www.law.berkeley.edu,berkeley.edu,"University of California, Berkeley School of Law",aauerbach@law.berkeley.edu,(510) 643-0711,10.0,8534
+22,22,Kif,Augustine-Adams,Ivan Meitus Chair & Professor,https://law.byu.edu,byu.edu,"Brigham Young University, J. Reuben Clark Law School",adamsk@law.byu.edu,(801) 422-3712,39.0,7643
+23,23,Susan,Ayres,Professor of Law,https://law.tamu.edu,tamu.edu,Texas A&M University School of Law,sayres@law.tamu.edu,(817) 212-3943,83.0,5809
+24,24,Samuel,Bagenstos,Prof.,https://www.law.umich.edu,umich.edu,The University of Michigan Law School,sambagen@umich.edu,(734) 647-7584,9.0,8071
+25,25,Paul,Baier,"George M. Armstrong, Jr. Prof. of Law; Judge Henry A. Politz Prof. of Law",https://www.law.lsu.edu,lsu.edu,"Louisiana State University, Paul M. Hebert Law Center",pbaier@lsu.edu,(225) 578-8326,100.0,5304
+26,26,Douglas,Baird,Harry A. Bigelow Dist. Serv. Prof.,https://www.law.uchicago.edu,uchicago.edu,"The University of Chicago, The Law School",dbaird@uchicago.edu,(773) 702-9571,4.0,1431
+27,27,Katharine,Baker,"University Distinguished Professor, Professor of Law, and Associate Dean for Administration and Strategic Initiatives",https://www.kentlaw.iit.edu,iit.edu,"Chicago-Kent College of Law, Illinois Institute of Technology",kbaker@kentlaw.iit.edu,(312) 906-5391,87.0,9703
+28,28,R. Lisle,Baker,Professor,https://www.suffolk.edu › law,suffolk.edu,Suffolk University Law School,lbaker@suffolk.edu,(617) 573-8186,143.0,1680
+29,29,Derek,Bambauer,Professor,https://law.arizona.edu,arizona.edu,The University of Arizona James E. Rogers College of Law,derekbambauer@email.arizona.edu,(520) 621-5411,39.0,6950
+30,30,Taunya Lovell,Banks,Jacob A. France Professor of Equality Jurisprudence,https://www.law.umaryland.edu,umaryland.edu,University of Maryland Francis King Carey School of Law,tbanks@law.umaryland.edu,(410) 706-3850,52.0,2894
+31,31,John,Barcelo,William Nelson Cromwell Professor of International and Comparative Law,https://www.lawschool.cornell.edu,lawschool.cornell.edu,Cornell Law School,jjb16@cornell.edu,(607) 255-3604,13.0,6647
+32,32,John,Barkai,Professor of Law,https://www.law.hawaii.edu,hawaii.edu,"University of Hawaii, William S. Richardson School of Law",barkai@hawaii.edu,(808) 956-6546,91.0,3730
+33,33,Wayne,Barnes,Professor of Law,https://law.tamu.edu,tamu.edu,Texas A&M University School of Law,wbarnes@law.tamu.edu,(817) 212-4109,83.0,1819
+34,34,Jonathan,Barnett,Torry H. Webb Professor of Law,https://gould.usc.edu,gould.usc.edu,University of Southern California Gould School of Law,jbarnett@law.usc.edu,(213) 740-4792,17.0,5728
+35,35,Michael,Barr,Prof.,https://www.law.umich.edu,umich.edu,The University of Michigan Law School,msbarr@umich.edu,(734) 936-2878,9.0,6134
+36,36,Ian,Bartrum,Professor of Law,https://law.unlv.edu,unlv.edu,"University of Nevada, Las Vegas, William S. Boyd School of Law",ian.bartrum@unlv.edu,(702) 895-5415,58.0,9128
+37,37,Sara,Beale,Charles L. B. Lowndes Professor of Law,https://law.duke.edu,duke.edu,Duke University School of Law,sun@law.duke.edu,(919) 613-7091,10.0,823
+38,38,Valena,Beety,Professor,https://www.law.wvu.edu,wvu.edu,West Virginia University College of Law,valena.beety@mail.wvu.edu,(304) 293-7520,100.0,1649
+39,39,Stephen,Befort,"Gray, Plant, Mooty, & Bennett Professor of Law",https://www.law.umn.edu,umn.edu,University of Minnesota Law School,befor001@umn.edu,(612) 625-7342,20.0,6323
+40,40,Christopher,Behan,Acting Dean,https://law.siu.edu,siu.edu,Southern Illinois University School of Law,cbehan@siu.edu,(618) 453-8722,146.0,9755
+41,41,Peter,Bell,Professor of Law,law.syr.edu,syr.edu,Syracuse University College of Law,pabell@law.syr.edu,(315) 443-3652,91.0,918
+42,42,Martin,Belsky,Randolph Baxter Professor of Law,https://www.uakron.edu › law,uakron.edu,University of Akron School of Law,belsky@uakron.edu,(330) 972-6361,143.0,479
+43,43,Barbara,Bergman,Professor and Director of Advocacy,https://law.arizona.edu,arizona.edu,The University of Arizona James E. Rogers College of Law,bbergman@email.arizona.edu,(520) 621-3984,39.0,3852
+44,44,David,Bernstein,University Professor,https://www.law.gmu.edu,gmu.edu,Antonin Scalia Law School at George Mason University,dbernste@gmu.edu,(703) 993-8089,45.0,5733
+45,45,Jagdish,Bhagwati,University Professor,https://www.law.columbia.edu,columbia.edu,Columbia Law School,jbhagw@law.columbia.edu,(212) 854-6297,5.0,1305
+46,46,Eric,Biber,Professor of Law,https://www.law.berkeley.edu,berkeley.edu,"University of California, Berkeley School of Law",ebiber@law.berkeley.edu,(510) 643-5647,10.0,289
+47,47,Kenworthey,Bilz,Professor,https://law.illinois.edu,illinois.edu,University of Illinois College of Law,kbilz@illinois.edu,(217) 333-0930,39.0,2225
+48,48,Barbara,Black,"Charles Hartsock Prof. & Dir., Corporate Law Center",https://law.uc.edu,uc.edu,University of Cincinnati College of Law,barbara.black@uc.edu,(513) 556-0113,83.0,3961
+49,49,Marianne,Blair,Professor of Law,https://law.utulsa.edu,utulsa.edu,The University of Tulsa College of Law,marianne-blair@utulsa.edu,(018) 631-2454,87.0,8181
+50,50,Andrew,Blair-Stanek,Professor,https://www.law.umaryland.edu,umaryland.edu,University of Maryland Francis King Carey School of Law,ablair-stanek@law.umaryland.edu,(410) 706-4232,52.0,3130
+51,51,Susan,Bloch,Prof.,https://www.law.georgetown.edu,georgetown.edu,Georgetown University Law Center,bloch@law.georgetown.edu,(202) 662-9063,14.0,1259
+52,52,Kate,Bloch,Prof.,http://uchastings.edu,uchastings.edu,"University of California, Hastings College of the Law",blochk@uchastings.edu,(415) 565-4867,62.0,4789
+53,53,Joseph,Blocher,Professor of Law,https://law.duke.edu,duke.edu,Duke University School of Law,blocher@law.duke.edu,(919) 613-7018,10.0,3539
+54,54,Robert,Bloom,Prof.,https://www.bc.edu › bc-web › schools › law,bc.edu,Boston College Law School,bloom@bc.edu,(617) 552-4374,27.0,1002
+55,55,Michelle,Boardman,Associate Professor of Law,https://www.law.gmu.edu,gmu.edu,Antonin Scalia Law School at George Mason University,mboardma@gmu.edu,(703) 993-8056,45.0,8306
+56,56,Joseph,Bockrath,R. Gordon Kean Prof. of Law and Law Class of 1950 Prof. of Law,https://www.law.lsu.edu,lsu.edu,"Louisiana State University, Paul M. Hebert Law Center",jbockrath@lsu.edu,(225) 578-8701,100.0,8773
+57,57,Johanna,Bond,Associate Dean for Acadmic Affairs and Professor of Law,https://law.wlu.edu,wlu.edu,Washington and Lee University School of Law,bondj@wlu.edu,(540) 458-8289,34.0,7747
+58,58,Robert,Bone,G. Rollie White Teaching Excellence Chair in Law,https://law.utexas.edu,utexas.edu,The University of Texas School of Law,rbone@law.utexas.edu,(512) 232-5562,16.0,4003
+59,59,Mark,Bonner,Professor of Law,https://www.avemarialaw.edu,avemarialaw.edu,Ave Maria School of Law,MBonner@avemarialaw.edu,(239) 687-5394,146.0,5935
+60,60,Vincent,Bonventre,The Justice Robert H. Jackson Distinguished Professor of Law,https://www.albanylaw.edu/,albanylaw.edu,Albany Law School,vbonv@albanylaw.edu,(518) 445-5856,115.0,4924
+61,61,Leslie,Book,Professor of Law,https://law.villanova.edu,villanova.edu,Villanova University Charles Widger School of Law,book@law.villanova.edu,(610) 519-6416,71.0,1655
+62,62,Linda,Bosniak,Distinguished Professor,https://law.rutgers.edu,rutgers.edu,Rutgers Law School,bosniak@camden.rutgers.edu,(856) 225-6403,77.0,5060
+63,63,James,Boyle,William Neal Reynolds Professor of Law,https://law.duke.edu,duke.edu,Duke University School of Law,boyle@law.duke.edu,(919) 613-7287,10.0,6360
+64,64,Gerard,Bradley,Professor of Law,https://law.nd.edu,nd.edu,Notre Dame Law School,bradley.16@nd.edu,(574) 631-8385,21.0,4602
+65,65,Dana Brakman,Reiser,Professor of Law,https://www.brooklaw.edu,brooklaw.edu,Brooklyn Law School,dana.brakman@brooklaw.edu,(718) 780-0396,71.0,6221
+66,66,Jeffrey,Brauch,"Professor; Executive Director, Center for Global Justice, Human Rights and the Rule of Law; Director LL.M. Programs",https://www.regent.edu › school-of-law,regent.edu,Regent University School of Law,jbrauch@regent.edu,(757) 352-4564,146.0,2518
+67,67,Mark,Brodin,Professor,https://www.bc.edu › bc-web › schools › law,bc.edu,Boston College Law School,brodin@bc.edu,(617) 552-4420,27.0,9176
+68,68,Carol,Brown,Professor of Law,https://law.richmond.edu,richmond.edu,The University of Richmond School of Law,cbrown5@richmond.edu,(804) 484-1626,52.0,8645
+69,69,Alan,Brownstein,Prof. & Boochever & Bird Chair for the Study & Teaching of Freedom & Equality,https://law.ucdavis.edu,ucdavis.edu,"University of California, Davis, School of Law",aebrownstein@ucdavis.edu,(530) 752-2586,31.0,9478
+70,70,Chris,Brummer,"Agnes N Williams Research Professor, Faculty Director (Institute of International Economic Law), Professor of Law",https://www.law.georgetown.edu,georgetown.edu,Georgetown University Law Center,cjb84@law.georgetown.edu,(202) 662-4191,14.0,7197
+71,71,William,Bryson,Blackstone Professor of Law,https://law.richmond.edu,richmond.edu,The University of Richmond School of Law,hbryson@richmond.edu,(804) 289-8196,52.0,1021
+72,72,Mercer,Bullard,MDLA Distinguished Lecturer and Professor of Law,https://law.olemiss.edu,olemiss.edu,University of Mississippi School of Law,mbullard@olemiss.edu,(662) 915-6835,108.0,6162
+73,73,Stephen,Burbank,David Berger Professor for the Administration of Justice,https://www.law.upenn.edu,upenn.edu,University of Pennsylvania Law School,sburbank@law.upenn.edu,(215) 898-7072,7.0,7874
+74,74,William,Burke-White,Professor of Law/Deputy Dean,https://www.law.upenn.edu,upenn.edu,University of Pennsylvania Law School,wburkewh@law.upenn.edu,(215) 898-7061,7.0,4617
+75,75,Michael,Burstein,Vice Dean and Professor of Law,https://cardozo.yu.edu,cardozo.yu.edu,Benjamin N. Cardozo School of Law,mburstei@yu.edu,(212) 790-0307,52.0,4619
+76,76,Steven,Burton,John F. Murray Professor,https://law.uiowa.edu,uiowa.edu,University of Iowa College of Law,steven-burton@uiowa.edu,(319) 855-8303,27.0,2644
+77,77,Robert,Butkin,Professor of Law,https://law.utulsa.edu,utulsa.edu,The University of Tulsa College of Law,robert-butkin@utulsa.edu,(918) 631-2443,87.0,4534
+78,78,Gordon,Butler,Professor of Law,https://www.stu.edu › law,stu.edu,St. Thomas University School of Law,gbutler@stu.edu,(305) 623-2308,117.0,9904
+79,79,Naomi,Cahn,Harold H. Greene Chair,https://www.law.gwu.edu,gwu.edu,The George Washington University Law School,ncahn@law.gwu.edu,(202) 994-6025,22.0,6886
+80,80,Gregory,Caldeira,Professor,https://moritzlaw.osu.edu,osu.edu,"The Ohio State University, Michael E. Moritz College of Law",caldeira.1@osu.edu,(614) 292-4476,34.0,138
+81,81,Mark,Cammack,Professor of Law,https://www.swlaw.edu/,swlaw.edu,Southwestern Law School,mcammack@swlaw.edu,(213) 738-6779,146.0,8288
+82,82,Paul,Campos,Professor,https://www.colorado.edu › law,colorado.edu,University of Colorado Law School,paul.campos@colorado.edu,(303) 492-6053,45.0,4102
+83,83,Daniel,Capra,Philip Reed Prof.,https://www.fordham.edu › info › school_of_law,fordham.edu,Fordham University School of Law,dcapra@law.fordham.edu,(212) 636-6855,39.0,4257
+84,84,Alexander,Capron,"Vice Dean for Faculty and Academic Affairs; University Professor, Scott H. Bice Chair in Healthcare Law, Policy and Ethics, and Professor of Law and Medicine, Keck School of Medicine, Co-Director, Pacific Center for Health Policy and Ethics",https://gould.usc.edu,gould.usc.edu,University of Southern California Gould School of Law,acapron@law.usc.edu,(213) 740-2557,17.0,3863
+85,85,Ann,Carlson,"Shirley Shapiro Professor of Environmental Law; Faculty Co-Director, Emmett Institute on Climate Change and the Environment",https://law.ucla.edu,ucla.edu,"University of California, Los Angeles School of Law",carlson@law.ucla.edu,(310) 206-9496,15.0,3999
+86,86,Jonathan,Carlson,Professor,https://law.uiowa.edu,uiowa.edu,University of Iowa College of Law,jonathan-c-carlson@uiowa.edu,(319) 335-9026,27.0,9415
+87,87,Kristen,Carpenter,Council Tree Professor,https://www.colorado.edu › law,colorado.edu,University of Colorado Law School,kristen.carpenter@colorado.edu,(303) 492-6526,45.0,3627
+88,88,Jeanne,Carriere,John Minor Wisdom Prof. of Civil Law.,https://law.tulane.edu,tulane.edu,Tulane University Law School,jcarriere@tulane.edu,(504) 865-5892,52.0,7992
+89,89,William,Carter,Professor of Law,https://www.law.pitt.edu › about,pitt.edu,University of Pittsburgh School of Law,william.carter@law.pitt.edu,(412) 383-0493,77.0,9969
+90,90,Jennifer,Carter-Johnson,Assoc. Prof. of Law,https://www.law.msu.edu,msu.edu,Michigan State University College of Law,jcj@law.msu.edu,(517) 432-6989,91.0,9655
+91,91,Daniela,Caruso,Professor of Law and EU Jean Monnet Chair,www.bu.edu › law,bu.edu,Boston University School of Law,danielac@bu.edu,(617) 353-7024,23.0,2015
+92,92,Anthony,Casey,Professor of Law and Mark Claster Mamolen Teaching Scholar,https://www.law.uchicago.edu,uchicago.edu,"The University of Chicago, The Law School",ajcasey@uchicago.edu,(312) 330-7791,4.0,6773
+93,93,R. Alta,Charo,Warren P. Knowles Professor of Law & Bioethics,https://law.wisc.edu,wisc.edu,University of Wisconsin Law School,racharo@wisc.edu,(608) 262-5015,34.0,2032
+94,94,April,Cherry,Professor,https://www.law.csuohio.edu,csuohio.edu,Cleveland-Marshall College of Law at Cleveland State University,april.cherry@law.csuohio.edu,(216) 687-2320,126.0,5110
+95,95,Andrew,Chin,Associate Professor of Law,https://law.unc.edu,unc.edu,University of North Carolina School of Law,chin@unc.edu,(919) 962-0356,34.0,9683
+96,96,Terrence,Chorvat,Professor of Law,https://www.law.gmu.edu,gmu.edu,Antonin Scalia Law School at George Mason University,tchorvat@gmu.edu,(703) 993-8208,45.0,9844
+97,97,Daniel,Chow,Frank & Virginia Bazler Chair,https://moritzlaw.osu.edu,osu.edu,"The Ohio State University, Michael E. Moritz College of Law",chow.1@osu.edu,(614) 292-0948,34.0,3388
+98,98,Chapin,Cimino,Associate Professor,https://drexel.edu › law,drexel.edu,Drexel University Thomas R. Kline School of Law,chapin.cimino@drexel.edu,(215) 571-4703,100.0,3106
+99,99,Gerard,Clark,Professor,https://www.suffolk.edu › law,suffolk.edu,Suffolk University Law School,gclark@suffolk.edu,(617) 573-8583,143.0,3148
+100,100,Kathleen,Clark,Professor,https://law.wustl.edu,wustl.edu,Washington University in St. Louis School of Law,kathleen@wustl.edu,(314) 827-4081,18.0,4627
+101,101,Sarah,Cleveland,"Louis Henkin Professor of Human and Constitutional Rights; Faculty Co-Director, Human Rights Institute",https://www.law.columbia.edu,columbia.edu,Columbia Law School,scleve@law.columbia.edu,(212) 854-2651,5.0,5739
+102,102,David,Cleveland,"Interim Dean, Professor of Law, Legal Writing Director",https://www.valpo.edu › law,valpo.edu,Valparaiso University Law School,david.cleveland@valpo.edu,(219) 465-7835,146.0,2764
+103,103,Zachary,Clopton,Professor of Law,www.law.northwestern.edu,northwestern.edu,Northwestern University Pritzker School of Law,zclopton@law.northwestern.edu,,10.0,6178
+104,104,A.,Cloud,Charles Howard Candler Prof.,law.emory.edu,emory.edu,Emory University School of Law,mcloud@law.emory.edu,(404) 727-5779,26.0,8389
+105,105,Ronald,Coffey,Professor Emeritus,http://case.edu,case.edu,Case Western Reserve University School of Law,rjc4@case.edu,(216) 368-2282,71.0,3140
+106,106,Neil,Cogan,Professor of Law,https://www.law.whittier.edu/,whittier.edu,Whittier Law School,ncogan@law.whittier.edu,(714) 444-4141 (216),146.0,1384
+107,107,Jonathan,Cohen,Professor; Director of the Introduction to Lawyering and the Legal Profession Program,https://www.law.ufl.edu,ufl.edu,University of Florida Fredric G. Levin College of Law,cohenjr@law.ufl.edu,(352) 273-0919,31.0,38
+108,108,Dana,Cole,Associate Professor,https://www.uakron.edu › law,uakron.edu,University of Akron School of Law,dkc@uakron.edu,(330) 972-7960,143.0,942
+109,109,Kevin,Cole,Professor of Law,https://www.sandiego.edu,sandiego.edu,University of San Diego School of Law,kcole@sandiego.edu,(619) 260-4527,86.0,8182
+110,110,Roger,Colinvaux,Professor,catholic.edu,catholic.edu,"The Catholic University of America, Columbus School of Law",colinvaux@law.edu,(202) 319-5146,108.0,7196
+111,111,Justin,Collings,Professor,https://law.byu.edu,byu.edu,"Brigham Young University, J. Reuben Clark Law School",collingsj@law.byu.edu,(801) 422-9026,39.0,9008
+112,112,John,Conley,"William Rand Kenan, Jr. Professor of Law",https://law.unc.edu,unc.edu,University of North Carolina School of Law,jmconley@email.unc.edu,(919) 962-8502,34.0,5859
+113,113,Alison,Conner,Professor of Law,https://www.law.hawaii.edu,hawaii.edu,"University of Hawaii, William S. Richardson School of Law",aconner@hawaii.edu,(808) 956-6552,91.0,1983
+114,114,Patrick,Connors,The Albert and Angela Farone Distinguished Professor of New York Civil Practice,https://www.albanylaw.edu/,albanylaw.edu,Albany Law School,pconn@albanylaw.edu,(518) 445-2322,115.0,5357
+115,115,Richard,Conviser,Professor of Law,https://www.kentlaw.iit.edu,iit.edu,"Chicago-Kent College of Law, Illinois Institute of Technology",Richard.Conviser@barbri.com,(312) 288-4555,87.0,4773
+116,116,Daniel,Coquillette,"J. Donald Monan, S.J., University Professor (Boston College Law School) & Charles Warren Visiting Professor of American Legal History (Harvard Law School)",https://www.bc.edu › bc-web › schools › law,bc.edu,Boston College Law School,daniel.coquillette@bc.edu,(617) 552-8650,27.0,7783
+117,117,William,Corbett,Professor,https://www.suffolk.edu › law,suffolk.edu,Suffolk University Law School,wcorbett@suffolk.edu,(617) 305-1683,143.0,6792
+118,118,Danshera,Cords,Professor of Law,https://www.albanylaw.edu/,albanylaw.edu,Albany Law School,dcord@albanylaw.edu,(412) 648-1359,115.0,6335
+119,119,Robert,Correales,Professor of Law,https://law.unlv.edu,unlv.edu,"University of Nevada, Las Vegas, William S. Boyd School of Law",robert.correales@unlv.edu,(702) 895-2406,58.0,1552
+120,120,Margaret,Costello,Associate Professor,www.law.udmercy.edu/,udmercy.edu,University of Detroit Mercy School of Law,costelma@udmercy.edu,(313) 596-9854,146.0,8696
+121,121,Anne,Coughlin,"Lewis F. Powell, Jr., Prof.",https://www.law.virginia.edu,virginia.edu,University of Virginia School of Law,amc6z@virginia.edu,(434) 924-3520,8.0,8184
+122,122,James,Cox,Brainerd Currie Professor of Law,https://law.duke.edu,duke.edu,Duke University School of Law,jdc@law.duke.edu,(919) 613-7056,10.0,6336
+123,123,Adam,Cox,Robert A. Kindler Professor of Law,https://www.law.nyu.edu,nyu.edu,New York University School of Law,CoxA@exchange.law.nyu.edu,(212) 998-8875,6.0,393
+124,124,Patience,Crowder,Associate Professor,https://www.law.du.edu/,du.edu,University of Denver Sturm College of Law,pcrowder@law.du.edu,(303) 871-6895,67.0,6963
+125,125,Michael Kent,Curtis,Donald L. Smith Prof. in Const'l & Public Law.,https://law.wfu.edu,wfu.edu,Wake Forest University School of Law,curtismk@wfu.edu,(336) 758-5714,31.0,8311
+126,126,Margaret,Dalton,Vice Dean and Professor of Law,https://www.sandiego.edu,sandiego.edu,University of San Diego School of Law,mdalton@sandiego.edu,(619) 260-7664,86.0,9207
+127,127,Meir,Dan-Cohen,Milo Reese Robbins Prof. of Law,https://www.law.berkeley.edu,berkeley.edu,"University of California, Berkeley School of Law",dan-cohen@berkeley.edu,(510) 642-7421,10.0,6288
+128,128,Robert,Danforth,,https://law.wlu.edu,wlu.edu,Washington and Lee University School of Law,danforthr@wlu.edu,(540) 458-8524,34.0,6853
+129,129,Steven,Dean,Prof.,https://www.brooklaw.edu,brooklaw.edu,Brooklyn Law School,steven.dean@brooklaw.edu,(718) 780-7939,71.0,1632
+130,130,Michael,DeBow,Stephen E. Wells Prof. of Municipal Law,https://www.samford.edu › cumberlandlaw,samford.edu,"Samford University, Cumberland School of Law",medebow@samford.edu,(205) 726-2434,146.0,279
+131,131,Nora,Demleitner,Roy L. Steinheimer Jr. Professor of Law,https://law.wlu.edu,wlu.edu,Washington and Lee University School of Law,demleitnern@wlu.edu,(540) 458-8502,34.0,3248
+132,132,Mark,Denbeaux,Professor of Law,https://law.shu.edu,shu.edu,Seton Hall University School of Law,mark.denbeaux@shu.edu,(973) 642-8822,59.0,9031
+133,133,John,Dernbach,"Comm'wlth Prof. & Dir., Env. Law Ctr.",https://commonwealthlaw.widener.edu,widener.edu,Widener University Commonwealth Law School,jcdernbach@widener.edu,(717) 541-1933,146.0,1389
+134,134,Michael,Devitt,"Professor of Law; Director, Summer Law Programs Abroad",https://www.sandiego.edu,sandiego.edu,University of San Diego School of Law,mdevitt@sandiego.edu,(619) 260-2992,86.0,4897
+135,135,Reza,Dibadj,Professor,https://www.usfca.edu › law,usfca.edu,University of San Francisco School of Law,rrdibadj@usfca.edu,(415) 422-5253,146.0,3509
+136,136,James,Diehm,Professor of Law,https://commonwealthlaw.widener.edu,widener.edu,Widener University Commonwealth Law School,jwdiehm@widener.edu,(717) 541-3939,146.0,982
+137,137,Shahar,Dillbary,"James M. Kidd, Sr Professor of Law",https://www.law.ua.edu,ua.edu,University of Alabama School of Law,sdillbary@law.ua.edu,(205) 348-9988,25.0,3313
+138,138,Joel,Dobris,"Professor of Law, Emeritus",https://law.ucdavis.edu,ucdavis.edu,"University of California, Davis, School of Law",jcdobris@ucdavis.edu,(530) 219-4665,31.0,8966
+139,139,Michael,Dorf,Robert S. Stevens Professor of Law,https://www.lawschool.cornell.edu,lawschool.cornell.edu,Cornell Law School,michaeldorf@cornell.edu,(607) 255-3890,13.0,6855
+140,140,David,Dorfman,Ass't Prof.,https://law.pace.edu,pace.edu,Pace University Elisabeth Haub School of Law,ddorfman@law.pace.edu,(914) 422-4195,122.0,3482
+141,141,David,Dow,Cullen Professor of Law,https://www.law.uh.edu,uh.edu,University of Houston Law Center,ddow@uh.edu,(713) 743-2171,59.0,7579
+142,142,Nancy,Dowd,"Professor, David H Levin Chair in Family Law, Emeritus Director of Center on Children & Families",https://www.law.ufl.edu,ufl.edu,University of Florida Fredric G. Levin College of Law,dowd@law.ufl.edu,(352) 273-0930,31.0,9060
+143,143,Michael,Doyle,University Professor,https://www.law.columbia.edu,columbia.edu,Columbia Law School,mdoyle@law.columbia.edu,(212) 854-3061,5.0,3793
+144,144,Donald,Dripps,Warren Distinguished Professor of Law,https://www.sandiego.edu,sandiego.edu,University of San Diego School of Law,dripps@sandiego.edu,(619) 260-4895,86.0,2210
+145,145,Barry,Dubner,Prof.,https://www.barry.edu › law,barry.edu,Barry University Dwayne O. Andreas School of Law,bdubner@mail.barry.edu,(407) 275-2000,146.0,8971
+146,146,John,Duffy,Professor of Law,https://www.law.virginia.edu,virginia.edu,University of Virginia School of Law,jfduffy@law.virginia.edu,(434) 243-8544,8.0,1859
+147,147,Richard,Duncan,"Sherman S. Welpton, Jr. Prof.",https://law.unl.edu,unl.edu,University of Nebraska College of Law,conlawprof@yahoo.com,(402) 472-6044,77.0,2983
+148,148,Martha Grace,Duncan,Prof.,law.emory.edu,emory.edu,Emory University School of Law,mdunc01@law.emory.edu,(404) 727-5768,26.0,8566
+149,149,John,Edwards,"Associate Dean, Information Resources & Technology; Director, Law Library; Professor of Law",https://www.drake.edu › law,drake.edu,Drake University Law School,john.edwards@drake.edu,(515) 271-2141,122.0,6125
+150,150,Stacy-Ann,Elvy,Professor of Law,https://law.ucdavis.edu,ucdavis.edu,"University of California, Davis, School of Law",selvy@ucdavis.edu,(530) 754-1744,31.0,9585
+151,151,Kirsten,Engel,Charles A. Ares Professor of Law,https://law.arizona.edu,arizona.edu,The University of Arizona James E. Rogers College of Law,engel@law.arizona.edu,(520) 621-1373,39.0,5249
+152,152,Lia,Epperson,Senior Asssociate Dean for Faculty & Academic Affairs,https://www.wcl.american.edu,wcl.american.edu,"American University, Washington College of Law",epperson@wcl.american.edu,(202) 274-4431,77.0,2435
+153,153,Ann,Estin,Aliber Family Chair in Law Professor,https://law.uiowa.edu,uiowa.edu,University of Iowa College of Law,ann-estin@uiowa.edu,(319) 335-6850,27.0,2883
+154,154,William,Ewald,Prof. of Law & Phil.,https://www.law.upenn.edu,upenn.edu,University of Pennsylvania Law School,wewald@law.upenn.edu,(215) 898-9135,7.0,6717
+155,155,Mirit,Eyal-Cohen,Associate Professor of Law,https://www.law.ua.edu,ua.edu,University of Alabama School of Law,meyal-cohen@law.ua.edu,(205) 348-0243,25.0,2335
+156,156,Edward,Fallone,Associate Professor,https://law.marquette.edu,marquette.edu,Marquette University Law School,edward.fallone@marquette.edu,(414) 288-5360,91.0,2022
+157,157,Cynthia,Farina,William G. McRoberts Research Professor in Administration of the Law,https://www.lawschool.cornell.edu,lawschool.cornell.edu,Cornell Law School,crf7@cornell.edu,(607) 255-5879,13.0,500
+158,158,Jorg,Fedtke,"A.N. Yiannopoulos Professor in Comparative Law & Co-Director., Eason-Weinmann Center for international and Comparative Law",https://law.tulane.edu,tulane.edu,Tulane University Law School,jfedtke@tulane.edu,(504) 865-5939,52.0,3477
+159,159,Robert,Fellmeth,"Price Prof. of Public Interest Law & Acad. Dir., Cntr. for Public Interest Law & Children's Advocacy Inst.",https://www.sandiego.edu,sandiego.edu,University of San Diego School of Law,cpil@sandiego.edu,(619) 260-4806,86.0,1200
+160,160,Mark,Fenster,"University Term Professor, Cone, Wagner, Nugent, Hazouri & Roth Tort Professor",https://www.law.ufl.edu,ufl.edu,University of Florida Fredric G. Levin College of Law,fenster@law.ufl.edu,(352) 273-0962,31.0,4296
+161,161,Kendra,Fershee,Professor,https://law.creighton.edu,creighton.edu,Creighton University School of Law,kendrafershee@creighton.edu,(304) 293-6667,117.0,7593
+162,162,Ted,Fiflis,Professor Emeritus,https://www.colorado.edu › law,colorado.edu,University of Colorado Law School,ted.fiflis@colorado.edu,(303) 492-6049,45.0,3895
+163,163,Chad,Flanders,Professor of Law,https://www.slu.edu › law,slu.edu,Saint Louis University School of Law,cflande2@slu.edu,(314) 977-4217,90.0,4006
+164,164,Robert,Flores,Professor,https://law.utah.edu,utah.edu,"University of Utah, S. J. Quinney College of Law",robert.flores@law.utah.edu,(801) 581-5881,47.0,9383
+165,165,David,Fontana,Assoc. Prof.,https://www.law.gwu.edu,gwu.edu,The George Washington University Law School,dfontana@law.gwu.edu,(202) 994-0577,22.0,4209
+166,166,Jonathan Barry,Forman,Kenneth E. McAfee Centennial Chair in Law,www.law.ou.edu,ou.edu,University of Oklahoma College of Law,jforman@ou.edu,(405) 325-4779,71.0,6608
+167,167,George,Foster,Professor of Law,https://law.lclark.edu,lclark.edu,Lewis and Clark Law School,foster@lclark.edu,(503) 768-6822,104.0,9665
+168,168,Leslie,Francis,Alfred C. Emery and Distinguished Professor,https://law.utah.edu,utah.edu,"University of Utah, S. J. Quinney College of Law",leslie.francis@law.utah.edu,(801) 581-4289,47.0,9205
+169,169,Monroe,Freedman,Visiting Professor of Law,https://law.hofstra.edu,hofstra.edu,Maurice A. Deane School of Law at Hofstra University,lawmhf@hofstra.edu,(516) 463-5882,100.0,9765
+170,170,Ezra,Friedman,Assoc. Prof.,www.law.northwestern.edu,northwestern.edu,Northwestern University Pritzker School of Law,ezra-friedman@law.northwestern.edu,(312) 503-0230,10.0,6813
+171,171,Joel,Friedman,"Jack M. Gordon Prof. of Procedural & Juris. & Dir., M.J. in Labor and Employment Program",https://law.tulane.edu,tulane.edu,Tulane University Law School,jfriedman@tulane.edu,(504) 865-5985,52.0,8855
+172,172,David,Frisch,Professor of Law,https://law.richmond.edu,richmond.edu,The University of Richmond School of Law,dfrisch@richmond.edu,(804) 289-8214,52.0,8349
+173,173,Stavros,Gadinis,Professor of Law,https://www.law.berkeley.edu,berkeley.edu,"University of California, Berkeley School of Law",sgadinis@berkeley.edu,(510) 642-3237,10.0,931
+174,174,Amy,Gajda,Professor of Law,https://law.tulane.edu,tulane.edu,Tulane University Law School,gajda@tulane.edu,(504) 862-3527,52.0,820
+175,175,Mitchell,Gans,Steven A. Horowitz Distinguished Professor of Tax Law and Professor of Law,https://law.hofstra.edu,hofstra.edu,Maurice A. Deane School of Law at Hofstra University,lawmmg@hofstra.edu,(516) 463-5876,100.0,5105
+176,176,David,Gantz,Samuel M. Fegtly Professor of Law,https://law.arizona.edu,arizona.edu,The University of Arizona James E. Rogers College of Law,gantz@law.arizona.edu,(520) 490-3004,39.0,8519
+177,177,Charlotte,Garden,Co-Associate Dean for Research and Faculty Development and Professor of Law,https://law.seattleu.edu,seattleu.edu,Seattle University School of Law,gardenc@seattleu.edu,(206) 398-4073,122.0,5919
+178,178,Susan,Gary,Professor,https://law.uoregon.edu,uoregon.edu,University of Oregon School of Law,sgary@uoregon.edu,(541) 346-3856,83.0,3891
+179,179,Frederick,Gedicks,Guy Anderson Chair & Professor of Law,https://law.byu.edu,byu.edu,"Brigham Young University, J. Reuben Clark Law School",gedicksf@law.byu.edu,(801) 422-4533,39.0,3644
+180,180,Deborah,Geier,Prof.,https://www.law.csuohio.edu,csuohio.edu,Cleveland-Marshall College of Law at Cleveland State University,deborah.geier@law.csuohio.edu,(216) 687-2341,126.0,4034
+181,181,Mark,Geistfeld,Sheila Lubetsky Birnbaum Professor of Civil Litigation,https://www.law.nyu.edu,nyu.edu,New York University School of Law,geistfeld@exchange.law.nyu.edu,(212) 998-6683,6.0,525
+182,182,Anna,Gelpern,Prof.,https://www.law.georgetown.edu,georgetown.edu,Georgetown University Law Center,ag1348@law.georgetown.edu,(202) 841-3623,14.0,4638
+183,183,James Paul,George,Professor of Law,https://law.tamu.edu,tamu.edu,Texas A&M University School of Law,pgeorge@law.tamu.edu,(817) 212-4120,83.0,5349
+184,184,Tracey,George,"Interim Vice Provost for Faculty Affairs, Charles B. Cox & Lucy D. Cox Family Chair in Law, Professor of Political Science",https://law.vanderbilt.edu,vanderbilt.edu,Vanderbilt University Law School,tracey.george@vanderbilt.edu,(615) 322-6310,18.0,3437
+185,185,Peter,Gerhart,Professor of Law,http://case.edu,case.edu,Case Western Reserve University School of Law,pmg2@case.edu,(216) 368-5469,71.0,7636
+186,186,Patty,Gerstenblith,Professor,https://law.depaul.edu,depaul.edu,DePaul University College of Law,pgersten@depaul.edu,(312) 362-6175,132.0,6050
+187,187,Ronald,Gilson,Marc and Eva Stern Professor of Law and Business,https://www.law.columbia.edu,columbia.edu,Columbia Law School,rgilson@stanford.edu,(650) 723-0614,5.0,9275
+188,188,Leonard,Glantz,"Prof. of Health, Prof. of Socio-Med. Scis. & Community Med. & Prof. of Law.",www.bu.edu › law,bu.edu,Boston University School of Law,lglantz@bu.edu,(617) 638-4644,23.0,9519
+189,189,Mark,Godsey,"Daniel P and Judith L Carmichael Prof. & Dir., Rosenthal Inst. for Just./Ohio Innocence Proj.",https://law.uc.edu,uc.edu,University of Cincinnati College of Law,markgodsey@gmail.com,(513) 556-0107,83.0,6951
+190,190,Carlos,Gonzalez,Professor of Law & Herbert Hannoch Scholar,https://law.rutgers.edu,rutgers.edu,Rutgers Law School,cgonzalez@kinoy.rutgers.edu,(973) 353-5065,77.0,6933
+191,191,Leigh,Goodmark,Marjorie Cook Professor of Law,https://www.law.umaryland.edu,umaryland.edu,University of Maryland Francis King Carey School of Law,lgoodmark@law.umaryland.edu,(410) 706-3549,52.0,4450
+192,192,Peter,Goodrich,"Professor of Law and Director, Program in Law and Humanities",https://cardozo.yu.edu,cardozo.yu.edu,Benjamin N. Cardozo School of Law,goodrich@yu.edu,(212) 790-0484,52.0,6561
+193,193,Iris,Goodwin,Associate Professor of Law,https://law.utk.edu,utk.edu,University of Tennessee College of Law,igoodwin@utk.edu,(865) 974-6813,59.0,444
+194,194,Jennifer,Gordon,,https://www.fordham.edu › info › school_of_law,fordham.edu,Fordham University School of Law,jgordon@fordham.edu,(212) 636-7444,39.0,1102
+195,195,David,Gray,Jacob A. France Professor of Law,https://www.law.umaryland.edu,umaryland.edu,University of Maryland Francis King Carey School of Law,dgray@law.umaryland.edu,(410) 706-5986,52.0,1145
+196,196,Susan,Grebeldinger,Prof.,https://law.wfu.edu,wfu.edu,Wake Forest University School of Law,grebelsk@wfu.edu,(336) 758-5715,31.0,2665
+197,197,Michael,Green,Bess & Walter Williams Dist. Chair.,https://law.wfu.edu,wfu.edu,Wake Forest University School of Law,greenmd@wfu.edu,(336) 758-4842,31.0,4261
+198,198,Michael,Green,Robert and Elizabeth Scott Research Professor of Law,https://law.wm.edu,wm.edu,William & Mary Law School,msgre2@wm.edu,(757) 221-7746,39.0,2257
+199,199,Mark,Greenberg,"Professor of Law & Professor of Philosophy; Faculty Co-Director, Law & Philosophy Program",https://law.ucla.edu,ucla.edu,"University of California, Los Angeles School of Law",greenberg@law.ucla.edu,(310) 206-1337,15.0,6710
+200,200,Hillary,Greene,Zephaniah Swift Professor of Law,https://www.law.uconn.edu,uconn.edu,University of Connecticut School of Law,hillary.greene@uconn.edu,(860) 570-5211,52.0,1239
+201,201,Kent,Greenfield,Prof. and Dean's Distinguished Scholar,https://www.bc.edu › bc-web › schools › law,bc.edu,Boston College Law School,greenfik@bc.edu,(617) 552-3167,27.0,8561
+202,202,Michael,Greenfield,"George Alexander Madill Prof., Contracts & Commercial Law",https://law.wustl.edu,wustl.edu,Washington University in St. Louis School of Law,michael.greenfield@wustl.edu,(314) 935-6428,18.0,453
+203,203,Andy,Grewal,Professor,https://law.uiowa.edu,uiowa.edu,University of Iowa College of Law,agrewal@iowa.uiowa.edu,(480) 253-9727,27.0,4406
+204,204,Lissa,Griffin,Prof.,https://law.pace.edu,pace.edu,Pace University Elisabeth Haub School of Law,lgriffin@law.pace.edu,(914) 422-4231,122.0,7287
+205,205,Itai,Grinberg,Professor of Law,https://www.law.georgetown.edu,georgetown.edu,Georgetown University Law Center,ig76@law.georgetown.edu,(202) 661-6615,14.0,7369
+206,206,Dermot,Groome,Professor of Law,https://dickinsonlaw.psu.edu,psu.edu,The Pennsylvania State University ‚Äì Dickinson Law,dmg32@psu.edu,(717) 241-3512,71.0,848
+207,207,Simona,Grossi,Professor of Law,https://www.lls.edu/,lls.edu,"Loyola Law School, Los Angeles",simona.grossi@lls.edu,(213) 736-8140,62.0,6229
+208,208,Paul,Haagen,Professor of Law,https://law.duke.edu,duke.edu,Duke University School of Law,phh@law.duke.edu,(919) 613-7088,10.0,5026
+209,209,John,Hall,Professor of Law,https://www.chapman.edu › law,chapman.edu,Chapman University Dale E. Fowler School of Law,jhall@chapman.edu,(714) 628-2617,132.0,6131
+210,210,Gunther,Handl,Eberhard Deutsch Prof. of Public Int'l Law.,https://law.tulane.edu,tulane.edu,Tulane University Law School,ghandl@tulane.edu,(504) 862-8825,52.0,4712
+211,211,Christopher,Hanna,,https://www.smu.edu › Law,smu.edu,"Southern Methodist University, Dedman School of Law",channa@smu.edu,(214) 768-4394,52.0,3825
+212,212,Valerie,Hans,Professor of Law,https://www.lawschool.cornell.edu,lawschool.cornell.edu,Cornell Law School,vh42@cornell.edu,(607) 255-0095,13.0,9731
+213,213,Brian,Havel,"Distinguished Resesearch Professor of Law, Dir., Int'l & Comp. Law Prog., Dir., Int'l Aviation Law Inst.",https://law.depaul.edu,depaul.edu,DePaul University College of Law,bhavel@depaul.edu,(312) 362-5222,132.0,2136
+214,214,Andrew,Hayashi,Professor of Law,https://www.law.virginia.edu,virginia.edu,University of Virginia School of Law,ath9f@virginia.edu,(434) 243-9125,8.0,6354
+215,215,Paul,Heald,Richard W. and Marie L. Corman Professor of Law,https://law.illinois.edu,illinois.edu,University of Illinois College of Law,heald@illinois.edu,(706) 542-7989,39.0,7349
+216,216,Thomas,Healy,Professor of Law,https://law.shu.edu,shu.edu,Seton Hall University School of Law,thomas.healy@shu.edu,(973) 642-8561,59.0,4700
+217,217,Michael,Heise,Professor of Law,https://www.lawschool.cornell.edu,lawschool.cornell.edu,Cornell Law School,mrh38@cornell.edu,(607) 255-0069,13.0,1084
+218,218,Michael,Heller,Lawrence A. Wien Professor of Real Estate Law,https://www.law.columbia.edu,columbia.edu,Columbia Law School,mhelle@law.columbia.edu,(212) 854-9763,5.0,6694
+219,219,Laura,Hernandez,Professor,https://www.baylor.edu › law,baylor.edu,Baylor University School of Law,laura_hernandez@baylor.edu,(254) 710-3691,48.0,906
+220,220,Carl,Hernandez,Teaching Professor,https://law.byu.edu,byu.edu,"Brigham Young University, J. Reuben Clark Law School",hernandezc@law.byu.edu,(801) 422-4934,39.0,7081
+221,221,Joni,Hersch,Cornelius Vanderbilt Chair; Professor of Law and Economics; Professor of Management; Ph.D Program in Law and Economics Co-Director,https://law.vanderbilt.edu,vanderbilt.edu,Vanderbilt University Law School,joni.hersch@vanderbilt.edu,(615) 343-7717,18.0,2683
+222,222,Robert,Heverly,Associate Professor of Law,https://www.albanylaw.edu/,albanylaw.edu,Albany Law School,rheve@albanylaw.edu,(518) 445-2379,115.0,7689
+223,223,Tracy,Higgins,Prof.,https://www.fordham.edu › info › school_of_law,fordham.edu,Fordham University School of Law,thiggins@law.fordham.edu,(212) 636-6864,39.0,3225
+224,224,John,Hill,R. Bruce Townsend Professor of Law; Adjunct Professor of Philosophy; Grimes Fellow,https://mckinneylaw.iu.edu,iu.edu,Indiana University Robert H. McKinney School of Law,johlhill@iupui.edu,(317) 278-9036,108.0,4852
+225,225,Frances,Hill,Professor and Dean's Distinguished Scholar for the Profession,https://www.law.miami.edu,miami.edu,University of Miami School of Law,fhill@law.miami.edu,(305) 284-2642,67.0,0
+226,226,Steven,Hobbs,Tom Bevill Chairholder of Law,https://www.law.ua.edu,ua.edu,University of Alabama School of Law,shobbs@law.ua.edu,(205) 348-5247,25.0,5687
+227,227,David,Hoffman,Professor of Law,https://www.law.upenn.edu,upenn.edu,University of Pennsylvania Law School,dhoffman@law.upenn.edu,(215) 898-9170,7.0,1312
+228,228,Emily,Houh,Gustavus Henry Wald Professor of the Law and Contracts,https://law.uc.edu,uc.edu,University of Cincinnati College of Law,emily.houh@uc.edu,(513) 556-0108,83.0,1641
+229,229,Joan,Howland,Roger F. Noreen Prof. of Law; Assoc. Dean for Info. and Tech.,https://www.law.umn.edu,umn.edu,University of Minnesota Law School,howla001@umn.edu,(612) 625-9036,20.0,5761
+230,230,Nicholas,Howson,Prof.,https://www.law.umich.edu,umich.edu,The University of Michigan Law School,nhowson@umich.edu,(734) 615-2892,9.0,7845
+231,231,Christopher,Hoyt,Professor of Law,https://law.umkc.edu,umkc.edu,University of Missouri-Kansas City School of Law,hoytc@umkc.edu,(816) 235-2395,108.0,3994
+232,232,Heather Lauren,Hughes,Prof.,https://www.wcl.american.edu,wcl.american.edu,"American University, Washington College of Law",hhughes@wcl.american.edu,(202) 274-4311,77.0,892
+233,233,Helia,Hull,Associate Professor,https://www.barry.edu › law,barry.edu,Barry University Dwayne O. Andreas School of Law,hhull@mail.barry.edu,(321) 206-5644,146.0,7972
+234,234,John,Humbach,Prof.,https://law.pace.edu,pace.edu,Pace University Elisabeth Haub School of Law,jhumbach@law.pace.edu,(914) 422-4239,122.0,3019
+235,235,Heidi,Hurd,"David C. Baum Professor of Law and Professor of Philosophy - Co-Director, Program in Law and Philosophy",https://law.illinois.edu,illinois.edu,University of Illinois College of Law,hhurd@illinois.edu,(217) 244-3446,39.0,1824
+236,236,Richard,Hyland,Distinguished Professor,https://law.rutgers.edu,rutgers.edu,Rutgers Law School,hyland@camden.rutgers.edu,(856) 225-6410,77.0,5413
+237,237,Keith,Hylton,William Fairfield Warren Distinguished Professor,www.bu.edu › law,bu.edu,Boston University School of Law,knhylton@bu.edu,(617) 353-8959,23.0,312
+238,238,Richard,Hynes,Professor,https://www.law.virginia.edu,virginia.edu,University of Virginia School of Law,hynes@virginia.edu,(434) 924-3763,8.0,8251
+239,239,Allan,Ides,Christopher N. May Professor,https://www.lls.edu/,lls.edu,"Loyola Law School, Los Angeles",allan.ides@lls.edu,(213) 736-1464,62.0,3706
+240,240,Anthony,Infanti,"Christopher C. Walthour, Sr. Professor of Law",https://www.law.pitt.edu › about,pitt.edu,University of Pittsburgh School of Law,infanti@pitt.edu,(412) 648-1244,77.0,6204
+241,241,Samuel,Issacharoff,Bonnie & Richard Reiss Prof. of Const'l Law.,https://www.law.nyu.edu,nyu.edu,New York University School of Law,samuel.issacharoff@nyu.edu,(212) 998-6580,6.0,576
+242,242,Tonja,Jacobi,Prof.,www.law.northwestern.edu,northwestern.edu,Northwestern University Pritzker School of Law,t-jacobi@law.northwestern.edu,(312) 503-1458,10.0,3517
+243,243,Neha,Jain,Assoc. Prof. of Law,https://www.law.umn.edu,umn.edu,University of Minnesota Law School,njain@umn.edu,(612) 625-7809,20.0,6791
+244,244,Steve,Johnson,Dunbar Family Professor,https://www.law.fsu.edu,fsu.edu,Florida State University College of Law,sjohnson@law.fsu.edu,(850) 644-1777,48.0,806
+245,245,Andrea,Johnson,Visiting Professor,https://www.uakron.edu › law,uakron.edu,University of Akron School of Law,ajohnson1@uakron.edu,(619) 525-1474,143.0,1607
+246,246,Cynthia,Jones,Prof.,https://www.wcl.american.edu,wcl.american.edu,"American University, Washington College of Law",cejones@wcl.american.edu,(202) 274-4416,77.0,9908
+247,247,Thomas,Joo,Martin Luther King Jr. Prof.,https://law.ucdavis.edu,ucdavis.edu,"University of California, Davis, School of Law",twjoo@ucdavis.edu,(530) 754-6089,31.0,5850
+248,248,Craig,Joyce,Hunton Andrews Kurth Professor of Law,https://www.law.uh.edu,uh.edu,University of Houston Law Center,cjoyce@central.uh.edu,(713) 743-2127,59.0,4731
+249,249,Daniel,Joyner,"Professor of Law, Director of International Programs",https://www.law.ua.edu,ua.edu,University of Alabama School of Law,djoyner@law.ua.edu,(205) 348-5831,25.0,2154
+250,250,David,Jung,"Prof. & Director, Center for State and Local Government Law",http://uchastings.edu,uchastings.edu,"University of California, Hastings College of the Law",jungd@uchastings.edu,(415) 565-4639,62.0,5620
+251,251,David,Kairys,Professor,https://www.law.temple.edu,temple.edu,"Temple University, James E. Beasley School of Law",david.kairys@temple.edu,(215) 204-8959,48.0,4588
+252,252,Mary Kay,Kane,Professor Emerita,http://uchastings.edu,uchastings.edu,"University of California, Hastings College of the Law",kanem@uchastings.edu,(415) 565-4777,62.0,4447
+253,253,Joseph,Kennedy,Professor of Law,https://law.unc.edu,unc.edu,University of North Carolina School of Law,kennedy4@email.unc.edu,(919) 843-3505,34.0,9249
+254,254,Lawrence,Kessler,Richard J. Cardali Distinguished Professor of Trial Advocacy and Professor of Law,https://law.hofstra.edu,hofstra.edu,Maurice A. Deane School of Law at Hofstra University,lawlwk@office.hofstra.edu,(516) 463-5894,100.0,8751
+255,255,Laura,Kessler,Professor,https://law.utah.edu,utah.edu,"University of Utah, S. J. Quinney College of Law",laura.kessler@law.utah.edu,(801) 585-9697,47.0,6678
+256,256,Kathleen,Kim,Prof.,https://www.lls.edu/,lls.edu,"Loyola Law School, Los Angeles",kathleen.kim@lls.edu,(213) 736-1316,62.0,985
+257,257,Darcy,Kirk,Associate Dean for Academic Affairs and Distinguished Professor of Law,https://www.law.uconn.edu,uconn.edu,University of Connecticut School of Law,darcy.kirk@uconn.edu,(860) 570-5109,52.0,2003
+258,258,Heidi,Kitrosser,"Robins, Kaplan, Miller & Ciresi Prof. of Law",https://www.law.umn.edu,umn.edu,University of Minnesota Law School,hdk@umn.edu,(612) 626-3070,20.0,43
+259,259,Christine,Klein,Chesterfield Smith Professor of Law,https://www.law.ufl.edu,ufl.edu,University of Florida Fredric G. Levin College of Law,kleinc@law.ufl.edu,(352) 273-0964,31.0,6165
+260,260,Joshua,Kleinfeld,Professor of Law,www.law.northwestern.edu,northwestern.edu,Northwestern University Pritzker School of Law,joshua.kleinfeld@northwestern.edu,(312) 503-2824,10.0,8343
+261,261,Heinz,Klug,"Evjue-Bascom Professor in Law; Director, Global Legal Studies Center",https://law.wisc.edu,wisc.edu,University of Wisconsin Law School,klug@wisc.edu,(608) 262-7370,34.0,6883
+262,262,Christopher,Knott,Associate Dean for Information Services and Technology and Professor of Law,https://law.wfu.edu,wfu.edu,Wake Forest University School of Law,knottca@wfu.edu,,31.0,4594
+263,263,Russell,Korobkin,Vice Dean for Academic and Institutional Affairs and Richard C. Maxwell Professor of Law,https://law.ucla.edu,ucla.edu,"University of California, Los Angeles School of Law",korobkin@law.ucla.edu,(310) 825-1994,15.0,7599
+264,264,Donald,Korobkin,Professor,https://law.rutgers.edu,rutgers.edu,Rutgers Law School,korobkin@camden.rutgers.edu,(856) 225-6376,77.0,2609
+265,265,Sarah,Krakoff,Professor and Assoc. Dean for Faculty Affairs & Research,https://www.colorado.edu › law,colorado.edu,University of Colorado Law School,sarah.krakoff@colorado.edu,(303) 492-2641,45.0,784
+266,266,Herbert,Krimmel,Professor of Law,https://www.swlaw.edu/,swlaw.edu,Southwestern Law School,hkrimmel@swlaw.edu,(213) 738-6747,146.0,6136
+267,267,Jayanth,Krishnan,"Prof. & Charles L. Whistler Faculty Fellow; Director, Milt and Judi Stewart Ctr. on the Global Legal Profession",https://www.law.indiana.edu,indiana.edu,Indiana University Maurer School of Law,jkrishna@indiana.edu,(812) 856-0434,34.0,4770
+268,268,Raymond,Ku,"Professor of Law; Director, Center for Cyberspace Law & Policy",http://case.edu,case.edu,Case Western Reserve University School of Law,raymond.ku@case.edu,(216) 368-3963,71.0,2864
+269,269,Peter,Kutner,Hugh Roff Professor of Law,www.law.ou.edu,ou.edu,University of Oklahoma College of Law,,,71.0,7285
+270,270,Michelle,Kwon,Associate Professor of Law,https://law.utk.edu,utk.edu,University of Tennessee College of Law,mkwon2@utk.edu,(865) 974-9207,59.0,5355
+271,271,Mary,LaFrance,IGT Professor of Intellectual Property Law,https://law.unlv.edu,unlv.edu,"University of Nevada, Las Vegas, William S. Boyd School of Law",mary.lafrance@unlv.edu,(702) 895-2481,58.0,797
+272,272,Alexandra,Lahav,Ellen Ash Peters Professor of Law,https://www.law.uconn.edu,uconn.edu,University of Connecticut School of Law,alexandra.lahav@uconn.edu,(860) 570-5217,52.0,1853
+273,273,Corinna Barrett,Lain,Professor of Law,https://law.richmond.edu,richmond.edu,The University of Richmond School of Law,clain@richmond.edu,(804) 289-8738,52.0,6007
+274,274,Catherine,Lanctot,Professor of Law,https://law.villanova.edu,villanova.edu,Villanova University Charles Widger School of Law,lanctot@law.villanova.edu,(610) 519-7076,71.0,1396
+275,275,Renee,Landers,Professor and Director of Health and Biomedical Law Concentration,https://www.suffolk.edu › law,suffolk.edu,Suffolk University Law School,rlanders@suffolk.edu,(617) 305-1686,143.0,2174
+276,276,David,Langum,Res. Prof.,https://www.samford.edu › cumberlandlaw,samford.edu,"Samford University, Cumberland School of Law",djlangum@samford.edu,(205) 726-2424,146.0,9952
+277,277,Mark,Latham,Professor of Law,http://vermontlaw.edu,vermontlaw.edu,Vermont Law School,mlatham@vermontlaw.edu,(802) 831-1226,136.0,1167
+278,278,Richard,Lavoie,"Professor, Fellow, Miller-Becker Center for Professional Responsibility",https://www.uakron.edu › law,uakron.edu,University of Akron School of Law,rlavoie@uakron.edu,(201) 406-4836,143.0,3977
+279,279,Robert,Lawless,"Max L. Rowe Professor of Law; Co-Director, Illinois Program on Law, Behavior and Social Science",https://law.illinois.edu,illinois.edu,University of Illinois College of Law,rlawless@illinois.edu,(217) 244-6714,39.0,9199
+280,280,Don,Leatherman,W. Allen Separk Distinguished Professor of Law,https://law.utk.edu,utk.edu,University of Tennessee College of Law,dleathe1@utk.edu,(865) 974-6838,59.0,8687
+281,281,Fredric,Lederer,"Chancellor Prof., Dir., Cntr. for Legal and Ct. Tech.",https://law.wm.edu,wm.edu,William & Mary Law School,filede@wm.edu,(757) 221-3792,39.0,7307
+282,282,Edward,Lee,Professor of Law and Director of the Program in Intellectual Property Law,https://www.kentlaw.iit.edu,iit.edu,"Chicago-Kent College of Law, Illinois Institute of Technology",elee@kentlaw.iit.edu,(312) 906-5212,87.0,2278
+283,283,Yoon-Ho Alex,Lee,Professor of Law,www.law.northwestern.edu,northwestern.edu,Northwestern University Pritzker School of Law,alex.lee@law.northwestern.edu,(213) 740-8044,10.0,9635
+284,284,Stephen,Lee,Professor of Law and Associate Dean for Faculty Research and Development,https://www.law.uci.edu,uci.edu,"University of California, Irvine School of Law",slee@law.uci.edu,(949) 824-3731,23.0,1382
+285,285,Benjamin,Leff,Professor,https://www.wcl.american.edu,wcl.american.edu,"American University, Washington College of Law",bleff@wcl.american.edu,(202) 274-4359,77.0,6123
+286,286,Andrew,Leipold,"Edwin M. Adams Professor; Director, Program in Criminal Law and Procedure",https://law.illinois.edu,illinois.edu,University of Illinois College of Law,aleipold@illinois.edu,(217) 333-1955,39.0,9939
+287,287,Margaret,Lemos,Robert G. Seaks LL.B. '34 Professor of Law,https://law.duke.edu,duke.edu,Duke University School of Law,lemos@law.duke.edu,(919) 613-7099,10.0,5131
+288,288,R. A. ,Lenhardt,Assoc. Prof.,https://www.fordham.edu › info › school_of_law,fordham.edu,Fordham University School of Law,rlenhardt@law.fordham.edu,(212) 636-7608,39.0,3108
+289,289,Craig,Lerner,Professor of Law,https://www.law.gmu.edu,gmu.edu,Antonin Scalia Law School at George Mason University,clerner@gmu.edu,(703) 993-8080,45.0,5099
+290,290,Kay,Levine,Professor,law.emory.edu,emory.edu,Emory University School of Law,klevin2@emory.edu,(404) 712-2422,26.0,4203
+291,291,Martin,Levine,"UPS Foundation Chair in Law, Gerontology, Psychiatry & the Behavioral Sciences; University Vice Provost & Senior Advisor to the Provost; Of Counsel, USC Office of the General Counsel",https://gould.usc.edu,gould.usc.edu,University of Southern California Gould School of Law,levine@usc.edu,(213) 740-2101,17.0,8661
+292,292,Nancy,Levit,Associate Dean and Curators' and Edward D. Ellison Professor of Law,https://law.umkc.edu,umkc.edu,University of Missouri-Kansas City School of Law,levitn@umkc.edu,(816) 235-2391,108.0,8333
+293,293,Saul,Levmore,William B. Graham Distinguished Service Prof.,https://www.law.uchicago.edu,uchicago.edu,"The University of Chicago, The Law School",s-levmore@uchicago.edu,(773) 702-9590,4.0,4354
+294,294,Margaret,Lewis,Professor of Law,https://law.shu.edu,shu.edu,Seton Hall University School of Law,Margaret.Lewis@shu.edu,(973) 642-8821,59.0,8666
+295,295,James,Liebman,Simon H. Rifkind Professor of Law,https://www.law.columbia.edu,columbia.edu,Columbia Law School,jliebman@law.columbia.edu,(212) 854-3423,5.0,4639
+296,296,Albert,Lin,,https://law.ucdavis.edu,ucdavis.edu,"University of California, Davis, School of Law",aclin@ucdavis.edu,(530) 752-8021,31.0,2896
+297,297,Jake,Linford,Loula Fuller & Dan Myers Professor of Law,https://www.law.fsu.edu,fsu.edu,Florida State University College of Law,jlinford@law.fsu.edu,(850) 644-3449,48.0,1197
+298,298,Rory,Little,Prof.,http://uchastings.edu,uchastings.edu,"University of California, Hastings College of the Law",littler@uchastings.edu,(415) 565-4669,62.0,3394
+299,299,Lisa,Litwiller,Prof.,https://www.chapman.edu › law,chapman.edu,Chapman University Dale E. Fowler School of Law,llitwill@chapman.edu,(714) 628-2586,132.0,7289
+300,300,Cortney,Lollar,James and Mary Lassiter Associate Professor of Law,https://law.uky.edu,uky.edu,University of Kentucky College of Law,cortney.lollar@uky.edu,(859) 257-3250,71.0,4458
+301,301,Clark,Lombardi,UWLS Foundation Professor of Law,https://www.law.uw.edu,uw.edu,University of Washington School of Law,lombardi@uw.edu,(206) 543-4939,44.0,8233
+302,302,Steven,Lubet,"Williams Memorial Professor & Dir., Bartlett Trial Advocacy Center",www.law.northwestern.edu,northwestern.edu,Northwestern University Pritzker School of Law,slubet@law.northwestern.edu,(312) 503-6605,10.0,5502
+303,303,Timothy,Lynch,Professor of Law,https://law.umkc.edu,umkc.edu,University of Missouri-Kansas City School of Law,lynchte@umkc.edu,(816) 235-2390,108.0,1474
+304,304,Thomas,Lyon,Judge Edward J. and Ruey L. Guirado Chair in Law & Psy.,https://gould.usc.edu,gould.usc.edu,University of Southern California Gould School of Law,tlyon@law.usc.edu,(213) 740-0142,17.0,4426
+305,305,Gregory,Magarian,Thomas & Karole Green Professor of Law,https://law.wustl.edu,wustl.edu,Washington University in St. Louis School of Law,gpmagarian@wulaw.wustl.edu,(610) 519-7652,18.0,8607
+306,306,Malachy,Mahon,,https://law.hofstra.edu,hofstra.edu,Maurice A. Deane School of Law at Hofstra University,lawmtm@hofstra.edu,(516) 463-5868,100.0,1134
+307,307,Kevin Noble,Maillard,Professor of Law,law.syr.edu,syr.edu,Syracuse University College of Law,maillard@law.syr.edu,(315) 443-4236,91.0,4732
+308,308,Thomas,Main,William S. Boyd Professor of Law,https://law.unlv.edu,unlv.edu,"University of Nevada, Las Vegas, William S. Boyd School of Law",thomas.main@unlv.edu,(702) 895-2927,58.0,3810
+309,309,Suparna,Malempati,Assoc. Prof.,http://johnmarshall.edu,johnmarshall.edu,Atlanta's John Marshall Law School,smalempati@johnmarshall.edu,(678) 916-2646,146.0,3610
+310,310,Martin,Malin,"Professor of Law & Co-Dir., Inst. for Law & the Workplace.",https://www.kentlaw.iit.edu,iit.edu,"Chicago-Kent College of Law, Illinois Institute of Technology",mmalin@kentlaw.iit.edu,(312) 906-5056,87.0,6534
+311,311,Laurie,Malman,Prof.,https://www.law.nyu.edu,nyu.edu,New York University School of Law,laurie.malman@nyu.edu,(212) 998-6166,6.0,9621
+312,312,Earl,Maltz,Distinguished Professor of Law,https://law.rutgers.edu,rutgers.edu,Rutgers Law School,emaltz@camden.rutgers.edu,(856) 225-6382,77.0,8350
+313,313,Karl,Manheim,Prof.,https://www.lls.edu/,lls.edu,"Loyola Law School, Los Angeles",karl.manheim@lls.edu,(213) 736-1106,62.0,7264
+314,314,Richard,Marcus,Dist. Prof. & Horace O. Coil ('57) Chair in Litig.,http://uchastings.edu,uchastings.edu,"University of California, Hastings College of the Law",marcusr@uchastings.edu,(415) 565-4829,62.0,1265
+315,315,Jennifer Mason,McAward,"Associate Professor of Law, Klau Center for Civil and Human Rights Director",https://law.nd.edu,nd.edu,Notre Dame Law School,mason.1@nd.edu,(574) 631-7528,21.0,2685
+316,316,Toni,Massaro,"Regent's Professor, Milton O. Riepe Chair in Constitutional Law and Dean Emerita",https://law.arizona.edu,arizona.edu,The University of Arizona James E. Rogers College of Law,massaro@law.arizona.edu,(520) 626-2687,39.0,5989
+317,317,Jonathan,Masur,"John P. Wilson Professor of Law, David and Celia Hilliard Research Scholar, and Director, Wachtell, Lipton, Rosen & Katz Program in Behavioral Law, Finance and Economics",https://www.law.uchicago.edu,uchicago.edu,"The University of Chicago, The Law School",jmasur@uchicago.edu,(773) 702-5188,4.0,4570
+318,318,Richard,McAdams,Bernard D. Meltzer Professor,https://www.law.uchicago.edu,uchicago.edu,"The University of Chicago, The Law School",rmcadams@uchicago.edu,(773) 834-2520,4.0,9992
+319,319,Linda,McClain,Prof. & Paul M. Siskind Research Scholar,www.bu.edu › law,bu.edu,Boston University School of Law,lmcclain@bu.edu,(617) 358-4635,23.0,199
+320,320,David,McCord,Associate Dean; Professor of Law,https://www.drake.edu › law,drake.edu,Drake University Law School,david.mccord@drake.edu,(515) 271-2069,122.0,1428
+321,321,Thomas,McDonnell,Prof.,https://law.pace.edu,pace.edu,Pace University Elisabeth Haub School of Law,tmcdonnell@law.pace.edu,(914) 422-4381,122.0,8953
+322,322,Denis,McLaughlin,Professor of Law,https://law.shu.edu,shu.edu,Seton Hall University School of Law,denis.mclaughlin@shu.edu,(973) 642-8824,59.0,7173
+323,323,Judith,McMullen,Prof.,https://law.marquette.edu,marquette.edu,Marquette University Law School,judith.mcmullen@marquette.edu,(414) 288-5376,91.0,3357
+324,324,Peter,Menell,Koret Professor of Law,https://www.law.berkeley.edu,berkeley.edu,"University of California, Berkeley School of Law",pmenell@law.berkeley.edu,(510) 642-5489,10.0,8894
+325,325,Douglas,Michael,Associate Dean for Academic Affairs and Dorothy Salmon Professor of Law,https://law.uky.edu,uky.edu,University of Kentucky College of Law,michaeld@uky.edu,(859) 257-1485,71.0,8929
+326,326,William,Miller,Thomas G. Long Prof.,https://www.law.umich.edu,umich.edu,The University of Michigan Law School,wimiller@umich.edu,(734) 763-9014,9.0,212
+327,327,John,Miller,Weldon Schimke Distinguished Professor of Law,https://www.uidaho.edu › law,uidaho.edu,University of Idaho College of Law,jamiller@uidaho.edu,(208) 885-2257,126.0,6904
+328,328,Robert,Miller,Professor of Law,https://law.uiowa.edu,uiowa.edu,University of Iowa College of Law,robert-miller@uiowa.edu,(319) 335-9001,27.0,3408
+329,329,David,Millon,J.B. Stombock Prof.,https://law.wlu.edu,wlu.edu,Washington and Lee University School of Law,millond@wlu.edu,(540) 460-8307,34.0,1166
+330,330,Dalia Tsuk,Mitchell,,https://www.law.gwu.edu,gwu.edu,The George Washington University Law School,dtsuk67@law.gwu.edu,(202) 994-9320,22.0,6334
+331,331,Matthew,Mitten,"Professor of Law and Executive Director, National Sports Law Institute",https://law.marquette.edu,marquette.edu,Marquette University Law School,matt.mitten@marquette.edu,(414) 288-7494,91.0,8017
+332,332,Michael,Moffitt,Professor,https://law.uoregon.edu,uoregon.edu,University of Oregon School of Law,mmoffitt@uoregon.edu,(541) 346-3836,83.0,3290
+333,333,Mark,Moller,Assistant Professor,https://law.depaul.edu,depaul.edu,DePaul University College of Law,mmoller@depaul.edu,(312) 362-5758,132.0,5601
+334,334,Freedman,Monroe,,https://law.hofstra.edu,hofstra.edu,Maurice A. Deane School of Law at Hofstra University,monroe.freedman@hofstra.edu,(516) 463-5858,100.0,8249
+335,335,Kathryn,Moore,Ashland-Spears Distinguished Research Professor of Law and Stites & Harbison Professor of Law,https://law.uky.edu,uky.edu,University of Kentucky College of Law,kmoore@uky.edu,(859) 257-7637,71.0,2624
+336,336,Patricia,Moore,Associate Dean for Academic Affairs and Professor of Law,https://www.stu.edu › law,stu.edu,St. Thomas University School of Law,pmoore@stu.edu,(305) 623-2342,117.0,2043
+337,337,John,Moore,"Walter L. Brown Prof., Dir., Cntr. for Oceans Law & Policy & Dir., Cntr. for Nat'l Security Law.",https://www.law.virginia.edu,virginia.edu,University of Virginia School of Law,jmoore@law.virginia.edu,(434) 924-7441,8.0,5588
+338,338,Michael,Morrison,William J. Boswell Chair.,https://www.baylor.edu › law,baylor.edu,Baylor University School of Law,michael_morrison@baylor.edu,(254) 710-3611,48.0,9040
+339,339,Susan,Morse,"Angus G. Wynne, Sr. Professor in Civil Jurisprudence",https://law.utexas.edu,utexas.edu,The University of Texas School of Law,smorse@law.utexas.edu,(512) 232-9346,16.0,7019
+340,340,Stephen,Morse,Ferdinand Wakeman Hubbell Prof. & Prof. of Psychology & Law in Psy.,https://www.law.upenn.edu,upenn.edu,University of Pennsylvania Law School,smorse@law.upenn.edu,(215) 898-2562,7.0,5287
+341,341,Seymour,Moskowitz,Senior Research Professor,https://www.valpo.edu › law,valpo.edu,Valparaiso University Law School,sy.moskowitz@valpo.edu,(219) 465-7858,146.0,7522
+342,342,Linda,Mullenix,Morris & Rita Atlas Chair in Advocacy,https://law.utexas.edu,utexas.edu,The University of Texas School of Law,lmullenix@law.utexas.edu,(512) 232-1375,16.0,3876
+343,343,Eric,Muller,Dan K. Moore Distinguished Professor of Law in Jurisprudence and Ethics,https://law.unc.edu,unc.edu,University of North Carolina School of Law,emuller@email.unc.edu,(919) 962-7067,34.0,5762
+344,344,Timothy,Mulvaney,Professor of Law,https://law.tamu.edu,tamu.edu,Texas A&M University School of Law,tmulvaney@law.tamu.edu,(817) 212-3968,83.0,8731
+345,345,Erin,Murphy,Professor of Law,https://www.law.nyu.edu,nyu.edu,New York University School of Law,erin.murphy@nyu.edu,(212) 998-6672,6.0,7348
+346,346,Richard,Murphy,AT&T Prof.,www.law.ttu.edu,ttu.edu,Texas Tech University School of Law,richard.murphy@ttu.edu,(806) 834-3654,117.0,727
+347,347,Colleen,Murphy,"Professor of Law; Associate Professor of Philosophy and Political Science; Director, Women and Gender in Global Perspectives Program",https://law.illinois.edu,illinois.edu,University of Illinois College of Law,colleenm@illinois.edu,(217) 244-0675,39.0,1151
+348,348,Eleanor,Myers,Associate Professor Emeritus,https://www.law.temple.edu,temple.edu,"Temple University, James E. Beasley School of Law",eleanor.myers@temple.edu,(215) 204-1923,48.0,8870
+349,349,D. Carolina,Nunez,Associate Dean of Research and Academic Affairs & Professor of Law,https://law.byu.edu,byu.edu,"Brigham Young University, J. Reuben Clark Law School",nunezc@law.byu.edu,(801) 422-6004,39.0,8969
+350,350,Thomas,Nachbar,Prof.,https://www.law.virginia.edu,virginia.edu,University of Virginia School of Law,tnachbar@virginia.edu,(434) 924-7588,8.0,1572
+351,351,Carol,Needham,Emanuel Myers Professor of Law,https://www.slu.edu › law,slu.edu,Saint Louis University School of Law,carol.needham.slu@gmail.com,(314) 977-7104,90.0,3481
+352,352,William,Nelson,Weinfeld Professor of Law,https://www.law.nyu.edu,nyu.edu,New York University School of Law,william.nelson@nyu.edu,(212) 998-6241,6.0,2213
+353,353,Curtis,Nesset,"Instr., Legal Writing Prog; Director, Capital Assistance Project",www.law.uga.edu,uga.edu,University of Georgia School of Law,nesset@uga.edu,(706) 542-5277,27.0,3240
+354,354,Neil,Netanel,Pete Kameron Endowed Chair in Law,https://law.ucla.edu,ucla.edu,"University of California, Los Angeles School of Law",netanel@law.ucla.edu,(310) 825-1634,15.0,7315
+355,355,Carol,Newman,Transactional Professor of Law,https://law.missouri.edu,missouri.edu,University of Missouri School of Law,newmancd@missouri.edu,(573) 882-2658,64.0,2681
+356,356,Lisa,Nicholson,Professor,https://louisville.edu › law,louisville.edu,"University of Louisville, Louis D. Brandeis School of Law",lisa.nicholson@louisville.edu,(502) 852-7166,108.0,3461
+357,357,John,Nockleby,"Prof. & Dir., Civil Just. Prog.",https://www.lls.edu/,lls.edu,"Loyola Law School, Los Angeles",john.nockleby@lls.edu,(213) 736-1163,62.0,7640
+358,358,Sean,Nolon,Vice Dean for Faculty; Professor of Law,http://vermontlaw.edu,vermontlaw.edu,Vermont Law School,snolon@vermontlaw.edu,(802) 831-1376,136.0,5577
+359,359,Kathy,Northern,"Assoc. Dean, Admissions, Diversity and Inclusion & Assoc. Prof.",https://moritzlaw.osu.edu,osu.edu,"The Ohio State University, Michael E. Moritz College of Law",northern.1@osu.edu,(614) 292-7750,34.0,3210
+360,360,Joseph,Norton,James L. Walsh Dist. Fac. Fellow in Fin'l Insts. & Prof.,https://www.smu.edu › Law,smu.edu,"Southern Methodist University, Dedman School of Law",jnorton@smu.edu,(214) 768-2777,52.0,4155
+361,361,Kimberly,Norwood,"Henry H. Oberschelp Prof of Law, Prof of African & African-American Studies",https://law.wustl.edu,wustl.edu,Washington University in St. Louis School of Law,norwood@wustl.edu,(314) 935-6416,18.0,9001
+362,362,Sean,O'Brien,Professor of Law,https://law.umkc.edu,umkc.edu,University of Missouri-Kansas City School of Law,obriensd@umkc.edu,(816) 235-6152,108.0,1076
+363,363,Barbara,O'Brien,Prof. of Law,https://www.law.msu.edu,msu.edu,Michigan State University College of Law,obrienb@law.msu.edu,(517) 432-6907,91.0,8296
+364,364,Mary Ellen,O'Connell,Robert & Marion Short Chair in Law/Research Professor of International Dispute Resolution,https://law.nd.edu,nd.edu,Notre Dame Law School,MaryEllenOConnell@nd.edu,(574) 631-7953,21.0,6500
+365,365,Catherine,O'Grady,Associate Dean for Academic Affairs and Professor of Law,https://law.arizona.edu,arizona.edu,The University of Arizona James E. Rogers College of Law,catherineogrady@email.arizona.edu,(480) 965-2847,39.0,1756
+366,366,Christiana,Ochoa,Assoc. Dean for Research & Faculty Affairs and Professor,https://www.law.indiana.edu,indiana.edu,Indiana University Maurer School of Law,cochoa@indiana.edu,(812) 856-1516,34.0,6926
+367,367,Dale,Oesterle,J. Gilbert Reese Chair,https://moritzlaw.osu.edu,osu.edu,"The Ohio State University, Michael E. Moritz College of Law",oesterle.4@osu.edu,(614) 292-7172,34.0,3393
+368,368,Karl,Okamoto,Professor & Director of the Business and Entrepreneurship Law Concentration,https://drexel.edu › law,drexel.edu,Drexel University Thomas R. Kline School of Law,karl.okamoto@drexel.edu,(215) 571-4761,100.0,843
+369,369,J.,Oldham,John H. Freeman Prof.,https://www.law.uh.edu,uh.edu,University of Houston Law Center,toldham@central.uh.edu,(713) 743-2161,59.0,5741
+370,370,Dotan,Oliar,Professor of Law,https://www.law.virginia.edu,virginia.edu,University of Virginia School of Law,oliar@virginia.edu,(434) 924-3219,8.0,5406
+371,371,Saule,Omarova,Professor of Law,https://www.lawschool.cornell.edu,lawschool.cornell.edu,Cornell Law School,sto24@cornell.edu,(607) 255-1476,13.0,794
+372,372,David,Opderbeck,"Professor of Law and Co-Director of the Gibbons Institute of Law, Science & Technology",https://law.shu.edu,shu.edu,Seton Hall University School of Law,david.opderbeck@shu.edu,(973) 642-8496,59.0,3802
+373,373,Myron,Orfield,Earl R. Larson Prof. of Civil Rights and Civil Liberties Law and Dir. of the Inst. on Metropolitan Opportunity,https://www.law.umn.edu,umn.edu,University of Minnesota Law School,orfield@umn.edu,(612) 625-7976,20.0,6637
+374,374,Spencer,Overton,Professor of Law,https://www.law.gwu.edu,gwu.edu,The George Washington University Law School,soverton@law.gwu.edu,(202) 994-9794,22.0,230
+375,375,Stefan,Padfield,Professor of Law,https://www.uakron.edu › law,uakron.edu,University of Akron School of Law,spadfie@uakron.edu,(917) 533-0183,143.0,1652
+376,376,Gideon,Parchomovsky,Professor of Law,https://www.law.upenn.edu,upenn.edu,University of Pennsylvania Law School,gparchom@law.upenn.edu,(215) 898-7481,7.0,3135
+377,377,Michael,Pardo,Henry Upson Sims Professor of Law,https://www.law.ua.edu,ua.edu,University of Alabama School of Law,mpardo@law.ua.edu,(205) 348-2032,25.0,9272
+378,378,John,Parry,Associate Dean of Faculty & Edward Brunet Professor of Law,https://law.lclark.edu,lclark.edu,Lewis and Clark Law School,parry@lclark.edu,(503) 768-6888,104.0,1455
+379,379,William,Patton,Professor,https://www.law.whittier.edu/,whittier.edu,Whittier Law School,bpatton@law.whittier.edu,(714) 444-4141,146.0,5523
+380,380,Kathleen,Payne,Prof. of Law,https://www.law.msu.edu,msu.edu,Michigan State University College of Law,payneka@law.msu.edu,(517) 432-6903,91.0,58
+381,381,Katherine,Pearson,Professor of Law,https://dickinsonlaw.psu.edu,psu.edu,The Pennsylvania State University ‚Äì Dickinson Law,kcp4@psu.edu,(717) 240-5219,71.0,7301
+382,382,Stephen,Pepper,Professor of Law,https://www.law.du.edu/,du.edu,University of Denver Sturm College of Law,spepper@law.du.edu,(303) 871-6259,67.0,8585
+383,383,Antonio,Perez,Professor,catholic.edu,catholic.edu,"The Catholic University of America, Columbus School of Law",pereza@law.edu,(202) 319-5820,108.0,9489
+384,384,Huyen,Pham,Professor of Law,https://law.tamu.edu,tamu.edu,Texas A&M University School of Law,hpham@law.tamu.edu,(817) 212-3953,83.0,2139
+385,385,Ngai,Pindell,"UNLV Vice Provost for Faculty Affairs; International Gaming Institute Professor of Law; Director, Gaming Programs",https://law.unlv.edu,unlv.edu,"University of Nevada, Las Vegas, William S. Boyd School of Law",ngai.pindell@unlv.edu,(702) 895-2417,58.0,1992
+386,386,Thomas,Plank,Joel A. Katz Distinguished Professor of Law,https://law.utk.edu,utk.edu,University of Tennessee College of Law,tplank@tennessee.edu,(865) 974-6849,59.0,6030
+387,387,Daniel,Polsby,Professor of Law,https://www.law.gmu.edu,gmu.edu,Antonin Scalia Law School at George Mason University,polsby@gmu.edu,(703) 993-8087,45.0,8411
+388,388,David,Pratt,The Jay and Ruth Caplan Distinguished Professor,https://www.albanylaw.edu/,albanylaw.edu,Albany Law School,dprat@albanylaw.edu,(518) 472-5870,115.0,5568
+389,389,Nicholson,Price,Professor of Law,https://www.law.umich.edu,umich.edu,The University of Michigan Law School,wnp@umich.edu,(603) 513-5147,9.0,7074
+390,390,Bruce,Price,Professor,https://www.usfca.edu › law,usfca.edu,University of San Francisco School of Law,bmprice@usfca.edu,(415) 422-5198,146.0,9866
+391,391,Amanda,Pustilnik,Professor of Law,https://www.law.umaryland.edu,umaryland.edu,University of Maryland Francis King Carey School of Law,apustilnik@law.umaryland.edu,(410) 706-4239,52.0,1575
+392,392,Asifa,Quraishi-Landes,Professor of Law,https://law.wisc.edu,wisc.edu,University of Wisconsin Law School,aquraishi@wisc.edu,(608) 263-7604,34.0,6039
+393,393,Robert,Ragazzo,Law Foundation Professor of Law,https://www.law.uh.edu,uh.edu,University of Houston Law Center,rragazzo@central.uh.edu,(713) 743-2146,59.0,7229
+394,394,Carolyn,Ramsey,Professor,https://www.colorado.edu › law,colorado.edu,University of Colorado Law School,carolyn.ramsey@colorado.edu,(303) 735-5028,45.0,723
+395,395,Jason,Rantanen,Professor & Ferguson-Carlson Fellow in Law,https://law.uiowa.edu,uiowa.edu,University of Iowa College of Law,jason-rantanen@uiowa.edu,(319) 335-9109,27.0,4504
+396,396,Aaron,Rappaport,Prof.,http://uchastings.edu,uchastings.edu,"University of California, Hastings College of the Law",rappapor@uchastings.edu,(415) 565-4697,62.0,9605
+397,397,Alan,Rau,Mark G. and Judy G. Yudof Chair in Law,https://law.utexas.edu,utexas.edu,The University of Texas School of Law,arau@law.utexas.edu,(512) 232-1266,16.0,5059
+398,398,Kal,Raustiala,"Professor of Law; Director, Ronald W. Burkle Center for International Relations",https://law.ucla.edu,ucla.edu,"University of California, Los Angeles School of Law",raustiala@law.ucla.edu,(310) 794-4856,15.0,759
+399,399,Louis,Raveson,Professor of Law & Alfred C. Clapp Public Service Scholar,https://law.rutgers.edu,rutgers.edu,Rutgers Law School,lraveson@kinoy.rutgers.edu,(973) 353-3054,77.0,7224
+400,400,Joseph,Raz,Thomas M. Macioce Professor of Law,https://www.law.columbia.edu,columbia.edu,Columbia Law School,raz@law.columbia.edu,(212) 854-5191,5.0,4749
+401,401,R. Anthony,Reese,Chancellor's Professor of Law,https://www.law.uci.edu,uci.edu,"University of California, Irvine School of Law",treese@law.uci.edu,(949) 824-4745,23.0,658
+402,402,Jerome,Reichman,Bunyan S. Womble Professor of Law,https://law.duke.edu,duke.edu,Duke University School of Law,reichman@law.duke.edu,(919) 613-7286,10.0,1124
+403,403,Mathias,Reimann,Hessel E. Yntema Prof.,https://www.law.umich.edu,umich.edu,The University of Michigan Law School,purzel@umich.edu,(734) 763-6331,9.0,9918
+404,404,Glenn,Reynolds,Beauchamp Brogan Distinguished Professor of Law,https://law.utk.edu,utk.edu,University of Tennessee College of Law,greynold@utk.edu,(865) 974-6744,59.0,1350
+405,405,Edward,Richards,"Clarence W. Edwards Prof. of Law & Dir., Prog. in Law, Sci. & Public Health",https://www.law.lsu.edu,lsu.edu,"Louisiana State University, Paul M. Hebert Law Center",richards@lsu.edu,(225) 578-7595,100.0,8293
+406,406,Jesse,Richardson,Professor,https://www.law.wvu.edu,wvu.edu,West Virginia University College of Law,jesse.richardson@mail.wvu.edu,(540) 552-4112,100.0,6029
+407,407,Michael,Risch,Associate Dean for Faculty Research & Development & Professor of Law,https://law.villanova.edu,villanova.edu,Villanova University Charles Widger School of Law,risch@law.villanova.edu,(610) 519-6836,71.0,4880
+408,408,Alasdair,Roberts,Chair terminated,https://www.suffolk.edu › law,suffolk.edu,Suffolk University Law School,alasdair.roberts@gmail.com,(617) 573-8544,143.0,6421
+409,409,Zoe,Robinson,Assistant Professor,https://law.depaul.edu,depaul.edu,DePaul University College of Law,zrobins2@depaul.edu,(312) 362-8541,132.0,3612
+410,410,Kimberly,Robinson,Professor of Law,https://www.law.virginia.edu,virginia.edu,University of Virginia School of Law,krobinson@law.virginia.edu,(804) 289-8985,8.0,1302
+411,411,Peter,Rofes,Prof.,https://law.marquette.edu,marquette.edu,Marquette University Law School,peter.rofes@marquette.edu,(414) 288-5361,91.0,1640
+412,412,Audrey,Rogers,Prof.,https://law.pace.edu,pace.edu,Pace University Elisabeth Haub School of Law,arogers@law.pace.edu,(914) 422-4068,122.0,2997
+413,413,Joel,Rogers,"Professor of Law, Political Science, Public Affairs and Sociology",https://law.wisc.edu,wisc.edu,University of Wisconsin Law School,jrogers60@gmail.com,(608) 890-2543,34.0,3514
+414,414,Martin,Rogoff,Maine Law Foundation Professor,https://mainelaw.maine.edu,maine.edu,University of Maine School of Law,rogoff@maine.edu,(207) 780-4358,126.0,6003
+415,415,Julie,Roin,Seymour Logan Prof.,https://www.law.uchicago.edu,uchicago.edu,"The University of Chicago, The Law School",julie_roin@law.uchicago.edu,(773) 702-5314,4.0,9493
+416,416,Amanda,Rose,Professor of Law; Owen Graduate School of Management Professor - 2019; Professor of Management,https://law.vanderbilt.edu,vanderbilt.edu,Vanderbilt University Law School,amanda.rose@vanderbilt.edu,(615) 936-8626,18.0,2064
+417,417,Adam,Rosenzweig,Professor of Law,https://law.wustl.edu,wustl.edu,Washington University in St. Louis School of Law,arosenzweig@wustl.edu,(314) 935-4419,18.0,2201
+418,418,Clifford,Rosky,Professor,https://law.utah.edu,utah.edu,"University of Utah, S. J. Quinney College of Law",clifford.rosky@law.utah.edu,(801) 581-7352,47.0,7949
+419,419,Andrea,Roth,Professor of Law,https://www.law.berkeley.edu,berkeley.edu,"University of California, Berkeley School of Law",aroth@law.berkeley.edu,(510) 643-6092,10.0,9424
+420,420,Laura,Rothstein,Prof. & Dist. Univ. Scholar,https://louisville.edu › law,louisville.edu,"University of Louisville, Louis D. Brandeis School of Law",laura.rothstein@louisville.edu,(502) 852-6288,108.0,5631
+421,421,J. B.,Ruhl,"David Daniels Allen Distinguished Chair in Law; Professor of Law; Program on Law and Innovation Director; Energy, Environment, and Land Use Program Co-Director",https://law.vanderbilt.edu,vanderbilt.edu,Vanderbilt University Law School,jb.ruhl@vanderbilt.edu,(615) 322-6500,18.0,7917
+422,422,John,Rumel,Professor of Law,https://www.uidaho.edu › law,uidaho.edu,University of Idaho College of Law,jrumel@uidaho.edu,(208) 364-4576,126.0,7075
+423,423,George,Rutherglen,John Barbee Minor Dist. Prof.,https://www.law.virginia.edu,virginia.edu,University of Virginia School of Law,grutherglen@law.virginia.edu,(434) 924-7015,8.0,8462
+424,424,James,Ryan,"President, University of Virginia; George M. Kaufman Presidential Professor; Professor of Law; Professor of Education",https://www.law.virginia.edu,virginia.edu,University of Virginia School of Law,president@virginia.edu,,8.0,9974
+425,425,Ronald,Rychlak,Professor of Law; holder of the Jamie L. Whitten Chair in Law and Government; Faculty Athletics Representative,https://law.olemiss.edu,olemiss.edu,University of Mississippi School of Law,rrychlak@olemiss.edu,(662) 915-6841,108.0,7554
+426,426,William,Sage,James R. Dougherty Chair for Faculty Excellence,https://law.utexas.edu,utexas.edu,The University of Texas School of Law,wsage@law.utexas.edu,(512) 232-7806,16.0,1033
+427,427,John,Sahl,"Prof., Dir., Miller/Becker Cntr., Fac. Fellow, Intell'l Prop. Cntr. .",https://www.uakron.edu › law,uakron.edu,University of Akron School of Law,jps@uakron.edu,(330) 972-6753,143.0,8125
+428,428,Chaim,Saiman,Associate Professor,https://law.villanova.edu,villanova.edu,Villanova University Charles Widger School of Law,saiman@law.villanova.edu,(610) 519-3296,71.0,2047
+429,429,Richard,Sander,Professor of Law,https://law.ucla.edu,ucla.edu,"University of California, Los Angeles School of Law",sander@law.ucla.edu,(310) 206-7300,15.0,5008
+430,430,Joseph,Sanders,A.A. White Professor of Law,https://www.law.uh.edu,uh.edu,University of Houston Law Center,JSanders@central.UH.edu,(713) 743-2125,59.0,4153
+431,431,Christina,Sautter,Cynthia Felder Fayard Prof. of Law and Byron R. Kantrow Prof. of Law,https://www.law.lsu.edu,lsu.edu,"Louisiana State University, Paul M. Hebert Law Center",csautter@lsu.edu,(225) 578-8701,100.0,79
+432,432,Richard,Saver,Arch T. Allen Distinguished Professor,https://law.unc.edu,unc.edu,University of North Carolina School of Law,saver@email.unc.edu,(713) 743-2263,34.0,7687
+433,433,Susan,Schmeiser,Professor of Law,https://www.law.uconn.edu,uconn.edu,University of Connecticut School of Law,susan.schmeiser@uconn.edu,(860) 570-5103,52.0,2591
+434,434,Ronna,Schneider,Prof.,https://law.uc.edu,uc.edu,University of Cincinnati College of Law,ronna.schneider@uc.edu,(513) 556-0098,83.0,3766
+435,435,Dick,Schneider,Prof.,https://law.wfu.edu,wfu.edu,Wake Forest University School of Law,schneirc@wfu.edu,(336) 758-4506,31.0,7078
+436,436,Jeffrey,Schoenblum,Centennial Professor of Law,https://law.vanderbilt.edu,vanderbilt.edu,Vanderbilt University Law School,jeffrey.schoenblum@vanderbilt.edu,(615) 322-2668,18.0,9293
+437,437,Maimon,Schwarzschild,Professor of Law,https://www.sandiego.edu,sandiego.edu,University of San Diego School of Law,maimons@sandiego.edu,(619) 260-2343,86.0,5270
+438,438,Robert,Scott,"Alfred McCormack Professor of Law and Director, Center on Contract and Economic Organization",https://www.law.columbia.edu,columbia.edu,Columbia Law School,rscott@law.columbia.edu,(202) 854-0072,5.0,6930
+439,439,Elizabeth,Scott,Vice Dean for Curriculum and Harold R. Medina Prof. of Law,https://www.law.columbia.edu,columbia.edu,Columbia Law School,escott@law.columbia.edu,(212) 854-9758,5.0,7475
+440,440,Ryan,Scott,Professor,https://www.law.indiana.edu,indiana.edu,Indiana University Maurer School of Law,ryanscot@indiana.edu,(812) 856-5941,34.0,9197
+441,441,Helen,Scott,Prof.,https://www.law.nyu.edu,nyu.edu,New York University School of Law,helen.scott@nyu.edu,(212) 998-6206,6.0,9287
+442,442,Rebecca,Scott,Charles Gibson Dist. Univ. Prof. of Hist. & Prof. of Law.,https://www.law.umich.edu,umich.edu,The University of Michigan Law School,rjscott@umich.edu,(734) 615-2082,9.0,248
+443,443,Bradley,Shannon,Professor of Law,https://www.fcsl.edu,fcsl.edu,Florida Coastal School of Law,,(904) 680-7700,146.0,3004
+444,444,Mitra,Sharafi,Associate Professor of Law,https://law.wisc.edu,wisc.edu,University of Wisconsin Law School,sharafi@wisc.edu,(608) 265-8428,34.0,2140
+445,445,Joan,Shaughnessy,Prof.,https://law.wlu.edu,wlu.edu,Washington and Lee University School of Law,shaughnessyj@wlu.edu,(540) 458-8512,34.0,6821
+446,446,Joanna,Shepherd,Professor of Law,law.emory.edu,emory.edu,Emory University School of Law,jshepherd@law.emory.edu,(404) 727-8957,26.0,3339
+447,447,George,Shepherd,Prof.,law.emory.edu,emory.edu,Emory University School of Law,gshep@law.emory.edu,(404) 727-6978,26.0,2123
+448,448,Emily,Sherwin,Frank B. Ingersoll Professor of Law,https://www.lawschool.cornell.edu,lawschool.cornell.edu,Cornell Law School,els36@cornell.edu,(607) 255-1922,13.0,3585
+449,449,Nadav,Shoked,Professor of Law,www.law.northwestern.edu,northwestern.edu,Northwestern University Pritzker School of Law,nadav.shoked@law.northwestern.edu,(312) 503-1321,10.0,7333
+450,450,Reed,Shuldiner,"Alvin Snowiss Prof., Co-Dir., Cntr. for Tax Law & Policy",https://www.law.upenn.edu,upenn.edu,University of Pennsylvania Law School,rshuldiner@law.upenn.edu,(215) 898-6536,7.0,165
+451,451,Mark,Sidel,Doyle-Bascom Professor of Law,https://law.wisc.edu,wisc.edu,University of Wisconsin Law School,sidel@wisc.edu,(608) 262-5608,34.0,1774
+452,452,Peter,Siegelman,Phillip I.Blumberg Professor of Law & Assoc. Dean Faculty Development & Research,https://www.law.uconn.edu,uconn.edu,University of Connecticut School of Law,peter.siegelman@law.uconn.edu,(860) 570-5238,52.0,3998
+453,453,John,Siliciano,"Professor of Law; Deputy Provost, Cornell University",https://www.lawschool.cornell.edu,lawschool.cornell.edu,Cornell Law School,jas83@cornell.edu,(607) 255-3062,13.0,6711
+454,454,Charles,Silver,Roy W. and Eugenia C. McDonald Endowed Chair in Civil Procedure/Professor of Government,https://law.utexas.edu,utexas.edu,The University of Texas School of Law,csilver@law.utexas.edu,(512) 232-1337,16.0,9400
+455,455,Daniel,Simmons,Prof.,https://law.ucdavis.edu,ucdavis.edu,"University of California, Davis, School of Law",dlsimmons@ucdavis.edu,(530) 752-2757,31.0,8319
+456,456,Omari,Simmons,Associate Professor,https://law.wfu.edu,wfu.edu,Wake Forest University School of Law,simmonos@wfu.edu,(336) 758-4493,31.0,3779
+457,457,Jonathan,Simon,Adrian A. Kragen Professor of Law,https://www.law.berkeley.edu,berkeley.edu,"University of California, Berkeley School of Law",jsimon@law.berkeley.edu,(510) 643-5169,10.0,9138
+458,458,Robert,Sitkoff,John L. Gray Professor of Law,https://hls.harvard.edu,hls.harvard.edu,Harvard Law School,rsitkoff@law.harvard.edu,(617) 384-8386,3.0,8221
+459,459,Paige,Skiba,Professor of Law,https://law.vanderbilt.edu,vanderbilt.edu,Vanderbilt University Law School,paige.skiba@vanderbilt.edu,(615) 322-1958,18.0,2523
+460,460,David,Skover,Fredric C. Tausend Professor,https://law.seattleu.edu,seattleu.edu,Seattle University School of Law,davidskover@seattleu.edu,(206) 398-4011,122.0,5536
+461,461,Ronald,Slye,Professor of Law,https://law.seattleu.edu,seattleu.edu,Seattle University School of Law,slye@seattleu.edu,(206) 398-4045,122.0,7727
+462,462,Brenda,Smith,Prof.,https://www.wcl.american.edu,wcl.american.edu,"American University, Washington College of Law",bvsmith@wcl.american.edu,(202) 274-4261,77.0,5586
+463,463,Stephen,Smith,Professor of Law,https://law.nd.edu,nd.edu,Notre Dame Law School,ssmith31@nd.edu,(574) 631-3097,21.0,5254
+464,464,Daniel,Solove,John Marshall Harlan Research Professor of Law,https://www.law.gwu.edu,gwu.edu,The George Washington University Law School,dsolove@law.gwu.edu,(202) 994-9514,22.0,7200
+465,465,Lawrence,Solum,Carmack Waterhouse Professor of Law,https://www.law.georgetown.edu,georgetown.edu,Georgetown University Law Center,lsolum@gmail.com,(202) 661-6590,14.0,7518
+466,466,Ilya,Somin,Professor of Law,https://www.law.gmu.edu,gmu.edu,Antonin Scalia Law School at George Mason University,isomin@gmu.edu,(703) 993-8069,45.0,7357
+467,467,Sarah,Song,Professor of Law; Associate Professor of Political Science,https://www.law.berkeley.edu,berkeley.edu,"University of California, Berkeley School of Law",ssong@law.berkeley.edu,(510) 643-5637,10.0,2781
+468,468,Nancy,Soonpaa,Prof. & Dir. Legal Prac. Prog.,www.law.ttu.edu,ttu.edu,Texas Tech University School of Law,nancy.soonpaa@ttu.edu,(806) 834-2604,117.0,3583
+469,469,Mark,Spiegel,Prof.,https://www.bc.edu › bc-web › schools › law,bc.edu,Boston College Law School,spiegelm@bc.edu,(617) 552-4326,27.0,3544
+470,470,Marc,Spindelman,Isadore & Ida Topper Professor,https://moritzlaw.osu.edu,osu.edu,"The Ohio State University, Michael E. Moritz College of Law",spindelman.1@osu.edu,(614) 292-9913,34.0,2277
+471,471,John,Sprankling,Professor of Law,https://www.mcgeorge.edu/,mcgeorge.edu,"University of the Pacific, McGeorge School of Law",jsprankling@pacific.edu,(916) 739-7225,146.0,3281
+472,472,Richard,Squire,Assoc. Prof.,https://www.fordham.edu › info › school_of_law,fordham.edu,Fordham University School of Law,rsquire@law.fordham.edu,(212) 636-7691,39.0,5408
+473,473,Barbara,Stark,Professor of Law and John DeWitt Gregory Research Scholar,https://law.hofstra.edu,hofstra.edu,Maurice A. Deane School of Law at Hofstra University,lawbjs@hofstra.edu,(516) 463-5994,100.0,8027
+474,474,Michalyn,Steele,Professor,https://law.byu.edu,byu.edu,"Brigham Young University, J. Reuben Clark Law School",steelem@law.byu.edu,(801) 422-3239,39.0,7761
+475,475,Carol,Steiker,Henry J. Friendly Professor of Law,https://hls.harvard.edu,hls.harvard.edu,Harvard Law School,steiker@law.harvard.edu,(617) 496-5457,3.0,3089
+476,476,Jordan,Steiker,Judge Robert M. Parker Endowed Chair in Law,https://law.utexas.edu,utexas.edu,The University of Texas School of Law,jsteiker@law.utexas.edu,(512) 232-1346,16.0,378
+477,477,Robert,Stein,Everett Fraser Prof. of Law; Dist. Global Prof.,https://www.law.umn.edu,umn.edu,University of Minnesota Law School,stein@umn.edu,(612) 625-3047,20.0,1460
+478,478,Marc,Steinberg,Rupert & Lillian Radford Prof. and Director Corporate Extern Program,https://www.smu.edu › Law,smu.edu,"Southern Methodist University, Dedman School of Law",msteinbe@smu.edu,(214) 768-4072,52.0,2969
+479,479,Craig,Stern,"Professor; Director, Honors Program",https://www.regent.edu › school-of-law,regent.edu,Regent University School of Law,craiste@regent.edu,(757) 352-4080,146.0,8363
+480,480,John,Stinneford,Professor,https://www.law.ufl.edu,ufl.edu,University of Florida Fredric G. Levin College of Law,jstinneford@law.ufl.edu,(352) 273-0959,31.0,5747
+481,481,Irwin,Stotzky,Professor,https://www.law.miami.edu,miami.edu,University of Miami School of Law,istotzky@law.miami.edu,(305) 284-2549,67.0,2679
+482,482,Robert,Strassfeld,Professor of Law,http://case.edu,case.edu,Case Western Reserve University School of Law,rns3@case.edu,(216) 368-5096,71.0,6151
+483,483,Joseph,Stulberg,Michael E. Moritz Chair in Alternative Dispute Resolution,https://moritzlaw.osu.edu,osu.edu,"The Ohio State University, Michael E. Moritz College of Law",stulberg.2@osu.edu,(614) 292-8638,34.0,6271
+484,484,William,Tabb,Professor & Judge Fred Daugherty Chair and David Ross Boyd Professor,www.law.ou.edu,ou.edu,University of Oklahoma College of Law,mtabb@ou.edu,(405) 325-4820,71.0,6347
+485,485,Shauhin,Talesh,"Professor of Law and Director, Law and Graduate Studies Program",https://www.law.uci.edu,uci.edu,"University of California, Irvine School of Law",stalesh@law.uci.edu,(949) 824-9214,23.0,1233
+486,486,Joseph,Thai,President's Associates Presidential Professor and Professor of Law,www.law.ou.edu,ou.edu,University of Oklahoma College of Law,thai@ou.edu,(405) 325-5269,71.0,6592
+487,487,Steve,Thel,Wormser Prof.,https://www.fordham.edu › info › school_of_law,fordham.edu,Fordham University School of Law,sthel@law.fordham.edu,(212) 636-6852,39.0,5445
+488,488,Kendall,Thomas,"Nash Professor of Law and Director, Center for the Study of Law and Culture",https://www.law.columbia.edu,columbia.edu,Columbia Law School,kthomas@law.columbia.edu,(212) 854-2288,5.0,3385
+489,489,David,Thronson,Alan S. Zekelman Professor of International Human Rights Law,https://www.law.msu.edu,msu.edu,Michigan State University College of Law,david.thronson@law.msu.edu,(517) 432-6916,91.0,3905
+490,490,Emerson,Tiller,J. Landis Martin Professor Law and Business,www.law.northwestern.edu,northwestern.edu,Northwestern University Pritzker School of Law,tiller@law.northwestern.edu,(312) 503-4772,10.0,7296
+491,491,Grace,Tonner,Professor of Lawyering Skills,https://www.law.uci.edu,uci.edu,"University of California, Irvine School of Law",gtonner@law.uci.edu,(949) 824-4037,23.0,2310
+492,492,Avishalom,Tor,Professor of Law,https://law.nd.edu,nd.edu,Notre Dame Law School,Avishalom.Tor.3@nd.edu,(574) 631-2537,21.0,2669
+493,493,Marketa,Trimble,Samuel S. Lionel Professor of Intellectual Property Law,https://law.unlv.edu,unlv.edu,"University of Nevada, Las Vegas, William S. Boyd School of Law",marketa.trimble@unlv.edu,(702) 895-0491,58.0,8886
+494,494,Lisa,Tripp,Ass't Prof.,http://johnmarshall.edu,johnmarshall.edu,Atlanta's John Marshall Law School,ltripp@johnmarshall.edu,(678) 916-2643,146.0,7058
+495,495,Kevin,Tu,Professor of Law,https://www.law.umaryland.edu,umaryland.edu,University of Maryland Francis King Carey School of Law,ktu@law.umaryland.edu,(425) 301-4550,52.0,7177
+496,496,Christian,Turner,Ass't Prof.,www.law.uga.edu,uga.edu,University of Georgia School of Law,cmturner@uga.edu,(706) 542-5140,27.0,8084
+497,497,Aaron,Twerski,Irwin & Jill Cohen Prof.,https://www.brooklaw.edu,brooklaw.edu,Brooklyn Law School,aaron.twerski@brooklaw.edu,(718) 780-0623,71.0,4988
+498,498,Manuel,Utset,William & Catherine VanDercreek Professor and Associate Dean for Academic Affairs,https://www.law.fsu.edu,fsu.edu,Florida State University College of Law,mutset@law.fsu.edu,(850) 644-7274,48.0,9455
+499,499,Stephen,Utz,Roger Sherman Professor of Law,https://www.law.uconn.edu,uconn.edu,University of Connecticut School of Law,stephen.utz@uconn.edu,(860) 570-5235,52.0,4779
+500,500,Rachel,VanLandingham,Professor of Law,https://www.swlaw.edu/,swlaw.edu,Southwestern Law School,rvanlandingham@swlaw.edu,(213) 738-6864,146.0,5483
+501,501,Julian,Velasco,Associate Professor of Law,https://law.nd.edu,nd.edu,Notre Dame Law School,jvelasco@nd.edu,(574) 631-4965,21.0,1967
+502,502,Valorie,Vojdik,Waller Lansden Distinguished Professor of Law,https://law.utk.edu,utk.edu,University of Tennessee College of Law,vvojdik@utk.edu,(865) 974-2331,59.0,8415
+503,503,Frans,von der Dunk,Harvey & Susan Perlman Alumni/Othmer Professor of Space Law,https://law.unl.edu,unl.edu,University of Nebraska College of Law,fvonderdunk2@unl.edu,(402) 472-1240,77.0,948
+504,504,Dov,Waisman,Vice Dean and Professor of Law,https://www.swlaw.edu/,swlaw.edu,Southwestern Law School,dwaisman@swlaw.edu,(213) 738-5733,146.0,3328
+505,505,David,Walker,Professor and Maurice Poch Faculty Research Scholar,www.bu.edu › law,bu.edu,Boston University School of Law,diwalker@bu.edu,(617) 353-3174,23.0,5703
+506,506,Cynthia,Ward,Prof.,https://law.wm.edu,wm.edu,William & Mary Law School,cvward@wm.edu,(757) 221-1476,39.0,1188
+507,507,Kathryn,Watts,Assoc. Prof. & Associate Dean for Research and Faculty Development,https://www.law.uw.edu,uw.edu,University of Washington School of Law,kawatts@u.washington.edu,(206) 543-6299,44.0,4393
+508,508,Louise,Weinberg,William B. Bates Chair for the Administration of Justice,https://law.utexas.edu,utexas.edu,The University of Texas School of Law,lweinberg@utexas.edu,(512) 232-1304,16.0,7881
+509,509,Laura,Weinrib,"Professor of Law, Associate Member, Department of History",https://www.law.uchicago.edu,uchicago.edu,"The University of Chicago, The Law School",weinrib@uchicago.edu,(773) 702-2139,4.0,5285
+510,510,David,Weisbach,"Walter J. Blum Professor of Law and Senior Fellow, the Computation Institute of the University of Chicago Argonne National Laboratory",https://www.law.uchicago.edu,uchicago.edu,"The University of Chicago, The Law School",d-weisbach@uchicago.edu,(773) 702-3342,4.0,8583
+511,511,Richard,Weisberg,Walter Floersheimer Professor of Constitutional Law,https://cardozo.yu.edu,cardozo.yu.edu,Benjamin N. Cardozo School of Law,rhweisbg@yu.edu,(212) 790-0299,52.0,4322
+512,512,Deborah,Weissman,Reef C. Ivey II Distinguished Professor of Law,https://law.unc.edu,unc.edu,University of North Carolina School of Law,weissman@email.unc.edu,(919) 962-5108,34.0,9656
+513,513,Sarah,Welling,"Ashland-Spears Distinguished Research Professor of Law and William L. Matthews, Jr. Professor of Law",https://law.uky.edu,uky.edu,University of Kentucky College of Law,swelling@uky.edu,(859) 257-8326,71.0,1522
+514,514,Bret,Wells,"Professor, Law Foundation Professor",https://www.law.uh.edu,uh.edu,University of Houston Law Center,bwells@central.uh.edu,(713) 743-2502,59.0,9296
+515,515,Keith,Werhan,Ashton Phelps Chair in Const'l Law.,https://law.tulane.edu,tulane.edu,Tulane University Law School,kwerhan@tulane.edu,(504) 862-8796,52.0,6657
+516,516,Jay,Westbrook,Benno C. Schmidt Chair of Business Law,https://law.utexas.edu,utexas.edu,The University of Texas School of Law,jwestbrook@law.utexas.edu,(512) 232-1303,16.0,8781
+517,517,Jay,Wexler,Professor,www.bu.edu › law,bu.edu,Boston University School of Law,jaywex@bu.edu,(617) 353-2789,23.0,2817
+518,518,Michaela,White,Professor of Law,https://law.creighton.edu,creighton.edu,Creighton University School of Law,white@creighton.edu,(402) 280-5515,117.0,9618
+519,519,Ahmed,White,Nicholas Rosenbaum Professor of Law,https://www.colorado.edu › law,colorado.edu,University of Colorado Law School,ahmed.white@colorado.edu,(303) 735-0138,45.0,1131
+520,520,Christina,Whitman,Francis A. Allen Collegiate Prof. of Law & Prof. of Women's Studies.,https://www.law.umich.edu,umich.edu,The University of Michigan Law School,cwhitman@umich.edu,(734) 764-9535,9.0,414
+521,521,Jonathan,Wiener,William R. and Thomas L. Perkins Professor of Law; Professor of Environmental Policy; Professor of Public Policy,https://law.duke.edu,duke.edu,Duke University School of Law,wiener@law.duke.edu,(919) 613-7054,10.0,4608
+522,522,Susan,Williams,"Walter W. Foskett Professor; Dir., Ctr. for Constitutional Democracy",https://www.law.indiana.edu,indiana.edu,Indiana University Maurer School of Law,shwillia@indiana.edu,(812) 855-6319,34.0,612
+523,523,Kelli,Williams,Matthews & Hawkins Professor of Property,https://www.law.fsu.edu,fsu.edu,Florida State University College of Law,kalces@law.fsu.edu,(850) 644-5079,48.0,8740
+524,524,David,Williams,"John S. Hastings Professor; Exec. Dir., Ctr. for Constitutional Democracy",https://www.law.indiana.edu,indiana.edu,Indiana University Maurer School of Law,dacwilli@indiana.edu,(812) 855-6793,34.0,1808
+525,525,Sean,Williams,F. Scott Baldwin Research Professor in Law,https://law.utexas.edu,utexas.edu,The University of Texas School of Law,swilliams@law.utexas.edu,(617) 495-4601,16.0,825
+526,526,Alan,Williams,Professor of Law,https://www.fcsl.edu,fcsl.edu,Florida Coastal School of Law,,(904) 680-7700,146.0,5545
+527,527,Steven,Willis,Professor,https://www.law.ufl.edu,ufl.edu,University of Florida Fredric G. Levin College of Law,willis@law.ufl.edu,(352) 273-0920,31.0,9693
+528,528,Arthur,Wilmarth,Prof.,https://www.law.gwu.edu,gwu.edu,The George Washington University Law School,awilmarth@law.gwu.edu,(202) 994-6386,22.0,808
+529,529,Patricia,Wilson,Professor,https://www.baylor.edu › law,baylor.edu,Baylor University School of Law,Patricia_Wilson@baylor.edu,(254) 710-6591,48.0,1345
+530,530,David,Wirth,Professor,https://www.bc.edu › bc-web › schools › law,bc.edu,Boston College Law School,wirthd@bc.edu,(617) 552-1237,27.0,3689
+531,531,Jarrod,Wong,"Professor of Law, Co-Director, Global Center for Business and Development",https://www.mcgeorge.edu/,mcgeorge.edu,"University of the Pacific, McGeorge School of Law",jwong@pacific.edu,(916) 739-7231,146.0,7833
+532,532,Ian,Wood,Associate Dean of Finance and Strategic Planning,https://gould.usc.edu,gould.usc.edu,University of Southern California Gould School of Law,iwood@law.usc.edu,(213) 740-2608,17.0,4909
+533,533,Jim,Wren,Professor,https://www.baylor.edu › law,baylor.edu,Baylor University School of Law,james_wren@baylor.edu,(254) 710-3691,48.0,6629
+534,534,Richard,Wright,Lawrence A. Jegen III Professor of Law,https://mckinneylaw.iu.edu,iu.edu,Indiana University Robert H. McKinney School of Law,gwright@iupui.edu,(317) 278-4794,108.0,8367
+535,535,Donna,Young,President William McKinley Distinguished Professor of Law and Public Policy,https://www.albanylaw.edu/,albanylaw.edu,Albany Law School,dyoun@albanylaw.edu,(518) 445-2354,115.0,4222
+536,536,Edward,Zelinsky,Morris and Annie Trachman Professor of Law,https://cardozo.yu.edu,cardozo.yu.edu,Benjamin N. Cardozo School of Law,edward.a.zelinsky@gmail.com,(212) 790-0277,52.0,7529
+537,537,Mo,Zhang,James E. Beasley Professor,https://www.law.temple.edu,temple.edu,"Temple University, James E. Beasley School of Law",mozhang@temple.edu,(215) 204-7135,48.0,6871
+538,538,Timothy,Zick,Professor,https://law.wm.edu,wm.edu,William & Mary Law School,tzick@wm.edu,(718) 990-6633,39.0,817
+539,539,Donald,Zillman,Edward S. Godfrey Professor of Law,https://mainelaw.maine.edu,maine.edu,University of Maine School of Law,zillman@maine.edu,(207) 780-8029,126.0,73
+540,540,Adam,Zimmerman,Professor of Law,https://www.lls.edu/,lls.edu,"Loyola Law School, Los Angeles",adam.zimmerman@lls.edu,(718) 990-6624,62.0,9140
+541,541,Stefan,Krieger,,http://hofstra.edu,hofstra.edu,Hofstra University,,,,3264
+542,542,Julian,Ku,,http://hofstra.edu,hofstra.edu,Hofstra University,,,,6164
+543,543,Thomas,Lyon,,https://gould.usc.edu,gould.usc.edu,University of Southern California Gould School of Law,,,,8975
+544,544,Susan,Estrich,,https://gould.usc.edu,gould.usc.edu,University of Southern California Gould School of Law,,,,6689
+545,545,David,Yamada,,https://www.suffolk.edu › law,suffolk.edu,Suffolk University Law School,,,,5735
+546,546,Kathryn,Mercer,,http://case.edu,case.edu,Case Western Reserve University School of Law,,,,4817
+547,547,Justin,Desautels-Stein,,https://www.colorado.edu › law,colorado.edu,University of Colorado Law School,,,,6397
+548,548,Ben,Depoorter,,https://www.uchastings.edu/,uchastings.edu,University of California Hastings,,,,4326
+549,549,Gabriel,Chin,,http://ucdavis.edu,ucdavis.edu,University of California Davis,,,,8434
+550,550,Peter,Spiro,,https://www.law.temple.edu,temple.edu,"Temple University, James E. Beasley School of Law",,,,2769
+551,551,Kirsten,Engel,,http://arizona.edu,arizona.edu,University of Arizona,,,,7175
+552,552,Akilah,Folami,,http://hofstra.edu,hofstra.edu,Hofstra University,,,,9406
+553,553,Allen,Snyder,,https://www.sandiego.edu,sandiego.edu,University of San Diego School of Law,,,,3537
+554,137,Shahar,Dilbary,"James M. Kidd, Sr Professor of Law",https://www.law.ua.edu,ua.edu,University of Alabama School of Law,sdillbary@law.ua.edu,(205) 348-9988,25.0,3313
