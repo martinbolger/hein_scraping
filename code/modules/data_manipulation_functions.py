@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 #I don't think this is used anymore, 
 #but it converted numbers like 1,000 to ints or floats
 #I think I found a better way to do it
@@ -14,22 +16,6 @@ def to_float_or_int(input_list):
                 value = ''
         new_list.append(value)
     return new_list
-
-#This converts a zipped list into a dictionary
-#It skips missing elements. 
-#The function wouldn't be necessary if all the entries were always present
-def create_dataframe_dict(my_list):
-    #, person, school, data_type):
-#     my_dict = {'Person': person, 
-#               'School': school, 
-#               'Type': data_type}
-    my_dict = {}
-    for stat in stats:
-        my_dict[stat] = ''
-        for item in my_list:   
-            if item[0] == stat:
-                my_dict[stat] = item[1]  
-    return my_dict
 
 #Removes commas from all values in a row of a dataframe
 def remove_commas(df1):
