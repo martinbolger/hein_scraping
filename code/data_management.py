@@ -66,8 +66,7 @@ data["Destination School"] = data["Destination School"].apply(lambda x: x.replac
 # SUBSET: Drop columns that we won't be using
 data = data.drop(["Origin US Law Sch", "BAYear", "JDYear", "PhD", "PhDYear", "BeganTeaching", "Gender", "Race", "OrigRank", "HiringRank"], axis = 1)
 
-print(data.head())
-#This line removes white space before or after names in the dataframe of names
+# DATA CLEANING: This line removes white space before or after names in the dataframe of names
 data["FirstName"] = data["FirstName"].apply(lambda x: x.str.strip() if type(x) == "str" else x)
 data["LastName"] = data["LastName"].apply(lambda x: x.str.strip() if type(x) == "str" else x)
 
