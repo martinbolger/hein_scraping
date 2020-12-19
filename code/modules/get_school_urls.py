@@ -21,6 +21,11 @@ selenium_driver_path: path
 
 output_path: path
     This is the path where the data will be output.
+
+Output:
+urls_df: dataframe
+    This is a dataframe with the updated URL data. It is
+    saved as a CSV and returned.
 """
 import time
 import pandas as pd
