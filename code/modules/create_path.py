@@ -18,8 +18,9 @@ def create_path():
     work_path = base_path / "data" / "a_working"
     intr_path = base_path / "data" / "b_intermediate"
     out_path = base_path / "data" / "c_output"
-    return input_path, work_path, intr_path, out_path
+    selenium_driver_path = base_path / "selenium_driver"
+    return input_path, work_path, intr_path, out_path, selenium_driver_path
 
 if __name__ == "__main__":
-    input_path, work_path, intr_path, out_path = create_path()
-    print(input_path)
+    input_path, work_path, intr_path, out_path, selenium_driver_path,  = create_path()
+    print(selenium_driver_path)
