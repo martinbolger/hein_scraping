@@ -66,6 +66,11 @@ data["Destination School"] = data["Destination School"].apply(lambda x: x.replac
 # SUBSET: Drop columns that we won't be using
 data = data.drop(["Origin US Law Sch", "BAYear", "JDYear", "PhD", "PhDYear", "BeganTeaching", "Gender", "Race", "OrigRank", "HiringRank"], axis = 1)
 
+print(data.head())
+#This line removes white space before or after names in the dataframe of names
+data["FirstName"] = data["FirstName"].apply(lambda x: x.str.strip() if type(x) == "str" else x)
+data["LastName"] = data["LastName"].apply(lambda x: x.str.strip() if type(x) == "str" else x)
+
 # DATA CHECK: The lateral column should = 1 or 0 (for whether or
 # not each observation is a lateral). We want to make sure it 
 # doesn't take any other values.
@@ -165,7 +170,7 @@ lateral = lateral.rename(columns = {"Short URL": "Short URL Destination"})
 if lateral["Short URL Destination"].isnull().values.any() == True or lateral["Short URL Origin"].isnull().values.any() == True or control["Short URL Origin"].isnull().values.any() == True:
     print("ERROR: There are missing values for the short url variable on one of the output datasets. Ending.")
     quit()
-    
+
 ## EXPORT: Export the final control and lateral datasets
 control.to_excel(work_path / "control.xlsx")
 lateral.to_excel(work_path / "lateral.xlsx")
