@@ -21,39 +21,12 @@ urls_df: dataframe
 """
 
 from urllib.parse import urlparse
+import tldextract
 
 __author__ = "Martin Bolger"
 __date__ = "December 19th, 2020"
 
 def short_url(url_data, url_var ):
-    url_data["Short URL"] = url_data[url_var].apply(lambda x: urlparse(x).netloc)
+    url_data["URL Var Clean"] = url_data[url_var].apply(lambda x: x.split(" ")[0] if " " in x else x)
+    url_data["Short URL"] = url_data["URL Var Clean"].apply(lambda x: tldextract.extract(x).domain + "." + tldextract.extract(x).suffix)
     return url_data
-    # short_url_list = []
-    # for url in url_data[url_var]:
-    #     if '.edu' in url:
-    #         end = '.edu'
-    #     elif '.ca' in url:
-    #         end = '.ca'
-    #     elif '.ac.uk' in url:
-    #         end = '.ac.uk'
-    #     elif '.hk' in url:
-    #         end = '.hk'
-    #     elif '.ac.il' in url:
-    #         end = '.ac.il'
-    #     elif '.yu' in url:
-    #         end = '.yu'
-    #     if 'https://www.' in url:
-    #         new_url = url.split('https://www.')[1].split(end)[0]
-    #     elif 'http://www.' in url:
-    #         new_url = url.split('http://www.')[1].split(end)[0]
-    #     elif 'https://www1.' in url:
-    #         new_url = url.split('https://www1.')[1].split(end)[0]
-    #     elif 'https://www2.' in url:
-    #         new_url = url.split('https://www2.')[1].split(end)[0]
-    #     elif 'www.' in url:
-    #         new_url = url.split('www.')[1].split(end)[0]
-    #     elif 'https://' in url:
-    #         new_url = url.split('https://')[1].split(end)[0]
-    #     elif 'http://' in url:
-    #         new_url = url.split('http://')[1].split(end)[0]
-    #     short_url_list.append(new_url+end)
