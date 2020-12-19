@@ -30,10 +30,15 @@ __date__ = "December 19th, 2020"
 # Create the paths for the data directories
 input_path, work_path, intr_path, out_path, selenium_driver_path = create_path()
 
-# Import the dataset of professor names
+# -------------------------------------------------------------------------
+## IMPORT: The dataset of professor names and the dataset of university and
+## college websites.
+# -------------------------------------------------------------------------
+
+# Import the professor data
 data = pd.read_excel(input_path / "prof_data_lateral_control.xlsx")
 
-# Import the dataset of university and college websites
+# Import the website data
 # If we have already run the proram, we import the version form working
 # If we have not run the program, we need to use the version from the 
 # input directory
@@ -47,6 +52,19 @@ else:
     else:
         print("ERROR: The dataset of University and College Websites was not found in the input directory. Ending")
         quit()
+
+# -------------------------------------------------------------------------
+## DATA CLEANING professor data: We clean the variables that we need 
+## from the professor data dataset and split the dataset into the 
+## control and lateral groups.
+# -------------------------------------------------------------------------
+
+# DATA CLEANING: Remove commas from school names (e.g., University of Texas, Austin becomes University of Texas Austin)
+data["Origin School"] = data["Origin School"].apply(lambda x: x.replace(',', '') if pd.notnull(x) else x)
+data["Destination School"] = data["Destination School"].apply(lambda x: x.replace(',', '') if pd.notnull(x) else x)
+
+# SUBSET: Drop columns that we won't be using
+data = data.drop(["Origin US Law Sch", "BAYear", "JDYear", "PhD", "PhDYear", "BeganTeaching", "Gender", "Race", "OrigRank", "HiringRank"], axis = 1)
 
 # DATA CHECK: The lateral column should = 1 or 0 (for whether or
 # not each observation is a lateral). We want to make sure it 
@@ -70,6 +88,12 @@ lateral_length = len(lateral.index)
 if full_data_length != control_length + lateral_length:
     print("ERROR: The length of the data subsets does not equal the length of the dataset. Ending.")
     quit()
+
+# -------------------------------------------------------------------------
+## DATA CHECK: We search for all of the school names from the professor
+## data in the school website list. If the school is not in the list,
+## we search for the website and add it.
+# -------------------------------------------------------------------------
 
 # Create a path for the Chrome binary file. This is the executable file that
 # is used to open Selenium.
@@ -99,23 +123,40 @@ website_data = get_school_urls(urls_df = website_data,
 # Create the short URL for each URL on the website data dataframe
 website_data= short_url(url_data = website_data, url_var = "URL")
 
-print(website_data.head())
-print(website_data.tail())
+# Drop any duplicate entries on the dataset
+website_data = website_data.drop_duplicates(subset = "School Name")
+
+# DATA CHECK: Make sure that the data is unique by the school name
+if website_data["School Name"].is_unique == False:
+    print("ERROR: The University and College URL data is not unique by School Name. Ending.")
+    quit()
+
+# Save a copy of the website data
+website_data.to_csv(work_path / 'university_and_college_websites.csv', index=False)
+
+# -------------------------------------------------------------------------
+## MERGE: Now merge the professor data and the website data.
+## This merge is based on the school name.
+# -------------------------------------------------------------------------
+
+## Control data:
+# Merge on origin school in the control data
+control = pd.merge(website_data[["School Name", "Short URL"]], control, how = "right", left_on = "School Name", right_on = "Origin School")
+
+# RENAME: Rename the short URL column
+control = control.rename(columns = {"Short URL": "Short URL Origin"})
+
+## Lateral data:
+# Merge on origin school in the lateral data
+lateral = pd.merge(website_data[["School Name", "Short URL"]], lateral, how = "right", left_on = "School Name", right_on = "Origin School")
+# RENAME: Rename the short URL column
+lateral = lateral.rename(columns = {"Short URL": "Short URL Origin"})
+# Merge on destination school in the lateral data
+lateral = pd.merge(website_data[["School Name", "Short URL"]], lateral, how = "right", left_on = "School Name", right_on = "Destination School")
+# RENAME: Rename the short URL column
+lateral = lateral.rename(columns = {"Short URL": "Short URL Destination"})
 
 
-#This line inserts the urls into the full dataframe
-# new_data.insert(4, "School URL", url_list) 
-# # The function returns the short version of the URLs
-# url_list = short_url(new_data['School URL'])
-# # This line inserts the short version of the URLs into the dataframe
-# new_data.insert(5, "School URL short", url_list)
-# #This section repeats the same steps for the second set of schools
-# print('First half complete')
-# url_list = get_school_urls(urls, new_data['New School'])
-# new_data.insert(7, "New School URL", url_list) 
-# url_list = short_url(new_data['New School URL'])
-# new_data.insert(8, "New School URL short", url_list) 
-# new_data.head()
-
+## EXPORT: Export the final control and lateral datasets
 control.to_excel(work_path / "control.xlsx")
 lateral.to_excel(work_path / "lateral.xlsx")
