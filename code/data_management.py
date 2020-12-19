@@ -96,6 +96,13 @@ website_data = get_school_urls(urls_df = website_data,
                 selenium_driver_path = selenium_driver_full_path,
                 output_path = work_path)
 
+# Create the short URL for each URL on the website data dataframe
+website_data= short_url(url_data = website_data, url_var = "URL")
+
+print(website_data.head())
+print(website_data.tail())
+
+
 #This line inserts the urls into the full dataframe
 # new_data.insert(4, "School URL", url_list) 
 # # The function returns the short version of the URLs
