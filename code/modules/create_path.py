@@ -14,10 +14,10 @@ __date__ = "December 19th, 2020"
 
 def create_path():
     base_path = pathlib.Path(__file__).parents[2]
-    input_path = base_path / "_input"
-    work_path = base_path / "a_working"
-    intr_path = base_path / "b_intermediate"
-    out_path = base_path / "c_output"
+    input_path = base_path / "data" / "_input"
+    work_path = base_path / "data" / "a_working"
+    intr_path = base_path / "data" / "b_intermediate"
+    out_path = base_path / "data" / "c_output"
     return input_path, work_path, intr_path, out_path
 
 if __name__ == "__main__":
