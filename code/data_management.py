@@ -142,17 +142,22 @@ website_data.to_csv(work_path / 'university_and_college_websites.csv', index=Fal
 ## Control data:
 # Merge on origin school in the control data
 control = pd.merge(website_data[["School Name", "Short URL"]], control, how = "right", left_on = "School Name", right_on = "Origin School")
-
+# Drop the variable School Name
+control = control.drop(["School Name"], axis = 1)
 # RENAME: Rename the short URL column
 control = control.rename(columns = {"Short URL": "Short URL Origin"})
 
 ## Lateral data:
 # Merge on origin school in the lateral data
 lateral = pd.merge(website_data[["School Name", "Short URL"]], lateral, how = "right", left_on = "School Name", right_on = "Origin School")
+# Drop the variable School Name
+lateral = lateral.drop(["School Name"], axis = 1)
 # RENAME: Rename the short URL column
 lateral = lateral.rename(columns = {"Short URL": "Short URL Origin"})
 # Merge on destination school in the lateral data
 lateral = pd.merge(website_data[["School Name", "Short URL"]], lateral, how = "right", left_on = "School Name", right_on = "Destination School")
+# Drop the variable School Name
+lateral = lateral.drop(["School Name"], axis = 1)
 # RENAME: Rename the short URL column
 lateral = lateral.rename(columns = {"Short URL": "Short URL Destination"})
 
