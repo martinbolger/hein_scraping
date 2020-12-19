@@ -161,7 +161,11 @@ lateral = lateral.drop(["School Name"], axis = 1)
 # RENAME: Rename the short URL column
 lateral = lateral.rename(columns = {"Short URL": "Short URL Destination"})
 
-
+#DATA CHECK: Make sure that there are no missing values for the short URL variables
+if lateral["Short URL Destination"].isnull().values.any() == True or lateral["Short URL Origin"].isnull().values.any() == True or control["Short URL Origin"].isnull().values.any() == True:
+    print("ERROR: There are missing values for the short url variable on one of the output datasets. Ending.")
+    quit()
+    
 ## EXPORT: Export the final control and lateral datasets
 control.to_excel(work_path / "control.xlsx")
 lateral.to_excel(work_path / "lateral.xlsx")
