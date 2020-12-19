@@ -1,7 +1,8 @@
 #!/usr/bin/env python
 
 from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
+from selenium.webdriver import ChromeOptions
+from selenium.webdriver.common.keys import Keys
 import pandas as pd
 import bs4 as bs
 import os
@@ -13,6 +14,14 @@ import nltk
 import requests
 import random
 import math
+
+# This function creates a remote control browser
+def create_browser(browser_binary_path, selenium_driver_path):
+    options = ChromeOptions()
+    options.binary_location = str(browser_binary_path)
+    # selenium_driver_path_string = str(selenium_driver_path)
+    driver = webdriver.Chrome(executable_path= str(selenium_driver_path), options = options)
+    return driver
 
 #This function searches for a professor's name on Hein. It goes through the papers that show up and checks for authors
 #with the same first and last name. Once a match is found, the name is searched on Bing using the function check_google

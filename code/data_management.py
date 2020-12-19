@@ -8,17 +8,7 @@ Hein scraping data:
 - School URLs are merged onto the datasets
 """
 
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
 import pandas as pd
-import bs4 as bs
-import re
-import time
-from selenium.webdriver.common.keys import Keys
-import nltk
-import requests
-import random
-import math
 import pathlib
 from modules.create_path import create_path
 from modules.get_school_urls import get_school_urls

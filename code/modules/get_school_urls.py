@@ -30,9 +30,7 @@ urls_df: dataframe
 import time
 import pandas as pd
 from pathlib import Path
-from selenium import webdriver
-from selenium.webdriver import ChromeOptions
-from selenium.webdriver.common.keys import Keys
+from modules.hein_scraping_functions import create_browser
 
 __author__ = "Martin Bolger"
 __date__ = "December 19th, 2020"
@@ -57,11 +55,7 @@ def get_school_urls(urls_df, school_list, browser_binary_path, selenium_driver_p
         #In the except section, the school name is serached on Google. The Selenium code find the URL on the page and saves it 
         #as the university url
         except:
-            options = ChromeOptions()
-            options.binary_location = str(browser_binary_path)
-            # selenium_driver_path_string = str(selenium_driver_path)
-            g_driver = webdriver.Chrome(executable_path= str(selenium_driver_path), options = options)
-            #Navigates the g_driver to Google.com
+            g_driver = create_browser(browser_binary_path, selenium_driver_path)
             g_driver.get("http://google.com")
             #This section is webpage manipulation. The first line finds the search box, the second line enters the school name
             #the third line presses enter
