@@ -1,17 +1,32 @@
+#!/usr/bin/env python
+
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+import pandas as pd
+import bs4 as bs
+import os
+import numpy as np
+import re
+import time
+from selenium.webdriver.common.keys import Keys
+import nltk
+import requests
+import random
+import math
+
 #This function searches for a professor's name on Hein. It goes through the papers that show up and checks for authors
 #with the same first and last name. Once a match is found, the name is searched on Bing using the function check_google
 #If the correct school name shows up on the Bing search, the name is added to the alternative name list (alt_fm_names.
 #Otherwise, the name is added to the error list (err_fm_names)
-def search_names(mid_first_name, last_name, school_url):
+def search_names(mid_first_name, last_name, school_url, driver, g_driver):
     link = 'https://heinonline-org.proxy01.its.virginia.edu/HOL/LuceneSearch?typea=title&termsa=&operator=AND&typeb=creator&termsb=' + last_name + '+' + mid_first_name + '&operatorb=AND&typec=text&termsc=&operatorc=AND&typed=title&termsd=&operatord=AND&typee=title&termse=&operatore=AND&typef=title&termsf=&yearlo=&yearhi=&tabfrom=&searchtype=field&collection=all&submit=Go'
     driver.get(link)
     try:
-        webpage_wait('//*[@id="heinlogo"]/a/img')
+        webpage_wait('//*[@id="heinlogo"]/a/img', driver)
         driver.find_element_by_xpath('//*[@id="search_modify"]/form/div/div/div/div/a[4]/i').click()
     except:
         driver.find_element_by_xpath('//*[@id="search_modify"]/div')
     element = driver.find_elements_by_tag_name('a')
-    full_name = mid_first_name + ' ' +  last_name
     alt_fm_names = []
     err_fm_names = []
     if ' ' in mid_first_name.lower():
@@ -29,7 +44,7 @@ def search_names(mid_first_name, last_name, school_url):
                     if first_name.lower() in new_first_mid and last_name.lower() == new_last:
                         new_fm = link.text.split(', ')[1]
                         if not new_fm in alt_fm_names and not new_fm in err_fm_names:
-                            faculty = check_google(new_fm, last_name, school_url)
+                            faculty = check_google(new_fm, last_name, school_url, g_driver)
                             if faculty: 
                                 alt_fm_names.append(new_fm)
                             else: 
@@ -49,7 +64,7 @@ def search_names(mid_first_name, last_name, school_url):
     return alt_fm_names, err_fm_names
 
 #This function checks if any of the names in the similar names list of the Hein page are the relevant author
-def similar_names(alt_name_list, err_fm_names, mid_first_name, last_name):
+def similar_names(alt_name_list, err_fm_names, mid_first_name, last_name, school_url, driver, g_driver):
     try:
         driver.find_element_by_xpath('//*[@id="page_content"]/div[2]/div/b/a').click()
         element = driver.find_element_by_xpath('//*[@id="simlist"]/ul[1]')
@@ -75,7 +90,7 @@ def similar_names(alt_name_list, err_fm_names, mid_first_name, last_name):
                         if new_mi == middle_name[0].lower():
                             alt_name_list.append(new_fm)
                             continue
-                    faculty = check_google(new_fm, last_name, school_url)
+                    faculty = check_google(new_fm, last_name, school_url, g_driver)
                     if faculty: 
                         alt_name_list.append(new_fm)
                     else: 
@@ -88,7 +103,7 @@ def similar_names(alt_name_list, err_fm_names, mid_first_name, last_name):
 #When there is no middle initial or middle name, the school url is included in the search. Otherwise, only the name is 
 #searched. I found that this method works well because when there is no middle name, there is sometimes a more famous
 #person with the same name
-def check_google(mid_first_name, last_name, school_url):
+def check_google(mid_first_name, last_name, school_url, g_driver):
     faculty = False
     for url in school_url:
         if faculty == True:
@@ -119,7 +134,7 @@ def mod_names(fm_names, err_fm_names, name_mod):
         print('passed')
         if [x for x in list(name_mod.query('@mid_first_name == first_mid_name and @last_name == last_name')['fm_names']) if str(x) != 'nan']:
             print('passed 1')
-            for name in name_mod.query('@mid_first_name == first_mid_name and @last_name == last_name')['fm_names'].values[0].split(',')
+            for name in name_mod.query('@mid_first_name == first_mid_name and @last_name == last_name')['fm_names'].values[0].split(','):
                 if name not in fm_names:
                     fm_names = fm_names + [name]
                 print(fm_names)
@@ -133,7 +148,7 @@ def mod_names(fm_names, err_fm_names, name_mod):
     return fm_names
 
 #This function gets all the paper data and appends it to the list data_stream
-def get_paper_data(last_name, prof_id, title_index, scroll_num):
+def get_paper_data(last_name, prof_id, title_index, scroll_num, driver):
     data_stream = []
     data_stream = dict.fromkeys(['Title','Author', 'id', 'Journal', 'BBCite', 'Topics'], 'na')
     data_stream['id'] = prof_id
@@ -158,7 +173,7 @@ def get_paper_data(last_name, prof_id, title_index, scroll_num):
     return data_stream
 
 #This function waits for the webpage to load by waiting until a webpage element appears
-def webpage_wait(xpath):
+def webpage_wait(xpath, driver):
     element = []
     while not element:
         try:
