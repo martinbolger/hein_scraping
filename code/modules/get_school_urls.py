@@ -10,7 +10,17 @@ urls_df: dataframe
 
 school_list: list
     This is a list of the schools that we are looking
-    for in the dataframe.
+    for in the main dataset.
+
+browser_binary_path: path
+    This is the path to the browser executable that Selenium
+    uses to open a remote controlled browser.
+
+selenium_driver_path: path
+    This is the path to the Selenium driver for the browser.
+
+output_path: path
+    This is the path where the data will be output.
 """
 import time
 import pandas as pd
