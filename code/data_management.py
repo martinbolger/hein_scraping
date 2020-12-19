@@ -46,4 +46,15 @@ if not (1 in data_types and 0 in data_types and len(data_types) == 2):
 control = data[data["Lateral"] == 0]
 lateral = data[data["Lateral"] == 1]
 
+# DATA CHECK: Make sure that we did not drop any observations when 
+# splitting into two datasets
+full_data_length = len(data.index)
+control_length = len(control.index)
+lateral_length = len(lateral.index)
 
+if full_data_length != control_length + lateral_length:
+    print("ERROR: The length of the data subsets does not equal the length of the dataset. Ending.")
+    quit()
+
+control.to_excel(work_path / "control.xlsx")
+lateral.to_excel(work_path / "lateral.xlsx")
