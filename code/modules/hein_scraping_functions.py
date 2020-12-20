@@ -132,7 +132,6 @@ def check_google(mid_first_name, last_name, school_url, g_driver):
         webpage_wait('//*[@id="sb_privacy"]', g_driver)
         elems = g_driver.find_elements_by_xpath("//a[@href]")
 
-        print("Updated")
         print("URL: {}".format(url))
         for elem in elems:
            if url in elem.get_attribute("href"):
