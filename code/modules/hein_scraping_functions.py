@@ -128,11 +128,15 @@ def check_google(mid_first_name, last_name, school_url, g_driver):
         else: 
             search.send_keys(mid_first_name + ' ' + last_name + ' ')
         search.send_keys(Keys.RETURN)
+        # Wait until the page has loaded to scrape the links
+        webpage_wait('//*[@id="sb_privacy"]', g_driver)
         elems = g_driver.find_elements_by_xpath("//a[@href]")
 
+        print("Updated")
+        print("URL: {}".format(url))
         for elem in elems:
-            if url in elem.text:
-                print(url + ' in: ' + elem.text)
+           if url in elem.get_attribute("href"):
+                print(url + ' in: ' + elem.get_attribute("href"))
                 faculty = True
                 break
 

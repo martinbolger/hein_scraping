@@ -123,31 +123,31 @@ for i in range(len(data)):
 df_alt_names.to_excel(work_path / "name_mod_test.xlsx")
 
     #This function manually changes names using the name_mod dataframe
-    # fm_names = mod_names(fm_names, err_fm_names, name_mod)
+    fm_names = mod_names(fm_names, err_fm_names, name_mod)
 
-    #If there were no matching names, the name is added to the skipped names list and the loop moves onto the next name
-    # if not fm_names:
-    #     print('Name ' + full_name + ' was not found')
-    #     skip_df = skip_df.append(pd.DataFrame([[full_name, school, new_school, title]], columns = ['Full Name', 'School', 'New School', 'Title']), sort=False)
+    # If there were no matching names, the name is added to the skipped names list and the loop moves onto the next name
+    if not fm_names:
+        print('Name ' + full_name + ' was not found')
+        skip_df = skip_df.append(pd.DataFrame([[full_name, school, new_school, title]], columns = ['Full Name', 'School', 'New School', 'Title']), sort=False)
         
-    # #This section loops through the list of alternative names and goes directly to their pages on Hein
-    # for fm_name in fm_names:
-    #     #Link to Heil page
-    #     link = 'https://heinonline-org.proxy01.its.virginia.edu/HOL/AuthorProfile?action=edit&search_name=' + last_name +  '%2C ' + fm_name + '&collection=journals'
-    #     #Direct the webdriver to the page
-    #     driver.get(link)
-    #     #This function waits for the webpage to load
-    #     webpage_wait('//*[@id="page_content"]/div[1]/div/div[1]/div[1]')
-    #     #This gets the page HTML
-    #     soup=bs.BeautifulSoup(driver.page_source, 'lxml')
-    #     #This find the stat table at the top of the page
-    #     table_rows = soup.findAll('td', {'style': 'text-align:right;'})
-    #     #This gives the full name
-    #     full_name = fm_name + ' ' +  last_name
-    #     #This function checks the similar names list on the Hein page to append additional names
-    #     fm_names, err_fm_names = similar_names(fm_names, err_fm_names, fm_name, last_name)
-    #     #This function checks the name_mod CSV again
-    #     fm_names = mod_names(fm_names, err_fm_names, name_mod)
+    #This section loops through the list of alternative names and goes directly to their pages on Hein
+    for fm_name in fm_names:
+        #Link to Hein page
+        link = 'https://heinonline-org.proxy01.its.virginia.edu/HOL/AuthorProfile?action=edit&search_name=' + last_name +  '%2C ' + fm_name + '&collection=journals'
+        #Direct the webdriver to the page
+        driver.get(link)
+        #This function waits for the webpage to load
+        webpage_wait('//*[@id="page_content"]/div[1]/div/div[1]/div[1]')
+        #This gets the page HTML
+        soup=bs.BeautifulSoup(driver.page_source, 'lxml')
+        #This find the stat table at the top of the page
+        table_rows = soup.findAll('td', {'style': 'text-align:right;'})
+        #This gives the full name
+        full_name = fm_name + ' ' +  last_name
+        #This function checks the similar names list on the Hein page to append additional names
+        fm_names, err_fm_names = similar_names(fm_names, err_fm_names, fm_name, last_name)
+        #This function checks the name_mod CSV again
+        fm_names = mod_names(fm_names, err_fm_names, name_mod)
         
         
 #         cur_page = driver.find_element_by_xpath('//*[@id="page_content"]/div[1]/div/div[1]/div[1]').text
