@@ -1,3 +1,4 @@
-code/modules/__pycache__/short_url.cpython-38.pyc
-code/modules/__pycache__/get_school_urls.cpython-38.pyc
-code/modules/__pycache__/create_path.cpython-38.pyc
+*.xlsx
+*.csv
+*.pyc
+*.log
