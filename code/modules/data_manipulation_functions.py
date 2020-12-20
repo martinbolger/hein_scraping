@@ -1,22 +1,5 @@
 #!/usr/bin/env python
 
-#I don't think this is used anymore, 
-#but it converted numbers like 1,000 to ints or floats
-#I think I found a better way to do it
-def to_float_or_int(input_list):
-    new_list = []
-    for x in input_list:
-        x = x.replace(',','')
-        try:
-            value = int(x)
-        except ValueError:
-            try:
-                value = float(x)
-            except:
-                value = ''
-        new_list.append(value)
-    return new_list
-
 #Removes commas from all values in a row of a dataframe
 def remove_commas(df1):
     for col in df1.columns:
@@ -33,12 +16,8 @@ def check_files(fm_name, last_name, current_files):
             break
     return done
 
-#This function checks to see if a dataframe for a specific stat and school already exists
-#This allows the program to pick up where it left off if it stops
-def check_df(current_stats, school_name):
-    file = ''
-    for cur_stat in current_stats:
-        if school_name in cur_stat.lower():
-            file = cur_stat
-            break
-    return file
+def list_to_comma_separated_string(list_of_strings):
+    list_str = ', '.join(list_of_strings)
+    list_str = list_str.replace('\'', '')
+    list_str.replace('\"', '')
+    return list_str
