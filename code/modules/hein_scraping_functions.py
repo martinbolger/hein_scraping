@@ -15,6 +15,8 @@ import requests
 import random
 import math
 
+from modules.data_manipulation_functions import list_to_comma_separated_string
+
 # This function creates a remote control browser
 def create_browser(browser_binary_path, selenium_driver_path):
     options = ChromeOptions()
@@ -70,7 +72,10 @@ def search_names(mid_first_name, last_name, school_url, driver, g_driver):
                 element = []
         else: 
             element = []
-    return alt_fm_names, err_fm_names
+    # Convert the output to a string format
+    alt_fm_names_str  = list_to_comma_separated_string(alt_fm_names)
+    err_fm_names_str  = list_to_comma_separated_string(err_fm_names)
+    return alt_fm_names_str, err_fm_names_str
 
 #This function checks if any of the names in the similar names list of the Hein page are the relevant author
 def similar_names(alt_name_list, err_fm_names, mid_first_name, last_name, school_url, driver, g_driver):
