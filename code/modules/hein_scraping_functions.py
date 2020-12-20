@@ -15,7 +15,7 @@ import requests
 import random
 import math
 
-from modules.data_manipulation_functions import list_to_comma_separated_string
+from data_manipulation_functions import list_to_comma_separated_string
 
 # This function creates a remote control browser
 def create_browser(browser_binary_path, selenium_driver_path):
