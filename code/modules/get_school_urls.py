@@ -30,6 +30,8 @@ urls_df: dataframe
 import time
 import pandas as pd
 from pathlib import Path
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
 from modules.hein_scraping_functions import create_browser
 
 __author__ = "Martin Bolger"

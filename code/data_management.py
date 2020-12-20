@@ -160,6 +160,10 @@ if lateral["Short URL Destination"].isnull().values.any() == True or lateral["Sh
     print("ERROR: There are missing values for the short url variable on one of the output datasets. Ending.")
     quit()
 
+# Remove an unnamed columns
+control.drop(control.columns[control.columns.str.contains('unnamed',case = False)],axis = 1, inplace = True)
+lateral.drop(lateral.columns[lateral.columns.str.contains('unnamed',case = False)],axis = 1, inplace = True)
+
 ## EXPORT: Export the final control and lateral datasets
 control.to_excel(work_path / "control.xlsx")
 lateral.to_excel(work_path / "lateral.xlsx")
