@@ -52,38 +52,13 @@ alt_name_mod_name.to_excel(work_path / "alt_name_mod_name_full_vars.xlsx")
 # DROP: Drop the duplicate columns from the alternate name and name mod dataframes.
 # The err_fm_names column is also dropped because it is not used. This column can 
 # be used to see which names we did not find on Hein in the above dataset.
-alt_name_mod_name = alt_name_mod_name.drop(["fm_names_orig", "err_fm_names_orig", "diff_last_name_orig", "fm_names_mod", "err_fm_names_mod", "diff_last_name_mod"], axis = 1)
+alt_name_mod_name = alt_name_mod_name.drop(["fm_names_orig", "err_fm_names_orig", "diff_last_name_orig", "fm_names_mod", "err_fm_names_mod", "diff_last_name_mod", "mid_first_name_mod", "last_name_mod", "diff_last_name", "mid_first_name_orig", "last_name_orig"], axis = 1)
+
+# Drop unnamed columns
+alt_name_mod_name.drop(alt_name_mod_name.columns[alt_name_mod_name.columns.str.contains('unnamed',case = False)],axis = 1, inplace = True)
+
+# SORT: Sort the output data by ID
+alt_name_mod_name.sort_values(["ID", "LastName"], inplace = True)
 
 # Output to Excel
 alt_name_mod_name.to_excel(intr_path / "alt_name_mod_name.xlsx")
-
-
-
-# # Drop unnamed columns
-# alt_name_name_mod_merge.drop(alt_name_name_mod_merge.columns[alt_name_name_mod_merge.columns.str.contains('unnamed',case = False)],axis = 1, inplace = True)
-
-
-
-# # Remove duplicates
-# alt_name_name_mod_merge_dedup = alt_name_name_mod_merge.drop_duplicates(subset = "ID")
-
-# # Output to Excel
-# alt_name_name_mod_merge_dedup.to_excel(intr_path / "alt_names.xlsx")
-
-# # Only complete these steps if we have data to add
-# if alt_names_data:
-#     # Append all of the data to the ouput dataset and output to Excel
-#     df_alt_names = df_alt_names.append(alt_names_data)
-
-#     # MERGE: Merge on the other variables from the lateral data
-#     alt_name_full = pd.merge(df_alt_names, lateral, how = "left", left_on = "ID", right_on = "ID")
-
-# else:
-#     alt_name_full = df_alt_names_final
-
-# # Output to Excel
-# alt_name_full.to_excel(intr_path / "alt_names_full.xlsx")
-
-
-# names_test = remove_err_names("", "")
-# names_test
