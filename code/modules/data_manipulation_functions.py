@@ -39,3 +39,18 @@ def concat_function(x, y):
         return y
     else:
         return x
+
+# This function removes substrings from one list of 
+# comma separated strings from another list. It is used
+# to remove error names from the alt names lists.
+def remove_err_names(names, err_names):
+    if names:
+        names_list = names.split(", ")
+    else:
+        names_list = []
+    if err_names:
+        err_names_list = err_names.split(", ")
+    else:
+        err_names_list = []
+    names_list = [x for x in names_list if x not in err_names_list]
+    return list_to_comma_separated_string(names_list)
