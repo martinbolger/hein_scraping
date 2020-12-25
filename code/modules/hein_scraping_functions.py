@@ -124,7 +124,7 @@ def check_google(mid_first_name, last_name, school_url, g_driver):
         g_driver.get("http://bing.com")
         search = g_driver.find_element_by_xpath('//*[@id="sb_form_q"]')
         if not ' ' in mid_first_name:
-            search.send_keys(mid_first_name + ' ' + last_name + ' ' + url)
+            search.send_keys(mid_first_name + ' ' + last_name + ' ' + url.split(".")[0])
         else: 
             search.send_keys(mid_first_name + ' ' + last_name + ' ')
         search.send_keys(Keys.RETURN)
