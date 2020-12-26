@@ -73,16 +73,11 @@ df_j.insert(3, 'Issue Year', [re.sub("[^0-9]", "", x.split('(')[1].split(')')[0]
 df_j.insert(4, 'First Page', [x.split('-')[0] if '-' in x else '' for x in df_j['Pages']])
 df_j.insert(5, 'Last Page', [x.split('-')[1] if '-' in x else '' for x in df_j['Pages']])
 
-
+# Drop the jounral data ID variable before concatenating
 df_j.drop(["ID"], axis = 1, inplace = True)
 
-print(df_j.head())
 # MERGE: Merge the journal data onto the stacked data
 stacked_df = pd.concat([df.reset_index(drop = True), df_j.reset_index(drop = True)], axis = 1)
 
-
-
-# df_j.to_excel(out_path / "_journal_data.xlsx")
+# Output the stacked paper data
 stacked_df.to_excel(out_path / "_stacked_paper_data.xlsx")
-
-# stacked_output.to_excel(out_path / '_stacked_output.xlsx', index=False)
