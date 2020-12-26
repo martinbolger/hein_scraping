@@ -165,5 +165,5 @@ control.drop(control.columns[control.columns.str.contains('unnamed',case = False
 lateral.drop(lateral.columns[lateral.columns.str.contains('unnamed',case = False)],axis = 1, inplace = True)
 
 ## EXPORT: Export the final control and lateral datasets
-control.to_excel(work_path / "control.xlsx")
-lateral.to_excel(work_path / "lateral.xlsx")
+control.to_excel(work_path / "control.xlsx", index = False)
+lateral.to_excel(work_path / "lateral.xlsx", index = False)
