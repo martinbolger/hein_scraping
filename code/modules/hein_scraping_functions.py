@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-
 from selenium import webdriver
 from selenium.webdriver import ChromeOptions
 from selenium.webdriver.common.keys import Keys
