@@ -31,7 +31,6 @@ alt_name_full = pd.read_excel(intr_path / "alt_names.xlsx")
 
 name_mod = name_mod_lateral
 
-
 # MERGE: Merge on the name mod dataset
 alt_name_mod_name = pd.merge(alt_name_full, name_mod[["ID", "fm_names", "err_fm_names"]], how = "left", left_on = ["ID"], right_on = ["ID"], suffixes=('_orig', '_mod'))
 
@@ -60,4 +59,4 @@ alt_name_mod_name.drop(alt_name_mod_name.columns[alt_name_mod_name.columns.str.c
 alt_name_mod_name.sort_values(["ID", "LastName"], inplace = True)
 
 # Output to Excel
-alt_name_mod_name.to_excel(intr_path / "hein_scraping_input_data.xlsx")
+alt_name_mod_name.to_excel(intr_path / "hein_scraping_input_data.xlsx", index = False)
