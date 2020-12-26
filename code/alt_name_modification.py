@@ -33,12 +33,11 @@ name_mod = name_mod_lateral
 
 
 # MERGE: Merge on the name mod dataset
-alt_name_mod_name = pd.merge(alt_name_full, name_mod, how = "left", left_on = ["ID"], right_on = ["ID"], suffixes=('_orig', '_mod'))
+alt_name_mod_name = pd.merge(alt_name_full, name_mod[["ID", "fm_names", "err_fm_names"]], how = "left", left_on = ["ID"], right_on = ["ID"], suffixes=('_orig', '_mod'))
 
 # Concatenate the values from the alternate name and name mod dataframes
 alt_name_mod_name["fm_names"] = alt_name_mod_name.apply(lambda x: concat_function(x["fm_names_orig"], x["fm_names_mod"]), axis = 1) 
 # alt_name_mod_name["err_fm_names"] = alt_name_mod_name.apply(lambda x: concat_function(x["err_fm_names_orig"], x["err_fm_names_mod"]), axis = 1)
-alt_name_mod_name["diff_last_name"] = alt_name_mod_name.apply(lambda x: concat_function(x["diff_last_name_orig"], x["diff_last_name_mod"]), axis = 1)
 
 # Replace nan values with a blank string so that we can run the function remove_err_names
 alt_name_mod_name["fm_names"].fillna('', inplace=True)
@@ -52,7 +51,7 @@ alt_name_mod_name.to_excel(work_path / "alt_name_mod_name_full_vars.xlsx")
 # DROP: Drop the duplicate columns from the alternate name and name mod dataframes.
 # The err_fm_names column is also dropped because it is not used. This column can 
 # be used to see which names we did not find on Hein in the above dataset.
-alt_name_mod_name = alt_name_mod_name.drop(["fm_names_orig", "err_fm_names_orig", "diff_last_name_orig", "fm_names_mod", "err_fm_names_mod", "diff_last_name_mod", "mid_first_name_mod", "last_name_mod", "diff_last_name", "mid_first_name_orig", "last_name_orig"], axis = 1)
+alt_name_mod_name = alt_name_mod_name.drop(["fm_names_orig", "err_fm_names_orig", "fm_names_mod", "err_fm_names_mod"], axis = 1)
 
 # Drop unnamed columns
 alt_name_mod_name.drop(alt_name_mod_name.columns[alt_name_mod_name.columns.str.contains('unnamed',case = False)],axis = 1, inplace = True)
@@ -61,4 +60,4 @@ alt_name_mod_name.drop(alt_name_mod_name.columns[alt_name_mod_name.columns.str.c
 alt_name_mod_name.sort_values(["ID", "LastName"], inplace = True)
 
 # Output to Excel
-alt_name_mod_name.to_excel(intr_path / "alt_name_mod_name.xlsx")
+alt_name_mod_name.to_excel(intr_path / "hein_scraping_input_data.xlsx")
