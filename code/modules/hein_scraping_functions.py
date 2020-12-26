@@ -180,7 +180,7 @@ def get_paper_data(last_name, prof_id, title_index, scroll_num, driver):
                 data_stream['Topics'] = a.split('Topics: ')[1]
             elif 'Vol.' in a:
                 data_stream['Journal'] = a
-            elif last_name in a:
+            elif last_name + "," in a:
                 data_stream['Author'] = a
             else:
                 data_stream['BBCite'] = a
