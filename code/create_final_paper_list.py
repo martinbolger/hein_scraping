@@ -37,6 +37,29 @@ df = stacked_output
 # SORT: Sort the dataset by ID
 stacked_output.sort_values(by = ["ID"], inplace = True)
 
+# Drop rows where the author name is "na". These come from
+# Papers that are on an author's page that do not contain 
+# the author's last name. If observations that are not
+# duplciates are in this category, you should look to see
+# if the author's last name changed.
+
+stacked_output["dup_title"] = stacked_output["Title"].duplicated(keep=False)
+
+stacked_output["na_author"] = stacked_output["Author(s)"].apply(lambda x: True if x == "na" else False)
+
+# Confirm that every time the author is "na", the observation is a duplicate.
+if not stacked_output[(stacked_output["na_author"] == True) & (stacked_output["dup_title"] == False)].empty:
+    print("ERROR: There are observations the no author that are not duplicates. Please check for authors with multiple last names. Ending.")
+    quit()
+
+# Now that we know that all observations with a missing author name are duplicates, we can remove them.
+stacked_output = stacked_output[(stacked_output["na_author"] == False) | (stacked_output["dup_title"] == False)]
+
+# Drop na flag
+stacked_output = stacked_output.drop(["na_author"], axis = 1)
+
+df = stacked_output
+
 # Extract paper type
 df.insert(1, "Paper Type", [x.split('[')[-1].split(']')[0] if '[' in x else '' for x in df['Title']])
 
