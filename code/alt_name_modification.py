@@ -56,5 +56,8 @@ alt_name_mod_name.drop(alt_name_mod_name.columns[alt_name_mod_name.columns.str.c
 # SORT: Sort the output data by ID
 alt_name_mod_name.sort_values(["ID", "LastName"], inplace = True)
 
+# Add an index for the number of duplicates for each name
+alt_name_mod_name["ID_counts"] = alt_name_mod_name.groupby(["ID"]).cumcount()+1
+
 # Output to Excel
 alt_name_mod_name.to_excel(intr_path / "hein_scraping_input_data.xlsx", index = False)
