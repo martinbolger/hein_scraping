@@ -47,13 +47,24 @@ stacked_output["dup_title"] = stacked_output["Title"].duplicated(keep=False)
 
 stacked_output["na_author"] = stacked_output["Author(s)"].apply(lambda x: True if x == "na" else False)
 
+# stacked_output.to_excel(out_path / "_stacked_output.xlsx")
+
+print(stacked_output.head())
+
 # Confirm that every time the author is "na", the observation is a duplicate.
 if not stacked_output[(stacked_output["na_author"] == True) & (stacked_output["dup_title"] == False)].empty:
-    print("ERROR: There are observations the no author that are not duplicates. Please check for authors with multiple last names. Ending.")
+    print("ERROR: There are observations with no author that are not duplicates. Please check for authors with multiple last names. Ending.")
     quit()
 
-# Now that we know that all observations with a missing author name are duplicates, we can remove them.
-stacked_output = stacked_output[(stacked_output["na_author"] == False) | (stacked_output["dup_title"] == False)]
+
+# Subset to non-duplicates
+stacked_output = stacked_output.drop(["file", "dup_title"], axis = 1).drop_duplicates()
+
+# Add a flag so that we can make sure that there are no other duplicates.
+stacked_output["dup_all"] = stacked_output.duplicated()
+
+# # Now that we know that all observations with a missing author name are duplicates, we can remove them.
+# stacked_output = stacked_output[(stacked_output["na_author"] == False) | (stacked_output["dup_title"] == False)]
 
 # Drop na flag
 stacked_output = stacked_output.drop(["na_author"], axis = 1)
