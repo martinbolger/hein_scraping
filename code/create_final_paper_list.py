@@ -49,8 +49,6 @@ stacked_output["na_author"] = stacked_output["Author(s)"].apply(lambda x: True i
 
 # stacked_output.to_excel(out_path / "_stacked_output.xlsx")
 
-print(stacked_output.head())
-
 # Confirm that every time the author is "na", the observation is a duplicate.
 if not stacked_output[(stacked_output["na_author"] == True) & (stacked_output["dup_title"] == False)].empty:
     print("ERROR: There are observations with no author that are not duplicates. Please check for authors with multiple last names. Ending.")
@@ -101,17 +99,14 @@ df['Topics'] = [re.sub(r'\bna\b', '', x) for x in  df['Topics']]
 df['BBCite'] = [re.sub(r'\bna\b', '', x) for x in  df['BBCite']]
 
 # Use the get_journal_data function to extract the journal data
-df_j = get_journal_data(df)
+df = get_journal_data(df)
+
 # Calculate the issue year and first and last page for the journal
-df_j.insert(3, 'Issue Year', [re.sub("[^0-9]", "", x.split('(')[1].split(')')[0])[:4] if '(' in x else '' for x in df_j["Issue"]])
-df_j.insert(4, 'First Page', [x.split('-')[0] if '-' in x else '' for x in df_j['Pages']])
-df_j.insert(5, 'Last Page', [x.split('-')[1] if '-' in x else '' for x in df_j['Pages']])
-
-# Drop the jounral data ID variable before concatenating
-df_j.drop(["ID"], axis = 1, inplace = True)
-
-# MERGE: Merge the journal data onto the stacked data
-stacked_df = pd.concat([df.reset_index(drop = True), df_j.reset_index(drop = True)], axis = 1)
+issue_year_list = df["Issue"].apply(lambda x: re.search(r"\d{4}", x))
+df["Issue Year"] = issue_year_list.apply(lambda x: x.group(0) if x else '')
+# Extract the first and last page for each paper
+df["First Page"] = df["Pages"].apply(lambda x: x.split('-')[0] if '-' in x else '')
+df["Last Page"] = df["Pages"].apply(lambda x: x.split('-')[1] if '-' in x else '')
 
 # Output the stacked paper data
-stacked_df.to_excel(out_path / "_stacked_paper_data.xlsx")
+df.to_excel(out_path / "_stacked_paper_data.xlsx")
