@@ -12,7 +12,7 @@ import requests
 import random
 import math
 
-from modules.data_manipulation_functions import list_to_comma_separated_string
+# from data_manipulation_functions import list_to_comma_separated_string
 
 # This function creates a remote control browser
 def create_browser(browser_binary_path, selenium_driver_path):
@@ -164,7 +164,7 @@ def mod_names(fm_names, err_fm_names, name_mod):
 #This function gets all the paper data and appends it to the list data_stream
 def get_paper_data(last_name, prof_id, title_index, scroll_num, driver):
     data_stream = []
-    data_stream = dict.fromkeys(['Title','Author', 'id', 'Journal', 'BBCite', 'Topics'], 'na')
+    data_stream = dict.fromkeys(['Title','Author', 'id', 'Journal', 'BBCite', 'Topics', 'Subjects'], 'na')
     data_stream['id'] = prof_id
     if scroll_num == 0:
         element = driver.find_elements_by_xpath('//*[@id="save_results"]/div/div/div/div[' + str(title_index) + ']/div[2]')      
@@ -172,18 +172,28 @@ def get_paper_data(last_name, prof_id, title_index, scroll_num, driver):
         element = driver.find_elements_by_xpath('//*[@id="save_results"]/div[' + str(title_index) + ']/div[2]')
     for elm in element:
         my_list = elm.text
-    data_list = my_list.split('\n')
+    # Remove strings that say "More Information" or "Full Text Not Currently Available in HeinOnline"
+    my_list = re.sub(r'\nMore Information\n', ' ', my_list)
+    my_list_clean = re.sub(r'Full Text Not Currently Available in HeinOnline', ' ', my_list)
+    # Create a list of strings with the data
+    data_list = my_list_clean.split('\n')
+    # Strip the strings in the list
+    data_list = list(map(str.strip, data_list))
+    # Remove blank strings from the list
+    data_list = list(filter(None, data_list))
     data_stream['Title'] = data_list[0]
+    print(data_list)
     for a in data_list[1:]:
-        if not 'More Information' in a and not a == '':
-            if 'Topics: ' in a:
-                data_stream['Topics'] = a.split('Topics: ')[1]
-            elif 'Vol.' in a:
-                data_stream['Journal'] = a
-            elif last_name + "," in a:
-                data_stream['Author'] = a
-            else:
-                data_stream['BBCite'] = a
+        if 'Topics: ' in a:
+            data_stream['Topics'] = a.split('Topics: ')[1]
+        elif 'Subjects: ' in a:
+            data_stream['Subjects'] = a.split('Subjects: ')[1]
+        elif 'Vol.' in a:
+            data_stream['Journal'] = a
+        elif last_name + "," in a:
+            data_stream['Author'] = a
+        else:
+            data_stream['BBCite'] = a
     return data_stream
 
 #This function waits for the webpage to load by waiting until a webpage element appears
