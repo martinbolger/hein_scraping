@@ -13,9 +13,9 @@ __author__ = "Martin Bolger"
 __date__ = "December 19th, 2020"
 
 def get_year(string):
-    matches = re.search(r"\((\w* (\d*,\s)?)?((19|20)\d{2}-?((19|20)\d{2})?)\)", string)
+    matches = re.search(r"\((\w*(-\w*)? (\d*,\s)?)?((19|20)\d{2}-?((19|20)\d{2})?)\)", string)
     if matches:
-        year = matches.group(3)
+        year = matches.group(4)
     else:
         year = ""
     return year
@@ -26,4 +26,6 @@ if __name__ == "__main__":
     year = get_year("43 La. L. Rev. 1001 (1982-1983)")
     print(year)
     year = get_year("test string (")
+    print(year)
+    year = get_year("5 (September-October 2003)")
     print(year)

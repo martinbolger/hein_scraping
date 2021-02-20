@@ -13,6 +13,7 @@ import pathlib
 import re
 from modules.create_path import create_path
 from modules.get_journal_data import get_journal_data
+from modules.get_year import get_year
 
 __author__ = "Martin Bolger"
 __date__ = "December 26th, 2020"
@@ -77,7 +78,7 @@ df['Title'] = [x.split(' [')[-2] if '[' in x else x for x in df['Title']]
 
 # BBCite year
 df['BBCite'] = df['BBCite'].str.replace('Full Text Not Currently Available in HeinOnline', '')
-df.insert(6, 'BBCite Year', [re.sub("[^0-9]", "", x.split('(')[1].split(')')[0])[:4] if '(' in x else '' for x in df["BBCite"]])
+df["BBCite Year"] = df['BBCite'].apply(lambda x: get_year(x))
 # Number of Authors
 df.insert(4, 'Number of Authors', [x.count(';') + 1 for x in df['Author(s)']])
 
@@ -96,14 +97,16 @@ df['ID'].astype('int')
 # Replace na in Journal, Topics, and BBCite columns
 df['Journal'] = [re.sub(r'\bna\b', '', x) for x in  df['Journal']]
 df['Topics'] = [re.sub(r'\bna\b', '', x) for x in  df['Topics']]
+df['Subjects'] = [re.sub(r'\bna\b', '', x) for x in  df['Subjects']]
 df['BBCite'] = [re.sub(r'\bna\b', '', x) for x in  df['BBCite']]
 
 # Use the get_journal_data function to extract the journal data
 df = get_journal_data(df)
 
-# Calculate the issue year and first and last page for the journal
+# Calculate the issue year
 issue_year_list = df["Issue"].apply(lambda x: re.search(r"\d{4}", x))
 df["Issue Year"] = issue_year_list.apply(lambda x: x.group(0) if x else '')
+
 # Extract the first and last page for each paper
 df["First Page"] = df["Pages"].apply(lambda x: x.split('-')[0] if '-' in x else '')
 df["Last Page"] = df["Pages"].apply(lambda x: x.split('-')[1] if '-' in x else '')
