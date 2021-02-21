@@ -40,28 +40,19 @@ df = stacked_output
 # SORT: Sort the dataset by ID
 stacked_output.sort_values(by = ["ID"], inplace = True)
 
-# Drop rows where the author name is "na". These come from
-# Papers that are on an author's page that do not contain 
-# the author's last name. If observations that are not
-# duplciates are in this category, you should look to see
-# if the author's last name changed.
-
-
-
+# Flag papers with duplicate titles
 stacked_output["dup_title"] = stacked_output.duplicated(subset = ["Title"], keep= False)
 
-# # Confirm that every time the author is "na", the observation is a duplicate.
+# Confirm that every time the author is "na", the observation is a duplicate.
 if not stacked_output[(stacked_output["Author(s)"] == "na") & (stacked_output["dup_title"] == False)].empty:
     print("ERROR: There are observations with no author that are not duplicates. Please check for authors with multiple last names. Ending.")
     quit()
-
 
 # Drop all entries that have a missing author "na". These entires 
 # are added when we have an author with multiple last names. Their
 # page may be scrapped twice. We only save the author name when
 # it is the name that we are looking for to avoid duplicates.
 stacked_output = stacked_output.loc[stacked_output["Author(s)"] != "na"].copy()
-
 
 # We can still get duplicates if the author has multiple first names and
 # multiple last names because the page has to be scrapped for each first name/last name
@@ -73,103 +64,95 @@ stacked_output = stacked_output[stacked_output["duplicate_title_author"] == Fals
 
 # stacked_output.to_excel(out_path / "_stacked_output.xlsx")
 
+# Drop na flag
+stacked_output = stacked_output.drop(["duplicate_title_author", "dup_title"], axis = 1)
 
-# # Drop na flag
-# stacked_output = stacked_output.drop(["na_author"], axis = 1)
+df = stacked_output
 
-# df = stacked_output
+# Extract paper type
+df.insert(1, "Paper Type", [x.split('[')[-1].split(']')[0] if '[' in x else '' for x in df['Title']])
 
+# Remove paper type from title
+df['Title'] = [x.split(' [')[-2] if '[' in x else x for x in df['Title']]
 
+# BBCite year
+df['BBCite'] = df['BBCite'].str.replace('Full Text Not Currently Available in HeinOnline', '')
+df["BBCite Year"] = df['BBCite'].apply(lambda x: get_year(x))
 
+# Get the first BBCite year
+bbcite_year_list = df['BBCite Year'].apply(lambda x: re.search(r"\d{4}", x))
+df["BBCite Year First"] = bbcite_year_list.apply(lambda x: x.group(0) if x else '')
+df['BBCite Year First'] = df['BBCite Year First'].replace('', "9999").astype("int")
+df["Before 1963 Flag"] = df["BBCite Year First"].apply(lambda x: 1 if x < 1963 else 0)
 
+# Number of Authors
+df.insert(4, 'Number of Authors', [x.count(';') + 1 for x in df['Author(s)']])
 
+#Replace na in Cited and Accessed columns:
+df['Cited (articles)'] = df['Cited (articles)'].astype(str)
+df['Cited (cases)'] = df['Cited (cases)'].astype(str)
+df['Accessed'] = df['Accessed'].astype(str)
+df['Cited (articles)'] = df['Cited (articles)'].str.replace('na', '0')
+df['Cited (cases)'] = df['Cited (cases)'].str.replace('na', '0')
+df['Accessed'] = df['Accessed'].str.replace('na', '0')
+df['Accessed'].astype('int')
+df['Cited (cases)'].astype('int')
+df['Cited (articles)'].astype('int')
+df['ID'].astype('int')
 
+# Replace na in Journal, Topics, and BBCite columns
+df['Journal'] = [re.sub(r'\bna\b', '', x) for x in  df['Journal']]
+df['Topics'] = [re.sub(r'\bna\b', '', x) for x in  df['Topics']]
+df['Subjects'] = [re.sub(r'\bna\b', '', x) for x in  df['Subjects']]
+df['BBCite'] = [re.sub(r'\bna\b', '', x) for x in  df['BBCite']]
 
+# Use the get_journal_data function to extract the journal data
+df = get_journal_data(df)
 
-# # Extract paper type
-# df.insert(1, "Paper Type", [x.split('[')[-1].split(']')[0] if '[' in x else '' for x in df['Title']])
+# Calculate the issue year
+issue_year_list = df["Issue"].apply(lambda x: re.search(r"\d{4}", x))
+df["Issue Year"] = issue_year_list.apply(lambda x: x.group(0) if x else '')
 
-# # Remove paper type from title
-# df['Title'] = [x.split(' [')[-2] if '[' in x else x for x in df['Title']]
+# Extract the first and last page for each paper
+df["First Page"] = df["Pages"].apply(lambda x: x.split('-')[0] if '-' in x else '')
+df["Last Page"] = df["Pages"].apply(lambda x: x.split('-')[1] if '-' in x else '')
 
-# # BBCite year
-# df['BBCite'] = df['BBCite'].str.replace('Full Text Not Currently Available in HeinOnline', '')
-# df["BBCite Year"] = df['BBCite'].apply(lambda x: get_year(x))
+# Add the author flags using the author cut-off data
+cut_off_data = pd.read_excel(
+    input_path / "author_year_cut_offs_control.xlsx", 
+    'Sheet1'
+)
 
-# # Get the first BBCite year
-# bbcite_year_list = df['BBCite Year'].apply(lambda x: re.search(r"\d{4}", x))
-# df["BBCite Year First"] = bbcite_year_list.apply(lambda x: x.group(0) if x else '')
-# df['BBCite Year First'] = df['BBCite Year First'].replace('', "9999").astype("int")
-# df["Before 1963 Flag"] = df["BBCite Year First"].apply(lambda x: 1 if x < 1963 else 0)
+# # Merge the cut-off data with the main dataset
+merge_test = pd.merge(
+    df,
+    cut_off_data,
+    how = "left",
+    left_on = "ID",
+    right_on = "ID",
+    sort = "False"
+)
 
-# # Number of Authors
-# df.insert(4, 'Number of Authors', [x.count(';') + 1 for x in df['Author(s)']])
+# Convert the types for string vars and change nan to ""
+merge_test["Word Exclude"] = merge_test["Word Exclude"].astype(str)
+merge_test['Word Exclude'] = merge_test['Word Exclude'].str.replace('nan', '')
+merge_test["BBCite Exclude"] = merge_test["BBCite Exclude"].astype(str)
+merge_test['BBCite Exclude'] = merge_test['BBCite Exclude'].str.replace('nan', '')
+merge_test["Journal Exclude"] = merge_test["Journal Exclude"].astype(str)
+merge_test['Journal Exclude'] = merge_test['Journal Exclude'].str.replace('nan', '')
 
-# #Replace na in Cited and Accessed columns:
-# df['Cited (articles)'] = df['Cited (articles)'].astype(str)
-# df['Cited (cases)'] = df['Cited (cases)'].astype(str)
-# df['Accessed'] = df['Accessed'].astype(str)
-# df['Cited (articles)'] = df['Cited (articles)'].str.replace('na', '0')
-# df['Cited (cases)'] = df['Cited (cases)'].str.replace('na', '0')
-# df['Accessed'] = df['Accessed'].str.replace('na', '0')
-# df['Accessed'].astype('int')
-# df['Cited (cases)'].astype('int')
-# df['Cited (articles)'].astype('int')
-# df['ID'].astype('int')
+merge_test["author_exclusion_flag"] = merge_test.apply(lambda x: flag_author_cut_off(x["Start Year"], x["BBCite Year First"], x["Journal Exclude"], x["Journal Name"], x["Word Exclude"], x["Title"], x["BBCite Exclude"], x["BBCite"]), axis = 1)
 
-# # Replace na in Journal, Topics, and BBCite columns
-# df['Journal'] = [re.sub(r'\bna\b', '', x) for x in  df['Journal']]
-# df['Topics'] = [re.sub(r'\bna\b', '', x) for x in  df['Topics']]
-# df['Subjects'] = [re.sub(r'\bna\b', '', x) for x in  df['Subjects']]
-# df['BBCite'] = [re.sub(r'\bna\b', '', x) for x in  df['BBCite']]
+# Subset to the rows that are not flagged by the author exclusion flag
+merge_test = merge_test[merge_test["author_exclusion_flag"] == 0]
 
-# # Use the get_journal_data function to extract the journal data
-# df = get_journal_data(df)
+# Subset to the rows that are not flagged by before 1963 flag
+merge_test = merge_test[merge_test["Before 1963 Flag"] == 0]
 
-# # Calculate the issue year
-# issue_year_list = df["Issue"].apply(lambda x: re.search(r"\d{4}", x))
-# df["Issue Year"] = issue_year_list.apply(lambda x: x.group(0) if x else '')
+# Drop extra variables
+merge_test = merge_test.drop(["Start Year",	"Journal Exclude", "Word Exclude", "BBCite Exclude", "author_exclusion_flag", "BBCite Year First", "Before 1963 Flag", 'First Name', 'Last Name'], axis = 1)
 
-# # Extract the first and last page for each paper
-# df["First Page"] = df["Pages"].apply(lambda x: x.split('-')[0] if '-' in x else '')
-# df["Last Page"] = df["Pages"].apply(lambda x: x.split('-')[1] if '-' in x else '')
+# Reorder the columns
+merge_test = merge_test[['ID', 'Title', 'Paper Type', 'Author(s)', 'Number of Authors', 'Journal', 'BBCite', 'BBCite Year', 'Topics', 'Subjects', 'Cited (articles)', 'Cited (cases)', 'Accessed', 'Journal Name', 'Vol', 'Issue', 'Pages', 'Issue Year', 'First Page', 'Last Page']]
 
-# # Add the author flags using the author cut-off data
-# cut_off_data = pd.read_excel(
-#     input_path / "author_year_cut_offs_control.xlsx", 
-#     'Sheet1'
-# )
-
-# # # Merge the cut-off data with the main dataset
-# merge_test = pd.merge(
-#     df,
-#     cut_off_data,
-#     how = "left",
-#     left_on = "ID",
-#     right_on = "ID",
-#     sort = "False"
-# )
-
-# # Convert the types for string vars and change nan to ""
-# merge_test["Word Exclude"] = merge_test["Word Exclude"].astype(str)
-# merge_test['Word Exclude'] = merge_test['Word Exclude'].str.replace('nan', '')
-# merge_test["BBCite Exclude"] = merge_test["BBCite Exclude"].astype(str)
-# merge_test['BBCite Exclude'] = merge_test['BBCite Exclude'].str.replace('nan', '')
-# merge_test["Journal Exclude"] = merge_test["Journal Exclude"].astype(str)
-# merge_test['Journal Exclude'] = merge_test['Journal Exclude'].str.replace('nan', '')
-
-# merge_test["author_exclusion_flag"] = merge_test.apply(lambda x: flag_author_cut_off(x["Start Year"], x["BBCite Year First"], x["Journal Exclude"], x["Journal Name"], x["Word Exclude"], x["Title"], x["BBCite Exclude"], x["BBCite"]), axis = 1)
-
-# # Subset to the rows that are not flagged by the author exclusion flag
-# merge_test = merge_test[merge_test["author_exclusion_flag"] == 0]
-
-# # Subset to the rows that are not flagged by before 1963 flag
-# merge_test = merge_test[merge_test["Before 1963 Flag"] == 0]
-
-# # Drop extra variables
-# merge_test = merge_test.drop(["Start Year",	"Journal Exclude", "Word Exclude", "BBCite Exclude", "author_exclusion_flag", "BBCite Year First", "Before 1963 Flag", 'First Name', 'Last Name'], axis = 1)
-
-# # Reorder the columns
-# merge_test = merge_test[['ID', 'Title', 'Paper Type', 'Author(s)', 'Number of Authors', 'Journal', 'BBCite', 'BBCite Year', 'Topics', 'Subjects', 'Cited (articles)', 'Cited (cases)', 'Accessed', 'dup_all', 'Journal Name', 'Vol', 'Issue', 'Pages', 'Issue Year', 'First Page', 'Last Page']]
-
-# merge_test.to_excel(out_path / "_merge_test.xlsx")
+merge_test.to_excel(out_path / "_merge_test.xlsx")
