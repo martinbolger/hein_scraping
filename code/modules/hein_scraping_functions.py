@@ -12,6 +12,8 @@ import requests
 import random
 import math
 
+from modules.data_manipulation_functions import list_to_comma_separated_string
+
 # from data_manipulation_functions import list_to_comma_separated_string
 
 # This function creates a remote control browser
@@ -182,7 +184,6 @@ def get_paper_data(last_name, prof_id, title_index, scroll_num, driver):
     # Remove blank strings from the list
     data_list = list(filter(None, data_list))
     data_stream['Title'] = data_list[0]
-    print(data_list)
     for a in data_list[1:]:
         if 'Topics: ' in a:
             data_stream['Topics'] = a.split('Topics: ')[1]
