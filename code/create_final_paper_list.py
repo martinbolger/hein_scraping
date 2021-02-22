@@ -155,4 +155,4 @@ merge_test = merge_test.drop(["Start Year",	"Journal Exclude", "Word Exclude", "
 # Reorder the columns
 merge_test = merge_test[['ID', 'Title', 'Paper Type', 'Author(s)', 'Number of Authors', 'Journal', 'BBCite', 'BBCite Year', 'Topics', 'Subjects', 'Cited (articles)', 'Cited (cases)', 'Accessed', 'Journal Name', 'Vol', 'Issue', 'Pages', 'Issue Year', 'First Page', 'Last Page']]
 
-merge_test.to_excel(out_path / "_merge_test.xlsx")
+merge_test.to_excel(out_path / "_stacked_paper_data_control.xlsx")
