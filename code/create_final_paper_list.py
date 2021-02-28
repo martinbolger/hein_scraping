@@ -189,6 +189,7 @@ int_format = workbook.add_format({'num_format': '0'})
 worksheet.set_column('F:F', 18, int_format)
 worksheet.set_column('M:O', 18, int_format)
 worksheet.set_column('J:J', 18, int_format)
+worksheet.set_column('T:T', 18, int_format)
 
 # Close the Pandas Excel writer and output the Excel file.
 writer.save()
