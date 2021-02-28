@@ -16,9 +16,10 @@ from modules.create_path import create_path
 from modules.get_journal_data import get_journal_data
 from modules.get_year import get_year
 from modules.flag_author_cut_off import flag_author_cut_off
+from modules.clean_page_number import clean_page_number
 
 __author__ = "Martin Bolger"
-__date__ = "December 26th, 2020"
+__date__ = "February 28th, 2021"
 
 # Create the paths for the data directories
 input_path, work_path, intr_path, out_path, selenium_driver_path = create_path()
@@ -114,8 +115,8 @@ issue_year_list = df["Issue"].apply(lambda x: re.search(r"\d{4}", x))
 df["Issue Year"] = issue_year_list.apply(lambda x: x.group(0) if x else '')
 
 # Extract the first and last page for each paper
-df["First Page"] = df["Pages"].apply(lambda x: x.split('-')[0] if '-' in x else '')
-df["Last Page"] = df["Pages"].apply(lambda x: x.split('-')[1] if '-' in x else '')
+df["First Page"] = df["Pages"].apply(lambda x: clean_page_number(x.split('-')[0]) if '-' in x else '')
+df["Last Page"] = df["Pages"].apply(lambda x: clean_page_number(x.split('-')[1]) if '-' in x else '')
 
 # Add the author flags using the author cut-off data
 cut_off_data = pd.read_excel(
@@ -155,4 +156,29 @@ merge_test = merge_test.drop(["Start Year",	"Journal Exclude", "Word Exclude", "
 # Reorder the columns
 merge_test = merge_test[['ID', 'Title', 'Paper Type', 'Author(s)', 'Number of Authors', 'Journal', 'BBCite', 'BBCite Year', 'Topics', 'Subjects', 'Cited (articles)', 'Cited (cases)', 'Accessed', 'Journal Name', 'Vol', 'Issue', 'Pages', 'Issue Year', 'First Page', 'Last Page']]
 
-merge_test.to_excel(out_path / "_stacked_paper_data_control.xlsx")
+# Convert numeric columns to numbers
+merge_test[["Number of Authors", "Cited (articles)", "Cited (cases)", "Accessed"]] = merge_test[["Number of Authors", "Cited (articles)", "Cited (cases)", "Accessed"]].astype(int)
+
+# Create a Pandas Excel writer using XlsxWriter as the engine.
+writer = pd.ExcelWriter(out_path / "_stacked_paper_data_control.xlsx", engine='xlsxwriter')  # pylint: disable=abstract-class-instantiated
+
+# Convert the dataframe to an XlsxWriter Excel object.
+merge_test.to_excel(writer, sheet_name='Sheet1')
+
+# Get the xlsxwriter workbook and worksheet objects.
+workbook  = writer.book
+worksheet = writer.sheets['Sheet1']
+
+# Add some cell formats.
+format2 = workbook.add_format({'num_format': '#'})
+
+# Note: It isn't possible to format any cells that already have a format such
+# as the index or headers or any cells that contain dates or datetimes.
+
+# Set the column width and format.
+worksheet.set_column('F:F', 18, format2)
+
+# Close the Pandas Excel writer and output the Excel file.
+writer.save()
+
+# merge_test.to_excel(out_path / "_stacked_paper_data_control.xlsx")
