@@ -192,26 +192,3 @@ worksheet.set_column('J:J', 18, int_format)
 
 # Close the Pandas Excel writer and output the Excel file.
 writer.save()
-
-# final_output.to_excel(out_path / "_stacked_paper_data_control.xlsx")
-
-
-# df = pd.DataFrame({'Floats': [10.1, 20.2, 30.3, 20.0, 15.9, 30.1, 45.0],
-#                    'Integers': [10.0, 20.0, 30, 20, 15, 30, 45]})
-
-# writer = pd.ExcelWriter(out_path / "_export_test.xlsx", engine='xlsxwriter')
-
-# df.to_excel(writer, sheet_name='Sheet1')
-
-# workbook  = writer.book
-
-# worksheet = writer.sheets['Sheet1']
-# number_format = workbook.add_format({'num_format': '0'})
-
-# worksheet.set_column('C:C', 18, number_format)
-
-
-# writer.save()
-
-# df = pd.read_excel(filename, convert_float=True)
-# print df
