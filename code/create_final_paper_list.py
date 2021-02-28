@@ -17,6 +17,8 @@ from modules.get_journal_data import get_journal_data
 from modules.get_year import get_year
 from modules.flag_author_cut_off import flag_author_cut_off
 from modules.clean_page_number import clean_page_number
+from modules.article_in_bbcite import article_in_bbcite
+from modules.split_page_number import split_page_number
 
 __author__ = "Martin Bolger"
 __date__ = "February 28th, 2021"
@@ -78,13 +80,20 @@ df['Title'] = [x.split(' [')[-2] if '[' in x else x for x in df['Title']]
 
 # BBCite year
 df['BBCite'] = df['BBCite'].str.replace('Full Text Not Currently Available in HeinOnline', '')
+
+# Check for articles in the BBCite field
+df["Article in BBCite"] = df["BBCite"].apply(lambda x: article_in_bbcite(x))
+# Swap the name of the article and BBCite if they are in the wrong field
+df['Title'], df["BBCite"] = np.where(df["Article in BBCite"] == 0, [df['Title'], df["BBCite"]], [df["BBCite"], df['Title']])
+
+# Get the BBCite year
 df["BBCite Year"] = df['BBCite'].apply(lambda x: get_year(x))
 
 # Get the first BBCite year
 bbcite_year_list = df['BBCite Year'].apply(lambda x: re.search(r"\d{4}", x))
 df["BBCite Year First"] = bbcite_year_list.apply(lambda x: x.group(0) if x else '')
-df['BBCite Year First'] = df['BBCite Year First'].replace('', "9999").astype("int")
-df["Before 1963 Flag"] = df["BBCite Year First"].apply(lambda x: 1 if x < 1963 else 0)
+df['BBCite Year First Mod'] = df['BBCite Year First'].replace('', "9999").astype("int")
+df["Before 1963 Flag"] = df["BBCite Year First Mod"].apply(lambda x: 1 if x < 1963 else 0)
 
 # Number of Authors
 df.insert(4, 'Number of Authors', [x.count(';') + 1 for x in df['Author(s)']])
@@ -115,8 +124,9 @@ issue_year_list = df["Issue"].apply(lambda x: re.search(r"\d{4}", x))
 df["Issue Year"] = issue_year_list.apply(lambda x: x.group(0) if x else '')
 
 # Extract the first and last page for each paper
-df["First Page"] = df["Pages"].apply(lambda x: clean_page_number(x.split('-')[0]) if '-' in x else '')
-df["Last Page"] = df["Pages"].apply(lambda x: clean_page_number(x.split('-')[1]) if '-' in x else '')
+
+df["First Page"] = df["Pages"].apply(lambda x: clean_page_number(split_page_number(x, 1)))
+df["Last Page"] = df["Pages"].apply(lambda x: clean_page_number(split_page_number(x, 2)))
 
 # Add the author flags using the author cut-off data
 cut_off_data = pd.read_excel(
@@ -125,7 +135,7 @@ cut_off_data = pd.read_excel(
 )
 
 # # Merge the cut-off data with the main dataset
-merge_test = pd.merge(
+final_output = pd.merge(
     df,
     cut_off_data,
     how = "left",
@@ -135,50 +145,73 @@ merge_test = pd.merge(
 )
 
 # Convert the types for string vars and change nan to ""
-merge_test["Word Exclude"] = merge_test["Word Exclude"].astype(str)
-merge_test['Word Exclude'] = merge_test['Word Exclude'].str.replace('nan', '')
-merge_test["BBCite Exclude"] = merge_test["BBCite Exclude"].astype(str)
-merge_test['BBCite Exclude'] = merge_test['BBCite Exclude'].str.replace('nan', '')
-merge_test["Journal Exclude"] = merge_test["Journal Exclude"].astype(str)
-merge_test['Journal Exclude'] = merge_test['Journal Exclude'].str.replace('nan', '')
+final_output["Word Exclude"] = final_output["Word Exclude"].astype(str)
+final_output['Word Exclude'] = final_output['Word Exclude'].str.replace('nan', '')
+final_output["BBCite Exclude"] = final_output["BBCite Exclude"].astype(str)
+final_output['BBCite Exclude'] = final_output['BBCite Exclude'].str.replace('nan', '')
+final_output["Journal Exclude"] = final_output["Journal Exclude"].astype(str)
+final_output['Journal Exclude'] = final_output['Journal Exclude'].str.replace('nan', '')
 
-merge_test["author_exclusion_flag"] = merge_test.apply(lambda x: flag_author_cut_off(x["Start Year"], x["BBCite Year First"], x["Journal Exclude"], x["Journal Name"], x["Word Exclude"], x["Title"], x["BBCite Exclude"], x["BBCite"]), axis = 1)
+final_output["author_exclusion_flag"] = final_output.apply(lambda x: flag_author_cut_off(x["Start Year"], x["BBCite Year First Mod"], x["Journal Exclude"], x["Journal Name"], x["Word Exclude"], x["Title"], x["BBCite Exclude"], x["BBCite"]), axis = 1)
 
 # Subset to the rows that are not flagged by the author exclusion flag
-merge_test = merge_test[merge_test["author_exclusion_flag"] == 0]
+final_output = final_output[final_output["author_exclusion_flag"] == 0]
 
 # Subset to the rows that are not flagged by before 1963 flag
-merge_test = merge_test[merge_test["Before 1963 Flag"] == 0]
+final_output = final_output[final_output["Before 1963 Flag"] == 0]
 
 # Drop extra variables
-merge_test = merge_test.drop(["Start Year",	"Journal Exclude", "Word Exclude", "BBCite Exclude", "author_exclusion_flag", "BBCite Year First", "Before 1963 Flag", 'First Name', 'Last Name'], axis = 1)
+final_output = final_output.drop(["Start Year",	"Journal Exclude", "Word Exclude", "BBCite Exclude", "author_exclusion_flag", "BBCite Year First Mod", "Before 1963 Flag", 'First Name', 'Last Name', 'Article in BBCite'], axis = 1)
 
 # Reorder the columns
-merge_test = merge_test[['ID', 'Title', 'Paper Type', 'Author(s)', 'Number of Authors', 'Journal', 'BBCite', 'BBCite Year', 'Topics', 'Subjects', 'Cited (articles)', 'Cited (cases)', 'Accessed', 'Journal Name', 'Vol', 'Issue', 'Pages', 'Issue Year', 'First Page', 'Last Page']]
+final_output = final_output[['ID', 'Title', 'Paper Type', 'Author(s)', 'Number of Authors', 'Journal', 'BBCite', 'BBCite Year', 'BBCite Year First', 'Topics', 'Subjects', 'Cited (articles)', 'Cited (cases)', 'Accessed', 'Journal Name', 'Vol', 'Issue', 'Pages', 'Issue Year', 'First Page', 'Last Page']]
 
 # Convert numeric columns to numbers
-merge_test[["Number of Authors", "Cited (articles)", "Cited (cases)", "Accessed"]] = merge_test[["Number of Authors", "Cited (articles)", "Cited (cases)", "Accessed"]].astype(int)
+final_output[["Number of Authors", "Cited (articles)", "Cited (cases)", "Accessed"]] = final_output[["Number of Authors", "Cited (articles)", "Cited (cases)", "Accessed"]].astype(int)
 
 # Create a Pandas Excel writer using XlsxWriter as the engine.
 writer = pd.ExcelWriter(out_path / "_stacked_paper_data_control.xlsx", engine='xlsxwriter')  # pylint: disable=abstract-class-instantiated
 
 # Convert the dataframe to an XlsxWriter Excel object.
-merge_test.to_excel(writer, sheet_name='Sheet1')
+final_output.to_excel(writer, sheet_name='Sheet1')
 
 # Get the xlsxwriter workbook and worksheet objects.
 workbook  = writer.book
 worksheet = writer.sheets['Sheet1']
 
 # Add some cell formats.
-format2 = workbook.add_format({'num_format': '#'})
+int_format = workbook.add_format({'num_format': '0'})
 
 # Note: It isn't possible to format any cells that already have a format such
 # as the index or headers or any cells that contain dates or datetimes.
 
-# Set the column width and format.
-worksheet.set_column('F:F', 18, format2)
+# Set the column width and format for numeric columns.
+worksheet.set_column('F:F', 18, int_format)
+worksheet.set_column('M:O', 18, int_format)
+worksheet.set_column('J:J', 18, int_format)
 
 # Close the Pandas Excel writer and output the Excel file.
 writer.save()
 
-# merge_test.to_excel(out_path / "_stacked_paper_data_control.xlsx")
+# final_output.to_excel(out_path / "_stacked_paper_data_control.xlsx")
+
+
+# df = pd.DataFrame({'Floats': [10.1, 20.2, 30.3, 20.0, 15.9, 30.1, 45.0],
+#                    'Integers': [10.0, 20.0, 30, 20, 15, 30, 45]})
+
+# writer = pd.ExcelWriter(out_path / "_export_test.xlsx", engine='xlsxwriter')
+
+# df.to_excel(writer, sheet_name='Sheet1')
+
+# workbook  = writer.book
+
+# worksheet = writer.sheets['Sheet1']
+# number_format = workbook.add_format({'num_format': '0'})
+
+# worksheet.set_column('C:C', 18, number_format)
+
+
+# writer.save()
+
+# df = pd.read_excel(filename, convert_float=True)
+# print df
