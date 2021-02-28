@@ -13,23 +13,27 @@ __author__ = "Martin Bolger"
 __date__ = "December 19th, 2020"
 
 def get_year(string):
-    matches = re.search(r"\((\w*((-|/)\w*)? (\d*,\s)?)?((19|20)\d{2}-?((19|20)\d{2})?\s?)\)", string)
-    if matches:
-        year = matches.group(5)
+    # Check to see if the string contains parentheses
+    parentheses = re.search(r"[/(|/)]", string)
+    if parentheses:
+        # If it does, use the expression for matches inside of parentheses
+        matches = re.search(r"\((\w*((-|/)\w*)?,? (\d*,\s)?)?((19|20)\d{2}\s?-?\s?((19|20)?\d{2})?\s?)\)", string)
+        if matches:
+            year = matches.group(5)
+        else:
+            year = ""
     else:
-        year = ""
+        # If it doesn't we just look for something that looks like it is a year
+        matches = re.search(r"(19|20)\d{2}", string)
+        if matches:
+            year = matches.group(0)
+        else:
+            year = ""
     return year
 
 if __name__ == "__main__":
-    year = get_year("32 Envtl. L. Rep. News & Analysis 10003 (2002)")
-    print(year)
-    year = get_year("43 La. L. Rev. 1001 (1982-1983)")
-    print(year)
-    year = get_year("test string (")
-    print(year)
-    year = get_year("5 (September-October 2003)")
-    print(year)
-    year = get_year("1-2 (Winter/Spring 2003)")
-    print(year)
-    year = get_year("5 (May 2010 )")
-    print(year)
+    test_cases = ["2004 Duke L. & Tech. Rev. 0009", "6 Int'l Fin. L. Rev. 13 (December, 1987)", "32 Envtl. L. Rep. News & Analysis 10003 (2002)", "43 La. L. Rev. 1001 (1982-1983)", "test string (", "5 (September-October 2003)", "1-2 (Winter/Spring 2003)", "5 (May 2010 )", "85 W. Va. L. Rev. 187 (1982-83)", "6 Buff. Crim. L. Rev. 1043 (2002 - 2003)", "2001 Fed. Cts. L. Rev. 1"]
+    for case in test_cases:
+        year = get_year(case)
+        print("Test case: {}".format(case))
+        print("Year output: {}".format(year))
