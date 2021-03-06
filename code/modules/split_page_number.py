@@ -24,14 +24,34 @@ def split_page_number(string, index):
                 page = string.split('-')[0] 
             elif index == 2:
                 page = string.split('-')[1] 
-    elif string.count("-") > 1:
-        match = re.match(r"(\d*-?\d*)-(\d*-?\d*)", string)
+    elif string.count("-") == 2:
+        match = re.match(r"(\[?(i|v|x|c|l)*\]?|\d*)-(\[?(i|v|x|c|l)*\]?|\d*)-(\d*|\[?(i|v|x|c|l)*\]?)$", string)
         if match:
-            page = match.group(index)
+            if index == 1:
+                page = match.group(1)
+            elif index == 2:
+                page = match.group(5)
+    elif string.count("-") == 3:
+        match = re.match(r"(\d*-?(\d*))-(\d*-?(\d*))", string)
+        if match:
+            if index == 1:
+                page = match.group(2)
+            elif index == 2:
+                page = match.group(4)
     return page
 
 if __name__ == "__main__":
     first_page = split_page_number("6-1-6-10", 1)
     print("First page: {}".format(first_page))
+    last_page = split_page_number("6-1-6-10", 2)
+    print("Last page: {}".format(last_page))
     last_page = split_page_number("6-10", 2)
+    print("Last page: {}".format(last_page))
+    first_page = split_page_number("1048-1050-1052", 1)
+    print("First page: {}".format(first_page))
+    last_page = split_page_number("1048-1050-1052", 2)
+    print("Last page: {}".format(last_page))
+    first_page = split_page_number("1-1-[iv]", 1)
+    print("First page: {}".format(first_page))
+    last_page = split_page_number("1-1-[iv]", 2)
     print("Last page: {}".format(last_page))
