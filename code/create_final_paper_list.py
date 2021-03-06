@@ -119,6 +119,13 @@ df['BBCite'] = [re.sub(r'\bna\b', '', x) for x in  df['BBCite']]
 # Use the get_journal_data function to extract the journal data
 df = get_journal_data(df)
 
+# Flag volume labels that span two years
+df["Vol Span Flag"] = df["Vol"].apply(lambda x: 1 if "-" in x else 0)
+
+# Get the first number for the volumn if the volumn is a span
+df["Vol First"] = df["Vol"].apply(lambda x: x.split("-")[0])
+df['Vol First'] = df['Vol First'].replace('', np.nan).astype(float)
+
 # Calculate the issue year
 issue_year_list = df["Issue"].apply(lambda x: re.search(r"\d{4}", x))
 df["Issue Year"] = issue_year_list.apply(lambda x: x.group(0) if x else '')
@@ -164,10 +171,10 @@ final_output = final_output[final_output["Before 1963 Flag"] == 0]
 final_output = final_output.drop(["Start Year",	"Journal Exclude", "Word Exclude", "BBCite Exclude", "author_exclusion_flag", "BBCite Year First Mod", "Before 1963 Flag", 'First Name', 'Last Name', 'Article in BBCite'], axis = 1)
 
 # Reorder the columns
-final_output = final_output[['ID', 'Title', 'Paper Type', 'Author(s)', 'Number of Authors', 'Journal', 'BBCite', 'BBCite Year', 'BBCite Year First', 'Topics', 'Subjects', 'Cited (articles)', 'Cited (cases)', 'Accessed', 'Journal Name', 'Vol', 'Issue', 'Pages', 'Issue Year', 'First Page', 'Last Page']]
+final_output = final_output[['ID', 'Title', 'Paper Type', 'Author(s)', 'Number of Authors', 'Journal', 'BBCite', 'BBCite Year', 'BBCite Year First', 'Topics', 'Subjects', 'Cited (articles)', 'Cited (cases)', 'Accessed', 'Journal Name', 'Vol', "Vol Span Flag", "Vol First", 'Issue', 'Pages', 'Issue Year', 'First Page', 'Last Page']]
 
 # Convert numeric columns to numbers
-final_output[["Number of Authors", "Cited (articles)", "Cited (cases)", "Accessed"]] = final_output[["Number of Authors", "Cited (articles)", "Cited (cases)", "Accessed"]].astype(int)
+final_output[["Number of Authors", "Cited (articles)", "Cited (cases)", "Accessed", "Vol Span Flag", "Vol First"]] = final_output[["Number of Authors", "Cited (articles)", "Cited (cases)", "Accessed", "Vol Span Flag", "Vol First"]].astype(float)
 
 # Create a Pandas Excel writer using XlsxWriter as the engine.
 writer = pd.ExcelWriter(out_path / "_stacked_paper_data_control.xlsx", engine='xlsxwriter')  # pylint: disable=abstract-class-instantiated
@@ -186,9 +193,15 @@ int_format = workbook.add_format({'num_format': '0'})
 # as the index or headers or any cells that contain dates or datetimes.
 
 # Set the column width and format for numeric columns.
+# Number of Authors
 worksheet.set_column('F:F', 18, int_format)
-worksheet.set_column('M:O', 18, int_format)
+# BBCite Year First
 worksheet.set_column('J:J', 18, int_format)
+# Cited/Accessed Columns
+worksheet.set_column('M:O', 18, int_format)
+# Vol Span Flag/Vol First
+worksheet.set_column('R:S', 18, int_format)
+# Issue Year
 worksheet.set_column('T:T', 18, int_format)
 
 # Close the Pandas Excel writer and output the Excel file.
