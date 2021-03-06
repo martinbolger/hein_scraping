@@ -210,6 +210,9 @@ worksheet.set_column('M:O', 18, int_format)
 worksheet.set_column('R:S', 18, int_format)
 # Issue Year
 worksheet.set_column('T:T', 18, int_format)
+# First Page/Last Page Roman Numeral Count
+worksheet.set_column('W:Y', 18, int_format)
+
 
 # Close the Pandas Excel writer and output the Excel file.
 writer.save()
