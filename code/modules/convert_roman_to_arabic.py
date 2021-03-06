@@ -1,18 +1,18 @@
 #!/usr/bin/env python
-"""clean_page_number.py
+"""convert_roman_to_arabic.py
 
-This module contains a function that cleans
-page numbers so that they are all formatted
-as regular numbers.
+This module contains a function that 
+converts Roman numerials to Arabic
+numerials.
 """
 
 import re
 
 __author__ = "Martin Bolger"
-__date__ = "February 28th, 2021"
+__date__ = "March 06th, 2021"
 
-def clean_page_number(string):
-
+def convert_roman_to_arabic(string):
+    result = string
     # Check if the string is a valid roman numeral
     if bool(re.search(r"^M{0,3}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$",result, flags = re.I)) == True:
         # Convert it to an Arabic numeral if it is
@@ -31,10 +31,10 @@ def clean_page_number(string):
     return result
 
 if __name__ == "__main__":
-    output = clean_page_number("[45]")
+    output = convert_roman_to_arabic("45")
     print(output)
-    output = clean_page_number("S1324")
+    output = convert_roman_to_arabic("1324")
     print(output)
-    output = clean_page_number("iv")
+    output = convert_roman_to_arabic("iv")
     print(output)
     
