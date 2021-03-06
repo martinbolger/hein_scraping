@@ -14,7 +14,7 @@ __date__ = "March 06th, 2021"
 def convert_roman_to_arabic(string):
     result = string
     # Check if the string is a valid roman numeral
-    if bool(re.search(r"^M{0,3}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$",result, flags = re.I)) == True:
+    if bool(re.search(r"(^(?=[MDCLXVI])M*(C[MD]|D?C{0,3})(X[CL]|L?X{0,3})(I[XV]|V?I{0,3})$)",result, flags = re.I)) == True:
         # Convert it to an Arabic numeral if it is
         rom_val = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}
         # Make sure that the Roman numeral is uppercase
@@ -31,9 +31,9 @@ def convert_roman_to_arabic(string):
     return result
 
 if __name__ == "__main__":
-    output = convert_roman_to_arabic("45")
+    output = convert_roman_to_arabic("xxx")
     print(output)
-    output = convert_roman_to_arabic("1324")
+    output = convert_roman_to_arabic("xi")
     print(output)
     output = convert_roman_to_arabic("iv")
     print(output)
