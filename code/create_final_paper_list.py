@@ -16,12 +16,13 @@ from modules.create_path import create_path
 from modules.get_journal_data import get_journal_data
 from modules.get_year import get_year
 from modules.flag_author_cut_off import flag_author_cut_off
-from modules.clean_page_number import clean_page_number
+from modules.convert_roman_to_arabic import convert_roman_to_arabic
+from modules.count_roman_numerals import count_roman_numerals
 from modules.article_in_bbcite import article_in_bbcite
 from modules.split_page_number import split_page_number
 
 __author__ = "Martin Bolger"
-__date__ = "February 28th, 2021"
+__date__ = "March 06th, 2021"
 
 # Create the paths for the data directories
 input_path, work_path, intr_path, out_path, selenium_driver_path = create_path()
@@ -131,11 +132,15 @@ issue_year_list = df["Issue"].apply(lambda x: re.search(r"\d{4}", x))
 df["Issue Year"] = issue_year_list.apply(lambda x: x.group(0) if x else '')
 
 # Extract the first and last page for each paper
+df["First Page"] = df["Pages"].apply(lambda x: split_page_number(x, 1))
+df["Last Page"] = df["Pages"].apply(lambda x: split_page_number(x, 2))
 
-df["First Page"] = df["Pages"].apply(lambda x: clean_page_number(split_page_number(x, 1)))
-df["Last Page"] = df["Pages"].apply(lambda x: clean_page_number(split_page_number(x, 2)))
+# Count the number of Roman numeral page numbers
+df["Roman Numeral Count"] = df.apply(lambda x: count_roman_numerals(x["First Page"], x["Last Page"]), axis = 1)
 
-df["page hyphen count"] = df["Pages"].apply(lambda x: x.count("-"))
+# Convert Roman numerals
+df["First Page"] = df["First Page"].apply(lambda x: convert_roman_to_arabic(x))
+df["Last Page"] = df["Last Page"].apply(lambda x: convert_roman_to_arabic(x))
 
 # Add the author flags using the author cut-off data
 cut_off_data = pd.read_excel(
@@ -173,7 +178,7 @@ final_output = final_output[final_output["Before 1963 Flag"] == 0]
 final_output = final_output.drop(["Start Year",	"Journal Exclude", "Word Exclude", "BBCite Exclude", "author_exclusion_flag", "BBCite Year First Mod", "Before 1963 Flag", 'First Name', 'Last Name', 'Article in BBCite'], axis = 1)
 
 # Reorder the columns
-final_output = final_output[['ID', 'Title', 'Paper Type', 'Author(s)', 'Number of Authors', 'Journal', 'BBCite', 'BBCite Year', 'BBCite Year First', 'Topics', 'Subjects', 'Cited (articles)', 'Cited (cases)', 'Accessed', 'Journal Name', 'Vol', "Vol Span Flag", "Vol First", 'Issue', 'Pages', 'Issue Year', 'First Page', 'Last Page', "page hyphen count"]]
+final_output = final_output[['ID', 'Title', 'Paper Type', 'Author(s)', 'Number of Authors', 'Journal', 'BBCite', 'BBCite Year', 'BBCite Year First', 'Topics', 'Subjects', 'Cited (articles)', 'Cited (cases)', 'Accessed', 'Journal Name', 'Vol', "Vol Span Flag", "Vol First", 'Issue', 'Issue Year', 'Pages', 'First Page', 'Last Page', "Roman Numeral Count"]]
 
 # Convert numeric columns to numbers
 final_output[["Number of Authors", "Cited (articles)", "Cited (cases)", "Accessed", "Vol Span Flag", "Vol First"]] = final_output[["Number of Authors", "Cited (articles)", "Cited (cases)", "Accessed", "Vol Span Flag", "Vol First"]].astype(float)
