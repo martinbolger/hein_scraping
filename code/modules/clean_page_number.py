@@ -12,7 +12,6 @@ __author__ = "Martin Bolger"
 __date__ = "February 28th, 2021"
 
 def clean_page_number(string):
-    result = re.sub(r"[\[|\]|S]", "", string)
 
     # Check if the string is a valid roman numeral
     if bool(re.search(r"^M{0,3}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$",result, flags = re.I)) == True:

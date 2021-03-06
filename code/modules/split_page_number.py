@@ -38,6 +38,7 @@ def split_page_number(string, index):
                 page = match.group(2)
             elif index == 2:
                 page = match.group(4)
+    page = re.sub(r"[\[|\]|S]", "", page)
     return page
 
 if __name__ == "__main__":
