@@ -1,6 +1,7 @@
 from selenium import webdriver
 from selenium.webdriver import ChromeOptions
 from selenium.webdriver.common.keys import Keys
+from selenium.common.exceptions import NoSuchElementException
 import pandas as pd
 import bs4 as bs
 import os
@@ -23,6 +24,31 @@ def create_browser(browser_binary_path, selenium_driver_path):
     # selenium_driver_path_string = str(selenium_driver_path)
     driver = webdriver.Chrome(executable_path= str(selenium_driver_path), options = options)
     return driver
+
+#This function searches for a string of text using the search bar in Hein
+def search_hein(search_text, driver):
+    
+    # Go to the main page
+    link = 'https://heinonline-org.proxy01.its.virginia.edu/HOL/Welcome'
+    driver.get(link)
+
+    # Wait for the page logo to load
+    webpage_wait('//*[@id="heinlogo"]/a/img', driver)
+
+    # Enter the search term into the search box
+    search = driver.find_element_by_xpath('//*[@id="full_text_terms"]')
+    search.send_keys(search_text)
+    search.send_keys(Keys.RETURN)
+    try:
+        results_count_elm = driver.find_element_by_xpath('//*[@id="results_total"]')
+        results_count_text = results_count_elm.text
+        # This only matches integers up to 999,999, but I doubt that will be a problem.
+        match = re.search(r"^(0|[1-9]\d{0,2},?\d*) results", results_count_text)
+        result_count = match.group(1)
+    except NoSuchElementException:
+        result_count = 0
+    
+    return result_count
 
 #This function searches for a professor's name on Hein. It goes through the papers that show up and checks for authors
 #with the same first and last name. Once a match is found, the name is searched on Bing using the function check_google
