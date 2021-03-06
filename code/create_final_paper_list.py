@@ -135,6 +135,8 @@ df["Issue Year"] = issue_year_list.apply(lambda x: x.group(0) if x else '')
 df["First Page"] = df["Pages"].apply(lambda x: clean_page_number(split_page_number(x, 1)))
 df["Last Page"] = df["Pages"].apply(lambda x: clean_page_number(split_page_number(x, 2)))
 
+df["page hyphen count"] = df["Pages"].apply(lambda x: x.count("-"))
+
 # Add the author flags using the author cut-off data
 cut_off_data = pd.read_excel(
     input_path / "author_year_cut_offs_control.xlsx", 
@@ -171,7 +173,7 @@ final_output = final_output[final_output["Before 1963 Flag"] == 0]
 final_output = final_output.drop(["Start Year",	"Journal Exclude", "Word Exclude", "BBCite Exclude", "author_exclusion_flag", "BBCite Year First Mod", "Before 1963 Flag", 'First Name', 'Last Name', 'Article in BBCite'], axis = 1)
 
 # Reorder the columns
-final_output = final_output[['ID', 'Title', 'Paper Type', 'Author(s)', 'Number of Authors', 'Journal', 'BBCite', 'BBCite Year', 'BBCite Year First', 'Topics', 'Subjects', 'Cited (articles)', 'Cited (cases)', 'Accessed', 'Journal Name', 'Vol', "Vol Span Flag", "Vol First", 'Issue', 'Pages', 'Issue Year', 'First Page', 'Last Page']]
+final_output = final_output[['ID', 'Title', 'Paper Type', 'Author(s)', 'Number of Authors', 'Journal', 'BBCite', 'BBCite Year', 'BBCite Year First', 'Topics', 'Subjects', 'Cited (articles)', 'Cited (cases)', 'Accessed', 'Journal Name', 'Vol', "Vol Span Flag", "Vol First", 'Issue', 'Pages', 'Issue Year', 'First Page', 'Last Page', "page hyphen count"]]
 
 # Convert numeric columns to numbers
 final_output[["Number of Authors", "Cited (articles)", "Cited (cases)", "Accessed", "Vol Span Flag", "Vol First"]] = final_output[["Number of Authors", "Cited (articles)", "Cited (cases)", "Accessed", "Vol Span Flag", "Vol First"]].astype(float)
