@@ -23,7 +23,7 @@ input_path, work_path, intr_path, out_path, selenium_driver_path = create_path()
 # This is a dataframe of names that we want to manually change 
 # This can be used if we found errors in the data (for example, names were not scraped)
 # This dataset is edited by hand, so it is stored in the input directory
-name_mod = pd.read_excel(input_path / 'name_mod_control.xlsx')
+name_mod = pd.read_excel(input_path / 'name_mod_lateral.xlsx')
 
 # Load the full alt name dataset. This is the output of 
 # the alt name dataset creation script.

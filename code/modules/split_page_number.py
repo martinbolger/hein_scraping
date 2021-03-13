@@ -38,7 +38,7 @@ def split_page_number(string, index):
                 page = match.group(2)
             elif index == 2:
                 page = match.group(4)
-    page = re.sub(r"[\[|\]|S]", "", page)
+    page = re.sub(r"[\[|\]|S|W]", "", page)
     return page
 
 if __name__ == "__main__":
@@ -55,4 +55,6 @@ if __name__ == "__main__":
     first_page = split_page_number("1-1-[iv]", 1)
     print("First page: {}".format(first_page))
     last_page = split_page_number("1-1-[iv]", 2)
+    print("Last page: {}".format(last_page))
+    last_page = split_page_number("W6-W7", 2)
     print("Last page: {}".format(last_page))

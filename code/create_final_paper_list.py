@@ -27,6 +27,8 @@ __date__ = "March 06th, 2021"
 # Create the paths for the data directories
 input_path, work_path, intr_path, out_path, selenium_driver_path = create_path()
 
+data_type = "lateral"
+
 # Stack the output files
 files = os.listdir(out_path)
 stacked_output = pd.DataFrame()
@@ -47,8 +49,13 @@ stacked_output.sort_values(by = ["ID"], inplace = True)
 # Flag papers with duplicate titles
 stacked_output["dup_title"] = stacked_output.duplicated(subset = ["Title"], keep= False)
 
+# Filter papers with titles containing the word "Annals". These papers have no author and 
+# include a date in the title that is before the cutoff date.
+stacked_output = stacked_output[~stacked_output["Title"].str.contains("Annals")]
+
 # Confirm that every time the author is "na", the observation is a duplicate.
-if not stacked_output[(stacked_output["Author(s)"] == "na") & (stacked_output["dup_title"] == False)].empty:
+if not stacked_output[(stacked_output["Author(s)"] == "na") & (stacked_output["dup_title"] == False) ].empty: #& ("Annals" not in stacked_output["Title"]);
+    stacked_output.to_excel(out_path / "_stacked_output.xlsx", index = False)
     print("ERROR: There are observations with no author that are not duplicates. Please check for authors with multiple last names. Ending.")
     quit()
 
@@ -142,40 +149,49 @@ df["Roman Numeral Count"] = df.apply(lambda x: count_roman_numerals(x["First Pag
 df["First Page"] = df["First Page"].apply(lambda x: convert_roman_to_arabic(x))
 df["Last Page"] = df["Last Page"].apply(lambda x: convert_roman_to_arabic(x))
 
-# Add the author flags using the author cut-off data
-cut_off_data = pd.read_excel(
-    input_path / "author_year_cut_offs_control.xlsx", 
-    'Sheet1'
-)
+# These steps drop flagged values on the dataset.
+if data_type == "control":
+    # Add the author flags using the author cut-off data
+    cut_off_data = pd.read_excel(
+        input_path / "author_year_cut_offs_control.xlsx", 
+        'Sheet1'
+    )
 
-# # Merge the cut-off data with the main dataset
-final_output = pd.merge(
-    df,
-    cut_off_data,
-    how = "left",
-    left_on = "ID",
-    right_on = "ID",
-    sort = "False"
-)
+    # # Merge the cut-off data with the main dataset
+    final_output = pd.merge(
+        df,
+        cut_off_data,
+        how = "left",
+        left_on = "ID",
+        right_on = "ID",
+        sort = "False"
+    )
 
-# Convert the types for string vars and change nan to ""
-final_output["Word Exclude"] = final_output["Word Exclude"].astype(str)
-final_output['Word Exclude'] = final_output['Word Exclude'].str.replace('nan', '')
-final_output["BBCite Exclude"] = final_output["BBCite Exclude"].astype(str)
-final_output['BBCite Exclude'] = final_output['BBCite Exclude'].str.replace('nan', '')
-final_output["Journal Exclude"] = final_output["Journal Exclude"].astype(str)
-final_output['Journal Exclude'] = final_output['Journal Exclude'].str.replace('nan', '')
+    # Convert the types for string vars and change nan to ""
+    final_output["Word Exclude"] = final_output["Word Exclude"].astype(str)
+    final_output['Word Exclude'] = final_output['Word Exclude'].str.replace('nan', '')
+    final_output["BBCite Exclude"] = final_output["BBCite Exclude"].astype(str)
+    final_output['BBCite Exclude'] = final_output['BBCite Exclude'].str.replace('nan', '')
+    final_output["Journal Exclude"] = final_output["Journal Exclude"].astype(str)
+    final_output['Journal Exclude'] = final_output['Journal Exclude'].str.replace('nan', '')
 
-final_output["author_exclusion_flag"] = final_output.apply(lambda x: flag_author_cut_off(x["Start Year"], x["BBCite Year First Mod"], x["Journal Exclude"], x["Journal Name"], x["Word Exclude"], x["Title"], x["BBCite Exclude"], x["BBCite"]), axis = 1)
+    final_output["author_exclusion_flag"] = final_output.apply(lambda x: flag_author_cut_off(x["Start Year"], x["BBCite Year First Mod"], x["Journal Exclude"], x["Journal Name"], x["Word Exclude"], x["Title"], x["BBCite Exclude"], x["BBCite"]), axis = 1)
 
-# Subset to the rows that are not flagged by the author exclusion flag
-final_output = final_output[final_output["author_exclusion_flag"] == 0]
+    # Subset to the rows that are not flagged by the author exclusion flag
+    final_output = final_output[final_output["author_exclusion_flag"] == 0]
 
-# Subset to the rows that are not flagged by before 1963 flag
-final_output = final_output[final_output["Before 1963 Flag"] == 0]
+    # Subset to the rows that are not flagged by before 1963 flag
+    final_output = final_output[final_output["Before 1963 Flag"] == 0]
 
-# Drop extra variables
-final_output = final_output.drop(["Start Year",	"Journal Exclude", "Word Exclude", "BBCite Exclude", "author_exclusion_flag", "BBCite Year First Mod", "Before 1963 Flag", 'First Name', 'Last Name', 'Article in BBCite'], axis = 1)
+    # Drop extra variables
+    final_output = final_output.drop(["Start Year",	"Journal Exclude", "Word Exclude", "BBCite Exclude", "author_exclusion_flag", "BBCite Year First Mod", "Before 1963 Flag", 'First Name', 'Last Name', 'Article in BBCite'], axis = 1)
+elif data_type == "lateral":
+    # There are no author exclusion conditions, we just want to drop any
+    # paper that was published before 1963.
+    final_output = df
+
+    # Subset to the rows that are not flagged by before 1963 flag
+    final_output = final_output[final_output["Before 1963 Flag"] == 0]
 
 # Reorder the columns
 final_output = final_output[['ID', 'Title', 'Paper Type', 'Author(s)', 'Number of Authors', 'Journal', 'BBCite', 'BBCite Year', 'BBCite Year First', 'Topics', 'Subjects', 'Cited (articles)', 'Cited (cases)', 'Accessed', 'Journal Name', 'Vol', "Vol Span Flag", "Vol First", 'Issue', 'Issue Year', 'Pages', 'First Page', 'Last Page', "Roman Numeral Count"]]
@@ -184,7 +200,7 @@ final_output = final_output[['ID', 'Title', 'Paper Type', 'Author(s)', 'Number o
 final_output[["Number of Authors", "Cited (articles)", "Cited (cases)", "Accessed", "Vol Span Flag", "Vol First"]] = final_output[["Number of Authors", "Cited (articles)", "Cited (cases)", "Accessed", "Vol Span Flag", "Vol First"]].astype(float)
 
 # Create a Pandas Excel writer using XlsxWriter as the engine.
-writer = pd.ExcelWriter(out_path / "_stacked_paper_data_control.xlsx", engine='xlsxwriter')  # pylint: disable=abstract-class-instantiated
+writer = pd.ExcelWriter(out_path / "_stacked_paper_data_{}.xlsx".format(data_type), engine='xlsxwriter')  # pylint: disable=abstract-class-instantiated
 
 # Convert the dataframe to an XlsxWriter Excel object.
 final_output.to_excel(writer, sheet_name='Sheet1')
