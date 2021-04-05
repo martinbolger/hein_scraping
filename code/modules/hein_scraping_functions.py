@@ -202,8 +202,10 @@ def mod_names(fm_names, err_fm_names, name_mod):
 #This function gets all the paper data and appends it to the list data_stream
 def get_paper_data(last_name, prof_id, title_index, scroll_num, driver):
     data_stream = []
-    data_stream = dict.fromkeys(['Title','Author', 'id', 'Journal', 'BBCite', 'Topics', 'Subjects'], 'na')
+    data_stream = dict.fromkeys(['Title','Author', 'id', 'Journal', 'BBCite', 'Topics', 'Subjects', 'Type'], 'na')
     data_stream['id'] = prof_id
+    # Make sure that the page has loaded the first papers
+    webpage_wait('//*[@id="sortby"]', driver)
     if scroll_num == 0:
         element = driver.find_elements_by_xpath('//*[@id="save_results"]/div/div/div/div[' + str(title_index) + ']/div[2]')      
     elif scroll_num > 0:
@@ -220,6 +222,10 @@ def get_paper_data(last_name, prof_id, title_index, scroll_num, driver):
     # Remove blank strings from the list
     data_list = list(filter(None, data_list))
     data_stream['Title'] = data_list[0]
+    # See if the second line matches one of our other fields. If it does not, make it a type field
+    substrings = ['Topics: ', 'Subjects: ', 'Vol.', last_name]
+    if not any([substring in data_list[1] for substring in substrings]):
+        data_stream['Type'] = data_list[1]
     for a in data_list[1:]:
         if 'Topics: ' in a:
             data_stream['Topics'] = a.split('Topics: ')[1]
