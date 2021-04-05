@@ -106,6 +106,9 @@ df["Before 1963 Flag"] = df["BBCite Year First Mod"].apply(lambda x: 1 if x < 19
 # Number of Authors
 df.insert(4, 'Number of Authors', [x.count(';') + 1 for x in df['Author(s)']])
 
+# Replace na in the type column
+df['Type'] = df['Type'].str.replace('na', '')
+
 #Replace na in Cited and Accessed columns:
 df['Cited (articles)'] = df['Cited (articles)'].astype(str)
 df['Cited (cases)'] = df['Cited (cases)'].astype(str)
@@ -148,6 +151,9 @@ df["Roman Numeral Count"] = df.apply(lambda x: count_roman_numerals(x["First Pag
 # Convert Roman numerals
 df["First Page"] = df["First Page"].apply(lambda x: convert_roman_to_arabic(x))
 df["Last Page"] = df["Last Page"].apply(lambda x: convert_roman_to_arabic(x))
+
+# Make the type blank if it matches the BBCite or the article title
+df['Type'] = df.apply(lambda x: "" if x["Type"].strip() == x["BBCite"].strip() or x["Type"].strip() == x["Title"].strip() else x["Type"], axis = 1)
 
 # These steps drop flagged values on the dataset.
 if data_type == "control":
@@ -194,7 +200,7 @@ elif data_type == "lateral":
     final_output = final_output[final_output["Before 1963 Flag"] == 0]
 
 # Reorder the columns
-final_output = final_output[['ID', 'Title', 'Paper Type', 'Author(s)', 'Number of Authors', 'Journal', 'BBCite', 'BBCite Year', 'BBCite Year First', 'Topics', 'Subjects', 'Cited (articles)', 'Cited (cases)', 'Accessed', 'Journal Name', 'Vol', "Vol Span Flag", "Vol First", 'Issue', 'Issue Year', 'Pages', 'First Page', 'Last Page', "Roman Numeral Count"]]
+final_output = final_output[['ID', 'Title', 'Paper Type', 'Author(s)', 'Number of Authors', 'Journal', 'BBCite', 'BBCite Year', 'BBCite Year First', 'Topics', 'Subjects', "Type", 'Cited (articles)', 'Cited (cases)', 'Accessed', 'Journal Name', 'Vol', "Vol Span Flag", "Vol First", 'Issue', 'Issue Year', 'Pages', 'First Page', 'Last Page', "Roman Numeral Count"]]
 
 # Convert numeric columns to numbers
 final_output[["Number of Authors", "Cited (articles)", "Cited (cases)", "Accessed", "Vol Span Flag", "Vol First"]] = final_output[["Number of Authors", "Cited (articles)", "Cited (cases)", "Accessed", "Vol Span Flag", "Vol First"]].astype(float)
