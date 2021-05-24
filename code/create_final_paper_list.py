@@ -156,54 +156,62 @@ df["Last Page"] = df["Last Page"].apply(lambda x: convert_roman_to_arabic(x))
 df['Type'] = df.apply(lambda x: "" if x["Type"].strip() == x["BBCite"].strip() or x["Type"].strip() == x["Title"].strip() else x["Type"], axis = 1)
 
 # These steps drop flagged values on the dataset.
-if data_type == "control":
-    # Add the author flags using the author cut-off data
-    cut_off_data = pd.read_excel(
-        input_path / "author_year_cut_offs_control.xlsx", 
-        'Sheet1'
-    )
 
-    # # Merge the cut-off data with the main dataset
-    final_output = pd.merge(
-        df,
-        cut_off_data,
-        how = "left",
-        left_on = "ID",
-        right_on = "ID",
-        sort = "False"
-    )
+# Add the author flags using the author cut-off data
+cut_off_data = pd.read_excel(
+    input_path / "author_year_cut_offs_{}.xlsx".format(data_type), 
+    'Sheet1'
+)
 
-    # Convert the types for string vars and change nan to ""
-    final_output["Word Exclude"] = final_output["Word Exclude"].astype(str)
-    final_output['Word Exclude'] = final_output['Word Exclude'].str.replace('nan', '')
-    final_output["BBCite Exclude"] = final_output["BBCite Exclude"].astype(str)
-    final_output['BBCite Exclude'] = final_output['BBCite Exclude'].str.replace('nan', '')
-    final_output["Journal Exclude"] = final_output["Journal Exclude"].astype(str)
-    final_output['Journal Exclude'] = final_output['Journal Exclude'].str.replace('nan', '')
+# # Merge the cut-off data with the main dataset
+final_output = pd.merge(
+    df,
+    cut_off_data,
+    how = "left",
+    left_on = "ID",
+    right_on = "ID",
+    sort = "False"
+)
 
-    final_output["author_exclusion_flag"] = final_output.apply(lambda x: flag_author_cut_off(x["Start Year"], x["BBCite Year First Mod"], x["Journal Exclude"], x["Journal Name"], x["Word Exclude"], x["Title"], x["BBCite Exclude"], x["BBCite"]), axis = 1)
+# Convert the types for string vars and change nan to ""
+final_output["Word Exclude"] = final_output["Word Exclude"].astype(str)
+final_output['Word Exclude'] = final_output['Word Exclude'].str.replace('nan', '')
+final_output["BBCite Exclude"] = final_output["BBCite Exclude"].astype(str)
+final_output['BBCite Exclude'] = final_output['BBCite Exclude'].str.replace('nan', '')
+final_output["Journal Exclude"] = final_output["Journal Exclude"].astype(str)
+final_output['Journal Exclude'] = final_output['Journal Exclude'].str.replace('nan', '')
 
-    # Subset to the rows that are not flagged by the author exclusion flag
-    final_output = final_output[final_output["author_exclusion_flag"] == 0]
+final_output["author_exclusion_flag"] = final_output.apply(lambda x: flag_author_cut_off(x["Start Year"], x["BBCite Year First Mod"], x["Journal Exclude"], x["Journal Name"], x["Word Exclude"], x["Title"], x["BBCite Exclude"], x["BBCite"]), axis = 1)
 
-    # Subset to the rows that are not flagged by before 1963 flag
-    final_output = final_output[final_output["Before 1963 Flag"] == 0]
+# Subset to the rows that are not flagged by the author exclusion flag
+final_output = final_output[final_output["author_exclusion_flag"] == 0]
 
-    # Drop extra variables
-    final_output = final_output.drop(["Start Year",	"Journal Exclude", "Word Exclude", "BBCite Exclude", "author_exclusion_flag", "BBCite Year First Mod", "Before 1963 Flag", 'First Name', 'Last Name', 'Article in BBCite'], axis = 1)
-elif data_type == "lateral":
-    # There are no author exclusion conditions, we just want to drop any
-    # paper that was published before 1963.
-    final_output = df
+# Subset to the rows that are not flagged by before 1963 flag
+final_output = final_output[final_output["Before 1963 Flag"] == 0]
 
-    # Subset to the rows that are not flagged by before 1963 flag
-    final_output = final_output[final_output["Before 1963 Flag"] == 0]
+# Drop extra variables
+final_output = final_output.drop(["Start Year",	"Journal Exclude", "Word Exclude", "BBCite Exclude", "author_exclusion_flag", "BBCite Year First Mod", "Before 1963 Flag", 'First Name', 'Last Name', 'Article in BBCite'], axis = 1)
 
 # Reorder the columns
 final_output = final_output[['ID', 'Title', 'Paper Type', 'Author(s)', 'Number of Authors', 'Journal', 'BBCite', 'BBCite Year', 'BBCite Year First', 'Topics', 'Subjects', "Type", 'Cited (articles)', 'Cited (cases)', 'Accessed', 'Journal Name', 'Vol', "Vol Span Flag", "Vol First", 'Issue', 'Issue Year', 'Pages', 'First Page', 'Last Page', "Roman Numeral Count"]]
 
 # Convert numeric columns to numbers
 final_output[["Number of Authors", "Cited (articles)", "Cited (cases)", "Accessed", "Vol Span Flag", "Vol First"]] = final_output[["Number of Authors", "Cited (articles)", "Cited (cases)", "Accessed", "Vol Span Flag", "Vol First"]].astype(float)
+
+# Perform a final data check: Make sure that all IDs from the original dataset are on the output dataset
+out_ids = final_output["ID"].drop_duplicates(keep='first', inplace=False).sort_values().reset_index(drop = True)
+
+input_data = pd.read_excel(work_path / "{}.xlsx".format(data_type), 'Sheet1')
+
+in_ids = input_data["ID"].drop_duplicates(keep='first', inplace=False).sort_values().reset_index(drop = True)
+
+missing_ids = in_ids[~in_ids.isin(out_ids)]
+
+# if len(missing_ids) > 0:
+#     print("ERROR: There are ids from the original data that do not appear in the output. Ending.")
+#     print(missing_ids)
+#     quit()
+
 
 # Create a Pandas Excel writer using XlsxWriter as the engine.
 writer = pd.ExcelWriter(out_path / "_stacked_paper_data_{}.xlsx".format(data_type), engine='xlsxwriter')  # pylint: disable=abstract-class-instantiated
