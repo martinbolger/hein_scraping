@@ -20,7 +20,7 @@ __date__ = "December 25th, 2020"
 input_path, work_path, intr_path, out_path, selenium_driver_path = create_path()
 
 # Set the data type
-data_type = "control"
+data_type = "lateral"
 
 # Load the name modification dataset
 # This is a dataframe of names that we want to manually change 
