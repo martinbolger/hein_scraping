@@ -213,8 +213,7 @@ def get_paper_data(last_name, prof_id, title_index, scroll_num, driver):
     for elm in element:
         my_list = elm.text
     # Remove strings that say "More Information" or "Full Text Not Currently Available in HeinOnline"
-    my_list = re.sub(r'\nMore Information\n', ' ', my_list)
-    my_list_clean = re.sub(r'Full Text Not Currently Available in HeinOnline', ' ', my_list)
+    my_list_clean = re.sub(r'\nMore Information\n|Full Text Not Currently Available in HeinOnline|\* Search your library catalog|Publisher link to article', ' ', my_list)
     # Create a list of strings with the data
     data_list = my_list_clean.split('\n')
     # Strip the strings in the list
