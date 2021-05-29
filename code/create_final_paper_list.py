@@ -207,10 +207,10 @@ in_ids = input_data["ID"].drop_duplicates(keep='first', inplace=False).sort_valu
 
 missing_ids = in_ids[~in_ids.isin(out_ids)]
 
-# if len(missing_ids) > 0:
-#     print("ERROR: There are ids from the original data that do not appear in the output. Ending.")
-#     print(missing_ids)
-#     quit()
+if len(missing_ids) > 0:
+    print("ERROR: There are ids from the original data that do not appear in the output. Ending.")
+    print(missing_ids)
+    quit()
 
 
 # Create a Pandas Excel writer using XlsxWriter as the engine.
