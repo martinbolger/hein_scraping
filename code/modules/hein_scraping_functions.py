@@ -61,10 +61,10 @@ def search_hein_for_books(search_text, year, driver):
 
 
 #This function searches for a professor's name on Hein. It goes through the papers that show up and checks for authors
-#with the same first and last name. Once a match is found, the name is searched on Bing using the function check_google
+#with the same first and last name. Once a match is found, the name is searched on Bing using the function check_bing
 #If the correct school name shows up on the Bing search, the name is added to the alternative name list (alt_fm_names.
 #Otherwise, the name is added to the error list (err_fm_names)
-def search_names(mid_first_name, last_name, school_url, driver, g_driver):
+def search_names(mid_first_name, last_name, school_url, driver, g_driver, s_driver):
     link = 'https://heinonline-org.proxy01.its.virginia.edu/HOL/LuceneSearch?typea=title&termsa=&operator=AND&typeb=creator&termsb=' + last_name + '+' + mid_first_name + '&operatorb=AND&typec=text&termsc=&operatorc=AND&typed=title&termsd=&operatord=AND&typee=title&termse=&operatore=AND&typef=title&termsf=&yearlo=&yearhi=&tabfrom=&searchtype=field&collection=all&submit=Go'
     driver.get(link)
     try:
@@ -83,20 +83,27 @@ def search_names(mid_first_name, last_name, school_url, driver, g_driver):
     while element:
         for link in element:
             link_text = link.text.lower()
-            if first_name.lower() in link_text.lower() and last_name.lower() in link_text.lower() and '[' not in link_text:
-                try:
-                    new_last = link_text.split(', ')[0]
-                    new_first_mid = link_text.split(', ')[1]
-                    if first_name.lower() in new_first_mid and last_name.lower() == new_last:
-                        new_fm = link.text.split(', ')[1]
-                        if not new_fm in alt_fm_names and not new_fm in err_fm_names:
-                            faculty = check_google(new_fm, last_name, school_url, g_driver)
-                            if faculty: 
-                                alt_fm_names.append(new_fm)
-                            else: 
-                                err_fm_names.append(new_fm)
-                except:
-                    continue
+            # Make sure punctuation is matched literally
+            escaped_first_name = re.escape(first_name.lower())
+            escaped_last_name = re.escape(last_name.lower())
+            # Search for the first and last name in the link text. We want to see them in the expected position
+            if bool(re.search(r", {}(\s|$)".format(escaped_first_name), link_text.lower(), flags = re.I)) and bool(re.search(r"(^|; ){}, ".format(escaped_last_name), link_text.lower(), flags = re.I)) and '[' not in link_text:
+                new_last = link_text.split(', ')[0]
+                new_first_mid = link_text.split(', ')[1]
+                if first_name.lower() in new_first_mid and last_name.lower() == new_last:
+                    new_fm = link.text.split(', ')[1]
+                    if not new_fm in alt_fm_names and not new_fm in err_fm_names:
+                        print(new_fm + ' ' + last_name)
+                        faculty = check_bing(new_fm, last_name, school_url, g_driver)
+                        if faculty: 
+                            alt_fm_names.append(new_fm)
+                        else: 
+                            err_fm_names.append(new_fm)
+                        link = 'https://heinonline-org.proxy01.its.virginia.edu/HOL/AuthorProfile?action=edit&search_name=' + last_name +  '%2C ' + new_fm + '&collection=journals'
+                        s_driver.get(link)
+                        similar_names = get_similar_names(first_name, last_name, s_driver)
+                        alt_fm_names, err_fm_names = check_similar_names(alt_fm_names, err_fm_names, similar_names, school_url, g_driver)    
+
         if page < 2:
             try:
                 driver.find_element_by_xpath('//*[@id="thenext"]/span').click()
@@ -112,47 +119,53 @@ def search_names(mid_first_name, last_name, school_url, driver, g_driver):
     err_fm_names_str  = list_to_comma_separated_string(err_fm_names)
     return alt_fm_names_str, err_fm_names_str
 
-#This function checks if any of the names in the similar names list of the Hein page are the relevant author
-def similar_names(alt_name_list, err_fm_names, mid_first_name, last_name, school_url, driver, g_driver):
+def get_similar_names(first_name, last_name, s_driver):
+    # Wait for the page to load
+    webpage_wait('//*[@id="heinlogo"]/a/img', s_driver)
+    # Check for the similar pages link
+    links = s_driver.find_elements_by_tag_name('a')
+    for link in links:
+        if link.text == "Similar Author Names":
+            link.click()
+            # Wait for the page to load
+            webpage_wait('//*[@id="similar-authors"]/div/ul', s_driver)
+    # Read the similar names list
     try:
-        driver.find_element_by_xpath('//*[@id="page_content"]/div[2]/div/b/a').click()
-        element = driver.find_element_by_xpath('//*[@id="simlist"]/ul[1]')
-        similar_name_list = [a.strip() for a in element.text.split('\n')]
-        middle_name = ''
-        if ' ' in mid_first_name.lower():
-            first_name = mid_first_name.split(' ')[0]
-            middle_name = mid_first_name.split(' ')[1]
-        else: 
-            first_name = mid_first_name
-        for name in similar_name_list:
-            if '*' in name:
-                name = name.split('*')[1]
-            elif '#' in name:
-                name = name.split('#')[1]
-            if first_name.lower() in name.lower() and last_name.lower() in name.lower() and ', ' in name.lower():
-                new_fm = name.split(', ', 1)[1]            
-                new_last = name.split(', ', 1)[0]
-                print(new_fm + ' ' + new_last)
-                if new_fm not in alt_name_list and last_name.lower() == new_last.lower() and not new_fm in err_fm_names:
-                    if ' ' in new_fm.lower() and middle_name != '':
-                        new_mi = new_fm.split(' ')[1][0].lower()
-                        if new_mi == middle_name[0].lower():
-                            alt_name_list.append(new_fm)
-                            continue
-                    faculty = check_google(new_fm, last_name, school_url, g_driver)
-                    if faculty: 
-                        alt_name_list.append(new_fm)
-                    else: 
-                        err_fm_names.append(new_fm)
-    except:
-        print('No similar names found.')
+        element = s_driver.find_element_by_xpath('//*[@id="similar-authors"]/div/ul')
+    except NoSuchElementException:
+        return []
+    similar_name_list = [a.strip() for a in element.text.split('\n')]
+    output_similar_name_list = []
+    # Make sure punctuation is matched literally
+    escaped_first_name = re.escape(first_name.lower())
+    escaped_last_name = re.escape(last_name.lower())
+    for similar_name in similar_name_list:
+        if bool(re.search(r", {}(\s|$)".format(escaped_first_name), similar_name.lower(), flags = re.I)) and bool(re.search(r"(^|; ){}, ".format(escaped_last_name), similar_name.lower(), flags = re.I)) and ', ' in similar_name.lower():
+            output_similar_name_list.append(similar_name)
+    return output_similar_name_list
+
+def check_similar_names(alt_name_list, err_fm_names, similar_name_list, school_url, g_driver):
+    for name in similar_name_list:
+        if '*' in name:
+            name = name.split('*')[1]
+        elif '#' in name:
+            name = name.split('#')[1]
+        new_fm = name.split(', ', 1)[1]
+        new_last = name.split(', ', 1)[0]
+        if new_fm not in alt_name_list and not new_fm in err_fm_names:
+            print(new_fm + ' ' + new_last)
+            faculty = check_bing(new_fm, new_last, school_url, g_driver)
+            if faculty: 
+                alt_name_list.append(new_fm)
+            else: 
+                err_fm_names.append(new_fm)
     return alt_name_list, err_fm_names
 
 #This function searches for a name on Bing and checks if any of the results that come up contain the school URL.
 #When there is no middle initial or middle name, the school url is included in the search. Otherwise, only the name is 
 #searched. I found that this method works well because when there is no middle name, there is sometimes a more famous
 #person with the same name
-def check_google(mid_first_name, last_name, school_url, g_driver):
+def check_bing(mid_first_name, last_name, school_url, g_driver):
     faculty = False
     for url in school_url:
         if faculty == True:
