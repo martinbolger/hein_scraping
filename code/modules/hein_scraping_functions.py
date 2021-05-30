@@ -1,7 +1,7 @@
 from selenium import webdriver
 from selenium.webdriver import ChromeOptions
 from selenium.webdriver.common.keys import Keys
-from selenium.common.exceptions import NoSuchElementException
+from selenium.common.exceptions import NoSuchElementException, StaleElementReferenceException
 import pandas as pd
 import bs4 as bs
 import os
@@ -75,6 +75,7 @@ def search_names(mid_first_name, last_name, school_url, driver, g_driver, s_driv
     element = driver.find_elements_by_tag_name('a')
     alt_fm_names = []
     err_fm_names = []
+    middle_name_found = 0
     if ' ' in mid_first_name.lower():
         first_name = mid_first_name.split(' ')[0]
     else: 
@@ -99,10 +100,15 @@ def search_names(mid_first_name, last_name, school_url, driver, g_driver, s_driv
                             alt_fm_names.append(new_fm)
                         else: 
                             err_fm_names.append(new_fm)
-                        link = 'https://heinonline-org.proxy01.its.virginia.edu/HOL/AuthorProfile?action=edit&search_name=' + last_name +  '%2C ' + new_fm + '&collection=journals'
-                        s_driver.get(link)
-                        similar_names = get_similar_names(first_name, last_name, s_driver)
-                        alt_fm_names, err_fm_names = check_similar_names(alt_fm_names, err_fm_names, similar_names, school_url, g_driver)    
+                        # Flag if a middle name was found
+                        if ' ' in new_fm:
+                            middle_name_found = 1
+                        # If a middle name has not been found, we can check the similar names
+                        if middle_name_found == 0:
+                            link = 'https://heinonline-org.proxy01.its.virginia.edu/HOL/AuthorProfile?action=edit&search_name=' + last_name +  '%2C ' + new_fm + '&collection=journals'
+                            s_driver.get(link)
+                            similar_names = get_similar_names(first_name, last_name, s_driver)
+                            alt_fm_names, err_fm_names = check_similar_names(alt_fm_names, err_fm_names, similar_names, school_url, g_driver)    
 
         if page < 2:
             try:
@@ -127,8 +133,6 @@ def get_similar_names(first_name, last_name, s_driver):
     for link in links:
         if link.text == "Similar Author Names":
             link.click()
-            # Wait for the page to load
-            webpage_wait('//*[@id="similar-authors"]/div/ul', s_driver)
     # Read the similar names list
     try:
         element = s_driver.find_element_by_xpath('//*[@id="similar-authors"]/div/ul')
@@ -183,10 +187,14 @@ def check_bing(mid_first_name, last_name, school_url, g_driver):
 
         print("URL: {}".format(url))
         for elem in elems:
-           if url in elem.get_attribute("href"):
-                print(url + ' in: ' + elem.get_attribute("href"))
-                faculty = True
-                break
+            try:
+                if url in elem.get_attribute("href"):
+                    print(url + ' in: ' + elem.get_attribute("href"))
+                    faculty = True
+                    break
+            except StaleElementReferenceException:
+                print("Stale element")
+                continue
 
         g_driver.get("http://amazon.com")
         time.sleep(3)
