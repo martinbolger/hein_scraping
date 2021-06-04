@@ -103,13 +103,6 @@ def search_names(mid_first_name, last_name, school_url, driver, g_driver, s_driv
                         # Flag if a middle name was found
                         if ' ' in new_fm:
                             middle_name_found = 1
-                        # If a middle name has not been found, we can check the similar names
-                        if middle_name_found == 0:
-                            link = 'https://heinonline-org.proxy01.its.virginia.edu/HOL/AuthorProfile?action=edit&search_name=' + last_name +  '%2C ' + new_fm + '&collection=journals'
-                            s_driver.get(link)
-                            similar_names = get_similar_names(first_name, last_name, s_driver)
-                            alt_fm_names, err_fm_names = check_similar_names(alt_fm_names, err_fm_names, similar_names, school_url, g_driver)    
-
         if page < 2:
             try:
                 driver.find_element_by_xpath('//*[@id="thenext"]/span').click()
@@ -120,6 +113,12 @@ def search_names(mid_first_name, last_name, school_url, driver, g_driver, s_driv
                 element = []
         else: 
             element = []
+    # If a middle name has not been found, we can check for similar names
+    if middle_name_found == 0:
+        link = 'https://heinonline-org.proxy01.its.virginia.edu/HOL/AuthorProfile?action=edit&search_name=' + last_name +  '%2C ' + mid_first_name + '&collection=journals'
+        s_driver.get(link)
+        similar_names = get_similar_names(first_name, last_name, s_driver)
+        alt_fm_names, err_fm_names = check_similar_names(alt_fm_names, err_fm_names, similar_names, school_url, g_driver)  
     # Convert the output to a string format
     alt_fm_names_str  = list_to_comma_separated_string(alt_fm_names)
     err_fm_names_str  = list_to_comma_separated_string(err_fm_names)
