@@ -12,6 +12,9 @@ import pandas as pd
 import pathlib
 from modules.create_path import create_path
 from modules.data_manipulation_functions import concat_function, remove_err_names
+from modules.flag_unusual_names import flag_unusual_names
+from modules.dedup_alt_names import dedup_alt_names
+
 
 __author__ = "Martin Bolger"
 __date__ = "December 25th, 2020"
@@ -64,6 +67,12 @@ alt_name_mod_name.sort_values(["ID", "LastName"], inplace = True)
 
 # Add an index for the number of duplicates for each name
 alt_name_mod_name["ID_counts"] = alt_name_mod_name.groupby(["ID"]).cumcount()+1
+
+# Deduplicate the list of alt names
+alt_name_mod_name["fm_names"] = alt_name_mod_name["fm_names"].apply(lambda x: dedup_alt_names(x))
+
+# Flag unusual alt names
+alt_name_mod_name["unusual_name_flag"] = alt_name_mod_name.apply(lambda x: flag_unusual_names(x["fm_names"], x["FirstName"]), axis = 1)
 
 # Output to Excel
 alt_name_mod_name.to_excel(intr_path / "hein_scraping_input_data.xlsx", index = False)
