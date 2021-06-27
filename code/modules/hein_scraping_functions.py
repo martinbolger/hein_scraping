@@ -26,8 +26,11 @@ def create_browser(browser_binary_path, selenium_driver_path):
     return driver
 
 #This function searches for a string of text using the advanced search function in Hein
-# It is used to find the number of hits for different book titles after a certain year.
-def search_hein_for_books(search_text, year, driver):
+# It is used to find the number of hits for different book/paper titles after a certain year.
+def search_hein_for_cites(search_text, year, driver):
+
+    if search_text == np.nan:
+        return np.nan
     
     # Go to the main page
     link = 'https://heinonline-org.proxy01.its.virginia.edu/HOL/LuceneSearch?collection=all&searchtype=open'
