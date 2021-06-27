@@ -27,7 +27,7 @@ __date__ = "March 06th, 2021"
 # Create the paths for the data directories
 input_path, work_path, intr_path, out_path, selenium_driver_path = create_path()
 
-data_type = "lateral"
+data_type = "control"
 
 # Stack the output files
 files = os.listdir(out_path)
@@ -68,7 +68,7 @@ stacked_output = stacked_output.loc[stacked_output["Author(s)"] != "na"].copy()
 # We can still get duplicates if the author has multiple first names and
 # multiple last names because the page has to be scrapped for each first name/last name
 # combination. We can drop these duplicates by the title of the paper and the author name.
-stacked_output["duplicate_title_author"] = stacked_output.duplicated(subset = ["Title", "Author(s)", "Journal", "BBCite"], keep= "first")
+stacked_output["duplicate_title_author"] = stacked_output.duplicated(subset = ["Title", "ID", "Author(s)", "Journal", "BBCite"], keep= "first")
 
 # Drop the duplicate entries
 stacked_output = stacked_output[stacked_output["duplicate_title_author"] == False].copy()

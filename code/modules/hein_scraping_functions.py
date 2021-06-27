@@ -45,7 +45,7 @@ def search_hein_for_books(search_text, year, driver):
     year_text.send_keys(year)
 
     # Click the search button
-    search = driver.find_element_by_xpath('//*[@id="full_text_advanced_search_box"]/div[3]/div/button[1]').click()
+    search = driver.find_element_by_xpath('//*[@id="lucene"]/div[2]/div[2]/div/div/button[1]').click()
     try:
         # Look for the number of results pannel
         results_count_elm = driver.find_element_by_xpath('//*[@id="results_total"]')
