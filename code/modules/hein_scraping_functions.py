@@ -27,7 +27,7 @@ def create_browser(browser_binary_path, selenium_driver_path):
 
 #This function searches for a string of text using the advanced search function in Hein
 # It is used to find the number of hits for different book/paper titles after a certain year.
-def search_hein_for_cites(search_text, year, driver):
+def search_hein_for_cites(search_text, year_low, year_high, driver):
 
     if search_text == np.nan:
         return np.nan
@@ -45,7 +45,9 @@ def search_hein_for_cites(search_text, year, driver):
 
     # Enter the year cutoff
     year_text = driver.find_element_by_xpath('//*[@id="yearlo"]') 
-    year_text.send_keys(year)
+    year_text.send_keys(year_low)
+    year_text = driver.find_element_by_xpath('//*[@id="yearhi"]') 
+    year_text.send_keys(year_high)
 
     # Click the search button
     search = driver.find_element_by_xpath('//*[@id="lucene"]/div[2]/div[2]/div/div/button[1]').click()
