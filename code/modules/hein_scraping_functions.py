@@ -40,14 +40,18 @@ def search_hein_for_cites(search_text, year_low, year_high, driver):
     webpage_wait('//*[@id="heinlogo"]/a/img', driver)
 
     # Enter the search text
-    full_text = driver.find_element_by_xpath('//*[@id="termsc"]') 
-    full_text.send_keys(search_text)
+    full_text = driver.find_element_by_xpath('//*[@id="termsa"]') 
+    full_text.send_keys(f'"{search_text}"')
+    # Check the search type to Full Text
+    search_type = driver.find_element_by_xpath("//*[@id='typea']/option[text()='Full Text']").click()
 
     # Enter the year cutoff
-    year_text = driver.find_element_by_xpath('//*[@id="yearlo"]') 
-    year_text.send_keys(year_low)
-    year_text = driver.find_element_by_xpath('//*[@id="yearhi"]') 
-    year_text.send_keys(year_high)
+    if year_low:
+        year_text = driver.find_element_by_xpath('//*[@id="yearlo"]') 
+        year_text.send_keys(year_low)
+    if year_high:
+        year_text = driver.find_element_by_xpath('//*[@id="yearhi"]') 
+        year_text.send_keys(year_high)
 
     # Click the search button
     search = driver.find_element_by_xpath('//*[@id="lucene"]/div[2]/div[2]/div/div/button[1]').click()
